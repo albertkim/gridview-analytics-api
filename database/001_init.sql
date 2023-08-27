@@ -1,6 +1,7 @@
 -- Countries schema
 CREATE TABLE countries (
-  id INTEGER PRIMARY KEY
+  id INTEGER PRIMARY KEY,
+  name TEXT
 );
 
 -- Cities schema
@@ -13,7 +14,10 @@ CREATE TABLE cities (
 -- City metrics
 CREATE TABLE city_metrics (
   id INTEGER PRIMARY KEY,
-  type TEXT
+  type TEXT,
+  year INTEGER,
+  value INTEGER,
+  source TEXT
 );
 
 -- Politician schema
@@ -32,23 +36,35 @@ CREATE TABLE addresses (
   full_address TEXT
 );
 
+-- City updates (aka city council meetings)
+CREATE TABLE city_updates (
+  id INTEGER PRIMARY KEY,
+  meeting_date DATE,
+  address INTEGER REFERENCES addresses(id)
+);
+
 -- Building application
 CREATE TABLE building_applications (
   id INTEGER PRIMARY KEY,
   applicant_name TEXT,
   address INTEGER REFERENCES addresses(id),
   summary TEXT,
+  type TEXT,
   date_submitted DATE,
   date_updated DATE,
   date_approved DATE,
-  status TEXT
+  status TEXT,
+  url TEXT
 );
 
--- City updates (aka city council meetings)
-CREATE TABLE city_updates (
+CREATE TABLE building_application_updates (
   id INTEGER PRIMARY KEY,
-  meeting_date DATE,
-
+  building_application_id INTEGER REFERENCES building_applications(id),
+  city_updates INTEGER REFERENCES city_updates(id),
+  date_added DATE,
+  summary TEXT,
+  description TEXT,
+  url TEXT
 );
 
 -- City votes
@@ -57,6 +73,7 @@ CREATE TABLE city_votes (
   title TEXT,
   description TEXT,
   type TEXT,
+  city_update_id REFERENCES city_updates(id),
   vote_result TEXT
 );
 
