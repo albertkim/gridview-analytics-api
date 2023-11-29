@@ -33,6 +33,7 @@ exports.up = async function(knex) {
       summary TEXT,
       meeting_type TEXT,
       sentiment TEXT,
+      date DATE,
       city_id INTEGER REFERENCES cities(id)
     );
   `)
@@ -40,6 +41,7 @@ exports.up = async function(knex) {
   await knex.raw(`
     CREATE TABLE news_links (
       id INTEGER PRIMARY KEY,
+      title TEXT,
       summary TEXT,
       url TEXT,
       news_id INTEGER REFERENCES news(id)

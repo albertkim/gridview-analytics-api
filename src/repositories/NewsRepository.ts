@@ -9,7 +9,7 @@ interface INewsFilter {
 interface INewsObject {
   id: number
   title: string
-  summary: string
+  summary: string | null
   meeting_type: string
   city_id: number
   city_name: string
@@ -26,7 +26,7 @@ interface ILinkObject {
 interface INews {
   id: number
   title: string
-  summary: string
+  summary: string | null
   meetingType: string
   cityId: number
   cityName: string
