@@ -32,6 +32,7 @@ exports.up = async function(knex) {
       title TEXT,
       summary TEXT,
       meeting_type TEXT,
+      sentiment TEXT,
       city_id INTEGER REFERENCES cities(id)
     );
   `)
@@ -60,5 +61,5 @@ exports.up = async function(knex) {
 }
 
 exports.down = async function(knex) {
-  
+
 }
