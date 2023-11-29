@@ -43,9 +43,8 @@ CREATE TABLE politicians (
   id INTEGER PRIMARY KEY,
   full_name TEXT,
   election_date DATE,
+  next_election_date DATE,
   party_name TEXT,
-  public_salary INTEGER,
-  public_salary_currency TEXT,
   city_id INTEGER REFERENCES cities(id)
 );
 
