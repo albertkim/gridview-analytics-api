@@ -17,7 +17,25 @@ CREATE TABLE city_metrics (
   type TEXT,
   year INTEGER,
   value INTEGER,
-  source TEXT
+  source TEXT,
+  city_id INTEGER REFERENCES cities(id)
+);
+
+-- News
+CREATE TABLE news (
+  id INTEGER PRIMARY KEY,
+  title TEXT,
+  summary TEXT,
+  meeting_type TEXT,
+  city_id INTEGER REFERENCES cities(id)
+);
+
+-- News links
+CREATE TABLE news_links (
+  id INTEGER PRIMARY KEY,
+  summary TEXT,
+  url TEXT,
+  news_id INTEGER REFERENCES news(id)
 );
 
 -- Politician schema
@@ -27,7 +45,8 @@ CREATE TABLE politicians (
   election_date DATE,
   party_name TEXT,
   public_salary INTEGER,
-  public_salary_currency TEXT
+  public_salary_currency TEXT,
+  city_id INTEGER REFERENCES cities(id)
 );
 
 -- Address (but somehow handle land assemblies and subdivisions)
