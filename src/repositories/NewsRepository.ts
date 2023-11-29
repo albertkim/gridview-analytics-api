@@ -13,6 +13,7 @@ interface INewsObject {
   meeting_type: string
   city_id: number
   city_name: string
+  date: string
 }
 
 interface ILinkObject {
@@ -30,6 +31,7 @@ interface INews {
   meetingType: string
   cityId: number
   cityName: string
+  date: string
   links: Array<{
     id: number
     title: string
@@ -43,6 +45,7 @@ export const NewsRepository = {
     const newsObject: INewsObject[] = await knex('news')
       .leftJoin('cities', 'cities.id', 'news.city_id')
       .select('news.*', 'cities.name as city_name')
+      .orderBy('date', 'desc')
 
     const newsIds = newsObject.map((n) => n.id)
 
@@ -56,6 +59,7 @@ export const NewsRepository = {
         meetingType: n.meeting_type,
         cityId: n.city_id,
         cityName: n.city_name,
+        date: n.date,
         links: linkObjects.filter((l) => l.news_id === n.id).map((l) => {
           return {
             id: l.id,
