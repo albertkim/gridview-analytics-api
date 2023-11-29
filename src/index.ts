@@ -1,4 +1,5 @@
 import express from 'express'
+import knex from './database'
 import 'dotenv/config'
 
 const app = express()
@@ -12,8 +13,9 @@ app.get('/ping', async (req, res) => {
 })
 
 app.get('/api/v1/news', async (req, res) => {
+  const news = await knex('news')
   res.send({
-
+    data: news
   })
 })
 
