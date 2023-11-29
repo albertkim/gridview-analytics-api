@@ -33,7 +33,9 @@ CREATE TABLE politicians (
 -- Address (but somehow handle land assemblies and subdivisions)
 CREATE TABLE addresses (
   id INTEGER PRIMARY KEY,
-  full_address TEXT
+  full_address TEXT,
+  center_latitude REAL,
+  center_longitude REAL
 );
 
 -- City updates (aka city council meetings)
@@ -73,7 +75,7 @@ CREATE TABLE city_votes (
   title TEXT,
   description TEXT,
   type TEXT,
-  city_update_id REFERENCES city_updates(id),
+  city_update_id INTEGER REFERENCES city_updates(id),
   vote_result TEXT
 );
 
