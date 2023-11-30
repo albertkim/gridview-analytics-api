@@ -1,6 +1,7 @@
-import express, { Request, Response } from 'express'
+import express, { Request, Response, NextFunction, ErrorRequestHandler } from 'express'
 import { NewsRepository } from './repositories/NewsRepository'
 import knex from './repositories/database'
+import cors from 'cors'
 import 'dotenv/config'
 
 // Run knex database migrations
@@ -21,8 +22,12 @@ async function runMigrations() {
 
 // Start the API server
 async function startServer() {
+
   const app = express()
   const port = process.env.PORT || 3000
+
+  // Allow requests from all origins (will have to change in the future for security)
+  app.use(cors())
 
   app.get('/ping', async (req: Request, res: Response) => {
     res.send({
@@ -39,9 +44,18 @@ async function startServer() {
     res.send(news)
   })
 
+  // Error handling middleware
+  const errorHandler: ErrorRequestHandler = (error, req, res, next) => {
+    console.error(error)
+    res.status(500).send(error.message)
+  }
+
+  app.use(errorHandler)
+
   app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`)
   })
+
 }
 
 async function initialize() {
