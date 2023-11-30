@@ -32,10 +32,11 @@ async function startServer() {
   })
 
   app.get('/api/v1/news', async (req: Request, res: Response) => {
-    const news = await NewsRepository.getNews({})
-    res.send({
-      data: news
+    const news = await NewsRepository.getNews({
+      offset: 0,
+      limit: 10
     })
+    res.send(news)
   })
 
   app.listen(port, () => {

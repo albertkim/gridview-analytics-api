@@ -1,8 +1,8 @@
 import knex from './database'
 
 interface INewsFilter {
-  offset?: number
-  limit?: number
+  offset: number | null
+  limit: number | null
   city?: string
 }
 
@@ -42,10 +42,28 @@ interface INews {
 export const NewsRepository = {
 
   async getNews(filter: INewsFilter) {
-    const newsObject: INewsObject[] = await knex('news')
-      .leftJoin('cities', 'cities.id', 'news.city_id')
+
+    function baseNewsQuery() {
+      return knex('news')
+        .leftJoin('cities', 'cities.id', 'news.city_id')
+        .orderBy('date', 'desc')
+    }
+
+    const newsQuery = baseNewsQuery()
       .select('news.*', 'cities.name as city_name')
-      .orderBy('date', 'desc')
+
+    if ((filter.limit !== null) && (filter.offset !== null)) {
+      newsQuery.limit(filter.limit).offset(filter.offset)
+    }
+
+    if (filter.city) {
+      newsQuery.where('city_name', '=', filter.city)
+    }
+
+    const newsObject: INewsObject[] = await newsQuery
+
+    const totalObject = await baseNewsQuery().count()
+    const total = totalObject[0]['count(*)']
 
     const newsIds = newsObject.map((n) => n.id)
 
@@ -70,7 +88,21 @@ export const NewsRepository = {
       }
     })
 
-    return news
+    return {
+      offset: filter.offset,
+      limit: filter.limit,
+      total: total,
+      data: news
+    }
+
+  },
+
+  async addNews() {
+
+  },
+
+  async updateNews(updateObject: INews) {
+
   }
 
 }
