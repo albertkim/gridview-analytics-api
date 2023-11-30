@@ -53,3 +53,15 @@ News
   ]
 }
 ```
+
+# Build
+```
+# Local
+yarn install
+yarn run build
+yarn start
+
+# Docker
+docker build -t gridview-analytics-api .
+docker run -dp 127.0.0.1:3000:80 gridview-analytics-api
+```
