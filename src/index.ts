@@ -72,14 +72,3 @@ async function initialize() {
 
 // Run the functions
 initialize()
-
-// Properly handle shutdown
-async function shutdown() {
-  console.log('Shutting down the server...')
-  await knex.destroy()
-  process.exit(0)
-}
-
-// Handle shutdown signals
-process.on('SIGINT', shutdown)
-process.on('SIGTERM', shutdown)

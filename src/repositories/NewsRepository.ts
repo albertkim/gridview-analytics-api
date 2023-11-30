@@ -50,20 +50,24 @@ export const NewsRepository = {
       const query = knex('news')
         .leftJoin('cities', 'cities.id', 'news.city_id')
         .orderBy('date', 'desc')
-      if ((filter.limit !== null) && (filter.offset !== null)) {
-        query.limit(filter.limit).offset(filter.offset)
-      }
+      
       if (filter.city) {
         query.where('cities.name', filter.city)
       }
       return query
     }
 
-    const newsObject: INewsObject[] = await baseNewsQuery()
+    const baseQuery = baseNewsQuery()
       .select('news.*', 'cities.name as city_name')
+    if ((filter.limit !== null) && (filter.offset !== null)) {
+      baseQuery.limit(filter.limit).offset(filter.offset)
+    }
+
+    const newsObject: INewsObject[] = await baseQuery
+      
 
     const totalObject = await baseNewsQuery().count()
-    const total = totalObject[0]['count(*)']
+    const total = totalObject[0] ? totalObject[0]['count(*)'] : 0
 
     const newsIds = newsObject.map((n) => n.id)
 
