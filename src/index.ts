@@ -37,9 +37,16 @@ async function startServer() {
   })
 
   app.get('/api/v1/news', async (req: Request, res: Response) => {
+    const rawLimit = req.query.limit as string | undefined
+    const rawOffset = req.query.offset as string | undefined
+    const rawCity = req.query.city as string | undefined
+    const limit = rawLimit ? parseInt(rawLimit) : 10
+    const offset = rawOffset ? parseInt(rawOffset) : 0
+    const city = rawCity || null
     const news = await NewsRepository.getNews({
-      offset: 0,
-      limit: 10
+      offset: offset,
+      limit: limit,
+      city: city
     })
     res.send(news)
   })

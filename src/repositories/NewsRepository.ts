@@ -3,7 +3,7 @@ import knex from './database'
 interface INewsFilter {
   offset: number | null
   limit: number | null
-  city?: string
+  city: string | null
 }
 
 interface INewsObject {
@@ -14,6 +14,7 @@ interface INewsObject {
   city_id: number
   city_name: string
   date: string
+  sentiment: string | null
 }
 
 interface ILinkObject {
@@ -32,10 +33,12 @@ interface INews {
   cityId: number
   cityName: string
   date: string
+  sentiment: string | null
   links: Array<{
     id: number
     title: string
     summary: string | null
+    url: string
   }>
 }
 
@@ -44,23 +47,20 @@ export const NewsRepository = {
   async getNews(filter: INewsFilter) {
 
     function baseNewsQuery() {
-      return knex('news')
+      const query = knex('news')
         .leftJoin('cities', 'cities.id', 'news.city_id')
         .orderBy('date', 'desc')
+      if ((filter.limit !== null) && (filter.offset !== null)) {
+        query.limit(filter.limit).offset(filter.offset)
+      }
+      if (filter.city) {
+        query.where('cities.name', filter.city)
+      }
+      return query
     }
 
-    const newsQuery = baseNewsQuery()
+    const newsObject: INewsObject[] = await baseNewsQuery()
       .select('news.*', 'cities.name as city_name')
-
-    if ((filter.limit !== null) && (filter.offset !== null)) {
-      newsQuery.limit(filter.limit).offset(filter.offset)
-    }
-
-    if (filter.city) {
-      newsQuery.where('city_name', '=', filter.city)
-    }
-
-    const newsObject: INewsObject[] = await newsQuery
 
     const totalObject = await baseNewsQuery().count()
     const total = totalObject[0]['count(*)']
@@ -78,11 +78,13 @@ export const NewsRepository = {
         cityId: n.city_id,
         cityName: n.city_name,
         date: n.date,
+        sentiment: n.sentiment,
         links: linkObjects.filter((l) => l.news_id === n.id).map((l) => {
           return {
             id: l.id,
             title: l.title,
-            summary: l.summary
+            summary: l.summary,
+            url: l.url
           }
         })
       }
