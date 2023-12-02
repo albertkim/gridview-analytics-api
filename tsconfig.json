@@ -8,7 +8,8 @@
     "strict": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "allowJs": true
+    "allowJs": true,
+    "sourceMap": true
   },
   "include": ["src/**/*", "src/knexfile.js"],
   "exclude": ["node_modules", "**/*.spec.ts"]

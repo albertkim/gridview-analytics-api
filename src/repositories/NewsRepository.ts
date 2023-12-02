@@ -1,3 +1,4 @@
+import createHttpError from 'http-errors'
 import knex from './database'
 
 interface INewsFilter {
@@ -42,7 +43,63 @@ interface INews {
   }>
 }
 
+interface ICreateNews {
+  title: string
+  summary: string | null
+  meetingType: string
+  cityId: number
+  cityName: string
+  date: string
+  sentiment: string | null
+  links: Array<{
+    title: string
+    summary: string | null
+    url: string
+  }>
+}
+
 export const NewsRepository = {
+
+  async getNewsById(id: number) {
+
+    const query = knex('news')
+      .leftJoin('cities', 'cities.id', 'news.city_id')
+      .where('news.id', id)
+      .select('news.*', 'cities.name as city_name')
+
+    const newsObjects: INewsObject[] = await query
+
+    if (newsObjects.length === 0) {
+      throw createHttpError(404, `News with id ${id} does not exist`)
+    }
+
+    const newsObject = newsObjects[0]
+
+    const linkObjects: ILinkObject[] = await knex('news_links')
+      .where('news_id', newsObject.id)
+
+    const news: INews = {
+      id: newsObject.id,
+      title: newsObject.title,
+      summary: newsObject.summary,
+      meetingType: newsObject.meeting_type,
+      cityId: newsObject.city_id,
+      cityName: newsObject.city_name,
+      date: newsObject.date,
+      sentiment: newsObject.sentiment,
+      links: linkObjects.filter((l) => l.news_id === newsObject.id).map((l) => {
+        return {
+          id: l.id,
+          title: l.title,
+          summary: l.summary,
+          url: l.url
+        }
+      })
+    }
+
+    return news
+
+  },
 
   async getNews(filter: INewsFilter) {
 
@@ -64,7 +121,6 @@ export const NewsRepository = {
     }
 
     const newsObject: INewsObject[] = await baseQuery
-      
 
     const totalObject = await baseNewsQuery().count()
     const total = totalObject[0] ? totalObject[0]['count(*)'] : 0
@@ -103,7 +159,30 @@ export const NewsRepository = {
 
   },
 
-  async addNews() {
+  async addNews(createNews: ICreateNews) {
+
+    const createdNewsObject = await knex('news').insert({
+      title: createNews.title,
+      summary: createNews.summary,
+      meeting_type: createNews.meetingType,
+      city_id: createNews.cityId,
+      date: createNews.date,
+      sentiment: createNews.sentiment
+    })
+    const createdNewsId = createdNewsObject[0]
+
+    const createLinkObjects = createNews.links.map((link) => {
+      return {
+        title: link.title,
+        summary: link.summary,
+        url: link.url,
+        news_id: createdNewsId
+      }
+    })
+
+    await knex('news_links').insert(createLinkObjects)
+
+    return await this.getNewsById(createdNewsId)
 
   },
 
