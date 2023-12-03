@@ -76,7 +76,7 @@ async function startServer() {
       }
   
       // News summary can be empty
-      const noNewsEmptyFields = ['title', 'summary', 'meetingType', 'cityId', 'date', 'sentiment']
+      const noNewsEmptyFields = ['title', 'meetingType', 'cityId', 'date', 'sentiment']
   
       // Link summary can be empty
       const noLinkEmptyFields = ['title', 'url']
