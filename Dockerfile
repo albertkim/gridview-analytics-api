@@ -5,9 +5,9 @@ ENV PORT=80
 WORKDIR /app
 COPY . .
 
-RUN yarn install --production
+RUN yarn install
+RUN yarn run build
 
-CMD ["yarn", "run", "build"]
 CMD ["yarn", "start"]
 
 EXPOSE $PORT
