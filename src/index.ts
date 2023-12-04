@@ -46,6 +46,20 @@ async function startServer() {
     }
   })
 
+  app.get('/api/v1/news/:newsId', async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const newsIdParam = req.params.newsId
+      if (!newsIdParam) {
+        throw createHttpError(400, `newsId must be a number`)
+      }
+      const newsId = parseInt(newsIdParam)
+      const news = await NewsRepository.getNewsById(newsId)
+      res.send(news)
+    } catch (error) {
+      next(error)
+    }
+  })
+
   app.get('/api/v1/news', async (req: Request, res: Response, next: NextFunction) => {
     try {
       const rawLimit = req.query.limit as string | undefined
