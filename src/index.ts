@@ -2,9 +2,9 @@ import express, { Request, Response, NextFunction, ErrorRequestHandler } from 'e
 import { NewsRepository } from './repositories/NewsRepository'
 import knex from './repositories/database'
 import cors from 'cors'
+import createHttpError from 'http-errors'
 import 'dotenv/config'
 import 'source-map-support/register'
-import createHttpError from 'http-errors'
 
 // Run knex database migrations
 async function runMigrations() {
@@ -166,6 +166,27 @@ async function startServer() {
       const updatedNews = await NewsRepository.updateNews(newsId, updateNewsObject)
 
       res.send(updatedNews)
+
+    } catch (error) {
+      next(error)
+    }
+
+  })
+
+  app.put('/api/v1/admin/news/:newsId', async (req: Request, res: Response, next: NextFunction) => {
+
+    try {
+
+      const rawNewsId = req.query.newsId as string | undefined
+      if (!rawNewsId) {
+        throw createHttpError(400, 'News ID required')
+      }
+
+      const newsId = parseInt(rawNewsId)
+
+      await NewsRepository.deleteNews(newsId)
+
+      res.send()
 
     } catch (error) {
       next(error)

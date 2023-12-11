@@ -207,7 +207,17 @@ export const NewsRepository = {
   },
 
   async deleteNews(newsId: number) {
-    
+
+    // Delete links first
+    await knex('links')
+      .where('newsId', newsId)
+      .delete()
+
+    // Then delete news
+    await knex('news')
+      .where('id', newsId)
+      .delete()
+
   }
 
 }
