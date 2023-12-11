@@ -121,6 +121,58 @@ async function startServer() {
 
   })
 
+  app.put('/api/v1/admin/news/:newsId', async (req: Request, res: Response, next: NextFunction) => {
+
+    try {
+
+      const rawNewsId = req.query.newsId as string | undefined
+      if (!rawNewsId) {
+        throw createHttpError(400, 'News ID required')
+      }
+
+      const newsId = parseInt(rawNewsId)
+
+      const updateNewsObject = req.body
+  
+      if (!updateNewsObject) {
+        res.statusMessage = 'Empty body'
+        res.status(400).end()
+      }
+
+      // News summary can be empty
+      const noNewsEmptyFields = ['id', 'title', 'meetingType', 'cityId', 'date', 'sentiment']
+  
+      // Link summary can be empty
+      const noLinkEmptyFields = ['id', 'title', 'url']
+  
+      noNewsEmptyFields.forEach((n) => {
+        if (!updateNewsObject[n]) {
+          throw createHttpError(400, `${n} cannot be empty in news object`)
+        }
+      })
+  
+      if (!updateNewsObject.links) {
+        throw createHttpError(400, `links must be an array in news object`)
+      }
+  
+      updateNewsObject.links.forEach((link: any) => {
+        noLinkEmptyFields.forEach((n) => {
+          if (!link[n]) {
+            throw createHttpError(400, `${n} cannot be empty in link object`)
+          }
+        })
+      })
+
+      const updatedNews = await NewsRepository.updateNews(newsId, updateNewsObject)
+
+      res.send(updatedNews)
+
+    } catch (error) {
+      next(error)
+    }
+
+  })
+
   // Error handling middleware
   const errorHandler: ErrorRequestHandler = (error, req, res, next) => {
     console.error(error)

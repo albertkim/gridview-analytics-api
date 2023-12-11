@@ -186,8 +186,28 @@ export const NewsRepository = {
 
   },
 
-  async updateNews(updateObject: INews) {
+  async updateNews(newsId: number, updateObject: INews) {
 
+    const {links, ...newsObject} = updateObject
+
+    // Update news parent object first
+    await knex('news')
+      .where('id', newsId)
+      .update(newsObject)
+
+    // Then update each link
+    for (const linkObject of links) {
+      await knex('links')
+        .where('id', linkObject.id)
+        .update(linkObject)
+    }
+
+    return await this.getNewsById(newsId)
+
+  },
+
+  async deleteNews(newsId: number) {
+    
   }
 
 }
