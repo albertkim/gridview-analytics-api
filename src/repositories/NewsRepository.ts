@@ -197,7 +197,7 @@ export const NewsRepository = {
 
     // Then update each link
     for (const linkObject of links) {
-      await knex('links')
+      await knex('news_links')
         .where('id', linkObject.id)
         .update(linkObject)
     }
@@ -209,8 +209,8 @@ export const NewsRepository = {
   async deleteNews(newsId: number) {
 
     // Delete links first
-    await knex('links')
-      .where('newsId', newsId)
+    await knex('news_links')
+      .where('news_id', newsId)
       .delete()
 
     // Then delete news

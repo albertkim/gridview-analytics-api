@@ -173,11 +173,11 @@ async function startServer() {
 
   })
 
-  app.put('/api/v1/admin/news/:newsId', async (req: Request, res: Response, next: NextFunction) => {
+  app.delete('/api/v1/admin/news/:newsId', async (req: Request, res: Response, next: NextFunction) => {
 
     try {
 
-      const rawNewsId = req.query.newsId as string | undefined
+      const rawNewsId = req.params.newsId as string | undefined
       if (!rawNewsId) {
         throw createHttpError(400, 'News ID required')
       }
