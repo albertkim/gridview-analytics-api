@@ -58,6 +58,10 @@ interface ICreateNews {
   }>
 }
 
+interface IUpdateNews extends ICreateNews {
+  id: number
+}
+
 export const NewsRepository = {
 
   async getNewsById(id: number) {
@@ -186,7 +190,7 @@ export const NewsRepository = {
 
   },
 
-  async updateNews(newsId: number, updateObject: INews) {
+  async updateNews(newsId: number, updateObject: IUpdateNews) {
 
     const {links, ...newsObject} = updateObject
 
@@ -195,11 +199,18 @@ export const NewsRepository = {
       .where('id', newsId)
       .update(newsObject)
 
-    // Then update each link
+    // Delete all links and re-create (to easily handle create, edit, and delete cases)
+    await knex('news_links')
+      .where('news_id', newsId)
+      .delete()
+
+    // Re-create each link
     for (const linkObject of links) {
       await knex('news_links')
-        .where('id', linkObject.id)
-        .update(linkObject)
+        .insert({
+          ...linkObject,
+          news_id: newsId
+        })
     }
 
     return await this.getNewsById(newsId)

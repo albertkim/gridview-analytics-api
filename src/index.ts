@@ -143,7 +143,8 @@ async function startServer() {
       const noNewsEmptyFields = ['id', 'title', 'meetingType', 'cityId', 'date', 'sentiment']
   
       // Link summary can be empty
-      const noLinkEmptyFields = ['id', 'title', 'url']
+      // Link IDs are not necessary, all entries are re-created in database
+      const noLinkEmptyFields = ['title', 'url']
   
       noNewsEmptyFields.forEach((n) => {
         if (!updateNewsObject[n]) {
