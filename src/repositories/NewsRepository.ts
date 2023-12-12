@@ -192,12 +192,17 @@ export const NewsRepository = {
 
   async updateNews(newsId: number, updateObject: IUpdateNews) {
 
-    const {links, ...newsObject} = updateObject
-
     // Update news parent object first
     await knex('news')
       .where('id', newsId)
-      .update(newsObject)
+      .update({
+        title: updateObject.title,
+        summary: updateObject.summary,
+        meeting_type: updateObject.meetingType,
+        city_id: updateObject.cityId,
+        date: updateObject.date,
+        sentiment: updateObject.sentiment
+      })
 
     // Delete all links and re-create (to easily handle create, edit, and delete cases)
     await knex('news_links')
@@ -205,10 +210,12 @@ export const NewsRepository = {
       .delete()
 
     // Re-create each link
-    for (const linkObject of links) {
+    for (const linkObject of updateObject.links) {
       await knex('news_links')
         .insert({
-          ...linkObject,
+          title: linkObject.title,
+          summary: linkObject.summary,
+          url: linkObject.url,
           news_id: newsId
         })
     }

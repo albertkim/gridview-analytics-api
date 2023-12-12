@@ -125,7 +125,7 @@ async function startServer() {
 
     try {
 
-      const rawNewsId = req.query.newsId as string | undefined
+      const rawNewsId = req.params.newsId as string | undefined
       if (!rawNewsId) {
         throw createHttpError(400, 'News ID required')
       }
