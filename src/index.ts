@@ -65,13 +65,16 @@ async function startServer() {
       const rawLimit = req.query.limit as string | undefined
       const rawOffset = req.query.offset as string | undefined
       const rawCity = req.query.city as string | undefined
+      const rawImportant = req.query.important as string | undefined
       const limit = rawLimit ? parseInt(rawLimit) : 10
       const offset = rawOffset ? parseInt(rawOffset) : 0
-      const city = rawCity || null
+      const city: string[] | string | null = rawCity || null
+      const important = rawImportant ? parseInt(rawImportant) : null
       const news = await NewsRepository.getNews({
         offset: offset,
         limit: limit,
-        city: city
+        city: city,
+        important: important
       })
       res.send(news)
     } catch (error) {

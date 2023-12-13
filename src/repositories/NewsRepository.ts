@@ -4,7 +4,7 @@ import knex from './database'
 interface INewsFilter {
   offset: number | null
   limit: number | null
-  city: string | null
+  city: string[] | string | null
   important: number | null
 }
 
@@ -121,7 +121,11 @@ export const NewsRepository = {
         .orderBy('date', 'desc')
       
       if (filter.city) {
-        query.where('cities.name', filter.city)
+        if (Array.isArray(filter.city)) {
+          query.whereIn('cities.name', filter.city)
+        } else {
+          query.where('cities.name', filter.city)
+        }
       }
       if (filter.important) {
         query.where('news.important', '>', filter.important)
