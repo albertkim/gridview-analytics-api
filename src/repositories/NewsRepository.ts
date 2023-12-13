@@ -5,6 +5,7 @@ interface INewsFilter {
   offset: number | null
   limit: number | null
   city: string | null
+  important: number | null
 }
 
 interface INewsObject {
@@ -15,7 +16,9 @@ interface INewsObject {
   city_id: number
   city_name: string
   date: string
+  create_date: string
   sentiment: string | null
+  important: number | null
 }
 
 interface ILinkObject {
@@ -34,7 +37,9 @@ interface INews {
   cityId: number
   cityName: string
   date: string
+  createDate: string | null
   sentiment: string | null
+  important: number | null // 0 - not important, 1 - locally important, 2 - globally important
   links: Array<{
     id: number
     title: string
@@ -51,6 +56,7 @@ interface ICreateNews {
   cityName: string
   date: string
   sentiment: string | null
+  important: number | null
   links: Array<{
     title: string
     summary: string | null
@@ -90,7 +96,9 @@ export const NewsRepository = {
       cityId: newsObject.city_id,
       cityName: newsObject.city_name,
       date: newsObject.date,
+      createDate: newsObject.create_date,
       sentiment: newsObject.sentiment,
+      important: newsObject.important,
       links: linkObjects.filter((l) => l.news_id === newsObject.id).map((l) => {
         return {
           id: l.id,
@@ -114,6 +122,9 @@ export const NewsRepository = {
       
       if (filter.city) {
         query.where('cities.name', filter.city)
+      }
+      if (filter.important) {
+        query.where('news.important', '>', filter.important)
       }
       return query
     }
@@ -143,6 +154,8 @@ export const NewsRepository = {
         cityName: n.city_name,
         date: n.date,
         sentiment: n.sentiment,
+        createDate: n.create_date,
+        important: n.important,
         links: linkObjects.filter((l) => l.news_id === n.id).map((l) => {
           return {
             id: l.id,
@@ -171,7 +184,8 @@ export const NewsRepository = {
       meeting_type: createNews.meetingType,
       city_id: createNews.cityId,
       date: createNews.date,
-      sentiment: createNews.sentiment
+      sentiment: createNews.sentiment,
+      important: createNews.important
     })
     const createdNewsId = createdNewsObject[0]
 
@@ -201,7 +215,8 @@ export const NewsRepository = {
         meeting_type: updateObject.meetingType,
         city_id: updateObject.cityId,
         date: updateObject.date,
-        sentiment: updateObject.sentiment
+        sentiment: updateObject.sentiment,
+        important: updateObject.important
       })
 
     // Delete all links and re-create (to easily handle create, edit, and delete cases)

@@ -90,7 +90,7 @@ async function startServer() {
       }
   
       // News summary can be empty
-      const noNewsEmptyFields = ['title', 'meetingType', 'cityId', 'date', 'sentiment']
+      const noNewsEmptyFields = ['title', 'meetingType', 'cityId', 'date', 'sentiment', 'important']
   
       // Link summary can be empty
       const noLinkEmptyFields = ['title', 'url']
@@ -140,7 +140,7 @@ async function startServer() {
       }
 
       // News summary can be empty
-      const noNewsEmptyFields = ['id', 'title', 'meetingType', 'cityId', 'date', 'sentiment']
+      const noNewsEmptyFields = ['id', 'title', 'meetingType', 'cityId', 'date', 'sentiment', 'important']
   
       // Link summary can be empty
       // Link IDs are not necessary, all entries are re-created in database

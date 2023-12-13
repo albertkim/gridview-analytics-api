@@ -34,7 +34,9 @@ exports.up = async function(knex) {
       meeting_type TEXT,
       sentiment TEXT,
       date DATE,
-      city_id INTEGER REFERENCES cities(id)
+      createdate DATETIME DEFAULT CURRENT_TIMESTAMP,
+      city_id INTEGER REFERENCES cities(id),
+      important INTEGER
     );
   `)
 
