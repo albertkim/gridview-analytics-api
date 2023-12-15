@@ -1,10 +1,12 @@
-import express, { Request, Response, NextFunction, ErrorRequestHandler } from 'express'
-import { NewsRepository } from './repositories/NewsRepository'
+import express, { ErrorRequestHandler } from 'express'
 import knex from './repositories/database'
 import cors from 'cors'
-import createHttpError from 'http-errors'
 import 'dotenv/config'
 import 'source-map-support/register'
+import { BaseController } from './BaseController'
+import { AdminController } from './AdminController'
+
+console.log(`NODE_ENV: ${process.env.NODE_ENV}`)
 
 // Run knex database migrations
 async function runMigrations() {
@@ -35,168 +37,10 @@ async function startServer() {
   // Crazy that this is not a default setting
   app.use(express.json())
 
-  app.get('/ping', async (req: Request, res: Response, next: NextFunction) => {
-    try {
-      res.send({
-        data: 'Hello world',
-        date: new Date()
-      })
-    } catch (error) {
-      next(error)
-    }
-  })
-
-  app.get('/api/v1/news/:newsId', async (req: Request, res: Response, next: NextFunction) => {
-    try {
-      const newsIdParam = req.params.newsId
-      if (!newsIdParam) {
-        throw createHttpError(400, `newsId must be a number`)
-      }
-      const newsId = parseInt(newsIdParam)
-      const news = await NewsRepository.getNewsById(newsId)
-      res.send(news)
-    } catch (error) {
-      next(error)
-    }
-  })
-
-  app.get('/api/v1/news', async (req: Request, res: Response, next: NextFunction) => {
-    try {
-      const rawLimit = req.query.limit as string | undefined
-      const rawOffset = req.query.offset as string | undefined
-      const rawCity = req.query.city as string | undefined
-      const rawImportant = req.query.important as string | undefined
-      const limit = rawLimit ? parseInt(rawLimit) : 10
-      const offset = rawOffset ? parseInt(rawOffset) : 0
-      const city: string[] | string | null = rawCity || null
-      const important = rawImportant ? parseInt(rawImportant) : null
-      const news = await NewsRepository.getNews({
-        offset: offset,
-        limit: limit,
-        city: city,
-        important: important
-      })
-      res.send(news)
-    } catch (error) {
-      next(error)
-    }
-  })
-
-  app.post('/api/v1/admin/news', async (req: Request, res: Response, next: NextFunction) => {
-
-    try {
-      const createNewsObject = req.body
-  
-      if (!createNewsObject) {
-        res.statusMessage = 'Empty body'
-        res.status(400).end()
-      }
-  
-      // News summary can be empty
-      const noNewsEmptyFields = ['title', 'meetingType', 'cityId', 'date', 'sentiment', 'important']
-  
-      // Link summary can be empty
-      const noLinkEmptyFields = ['title', 'url']
-  
-      noNewsEmptyFields.forEach((n) => {
-        if (!createNewsObject[n]) {
-          throw createHttpError(400, `${n} cannot be empty in news object`)
-        }
-      })
-  
-      if (!createNewsObject.links) {
-        throw createHttpError(400, `links must be an array in news object`)
-      }
-  
-      createNewsObject.links.forEach((link: any) => {
-        noLinkEmptyFields.forEach((n) => {
-          if (!link[n]) {
-            throw createHttpError(400, `${n} cannot be empty in link object`)
-          }
-        })
-      })
-  
-      const news = await NewsRepository.addNews(createNewsObject)
-      res.send(news)
-    } catch (error) {
-      next(error)
-    }
-
-  })
-
-  app.put('/api/v1/admin/news/:newsId', async (req: Request, res: Response, next: NextFunction) => {
-
-    try {
-
-      const rawNewsId = req.params.newsId as string | undefined
-      if (!rawNewsId) {
-        throw createHttpError(400, 'News ID required')
-      }
-
-      const newsId = parseInt(rawNewsId)
-
-      const updateNewsObject = req.body
-  
-      if (!updateNewsObject) {
-        res.statusMessage = 'Empty body'
-        res.status(400).end()
-      }
-
-      // News summary can be empty
-      const noNewsEmptyFields = ['id', 'title', 'meetingType', 'cityId', 'date', 'sentiment', 'important']
-  
-      // Link summary can be empty
-      // Link IDs are not necessary, all entries are re-created in database
-      const noLinkEmptyFields = ['title', 'url']
-  
-      noNewsEmptyFields.forEach((n) => {
-        if (!updateNewsObject[n]) {
-          throw createHttpError(400, `${n} cannot be empty in news object`)
-        }
-      })
-  
-      if (!updateNewsObject.links) {
-        throw createHttpError(400, `links must be an array in news object`)
-      }
-  
-      updateNewsObject.links.forEach((link: any) => {
-        noLinkEmptyFields.forEach((n) => {
-          if (!link[n]) {
-            throw createHttpError(400, `${n} cannot be empty in link object`)
-          }
-        })
-      })
-
-      const updatedNews = await NewsRepository.updateNews(newsId, updateNewsObject)
-
-      res.send(updatedNews)
-
-    } catch (error) {
-      next(error)
-    }
-
-  })
-
-  app.delete('/api/v1/admin/news/:newsId', async (req: Request, res: Response, next: NextFunction) => {
-
-    try {
-
-      const rawNewsId = req.params.newsId as string | undefined
-      if (!rawNewsId) {
-        throw createHttpError(400, 'News ID required')
-      }
-
-      const newsId = parseInt(rawNewsId)
-
-      await NewsRepository.deleteNews(newsId)
-
-      res.send()
-
-    } catch (error) {
-      next(error)
-    }
-
-  })
+  app.use(BaseController)
+  if (process.env.NODE_ENV === 'development') {
+    app.use(AdminController)
+  }
 
   // Error handling middleware
   const errorHandler: ErrorRequestHandler = (error, req, res, next) => {
