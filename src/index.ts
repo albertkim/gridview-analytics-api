@@ -1,10 +1,9 @@
-import express, { ErrorRequestHandler } from 'express'
-import knex from './repositories/database'
-import cors from 'cors'
 import 'dotenv/config'
 import 'source-map-support/register'
-import { BaseController } from './BaseController'
-import { AdminController } from './AdminController'
+import knex from './repositories/database'
+import { App } from './App'
+
+const port = process.env.PORT || 3000
 
 console.log(`NODE_ENV: ${process.env.NODE_ENV}`)
 
@@ -27,32 +26,7 @@ async function runMigrations() {
 // Start the API server
 async function startServer() {
 
-  const app = express()
-  const port = process.env.PORT || 3000
-
-  // Allow requests from all origins (will have to change in the future for security)
-  app.use(cors())
-
-  // Allow Express to parse json request bodies
-  // Crazy that this is not a default setting
-  app.use(express.json())
-
-  app.use(BaseController)
-  if (process.env.NODE_ENV === 'development') {
-    app.use(AdminController)
-  }
-
-  // Error handling middleware
-  const errorHandler: ErrorRequestHandler = (error, req, res, next) => {
-    console.error(error)
-    if (error.status && error.message) {
-      res.status(error.status).send({ error: error.message })
-    } else {
-      res.status(500).send({ error: 'Internal Server Error' })
-    }
-  }
-
-  app.use(errorHandler)
+  const app = App
 
   app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`)
