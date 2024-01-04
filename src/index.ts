@@ -30,6 +30,7 @@ const app = App
 // Run as serverless function in production
 module.exports.handler = serverless(app)
 
+// Run as a regular server on development, including running database migrations for the time being
 async function startServer() {
   await runMigrations()
   app.listen(port, () => {

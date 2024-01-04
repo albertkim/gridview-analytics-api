@@ -15,7 +15,7 @@ const config = {
   },
 
   production: {
-    client: 'postgresql',
+    client: 'sqlite3',
     connection: {
       filename: './database/database.db'
     },
