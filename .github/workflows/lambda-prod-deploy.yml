@@ -33,6 +33,7 @@ jobs:
           mkdir package
           cp -r dist/. package
           cp -r node_modules package
+          cp -r database package
           cd package && zip -r ../package-$PACKAGE_ID.zip *
 
       - name: Configure AWS credentials
