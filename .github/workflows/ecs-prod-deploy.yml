@@ -3,7 +3,7 @@ name: ECSDeploy
 on:
   push:
     branches:
-      - main
+      - ecs
 
 env:
   AWS_REGION: us-west-2
