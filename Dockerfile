@@ -18,6 +18,8 @@ RUN yarn run build
 
 # EXPOSE $PORT
 
+# this Dockerfile currently doesn't run the application; it's for building packages
+
 RUN apk add zip
 
 RUN mkdir package
