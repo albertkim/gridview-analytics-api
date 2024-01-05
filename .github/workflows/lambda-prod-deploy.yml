@@ -47,4 +47,4 @@ jobs:
         env:
           PACKAGE_ID: ${{ github.sha }}
         run: |
-          aws lambda update-function-code function-name $LAMBDA_FUNCTION_NAME --zip-file fileb://package-$PACKAGE_ID.zip
+          aws lambda update-function-code --function-name $LAMBDA_FUNCTION_NAME --zip-file fileb://package-$PACKAGE_ID.zip
