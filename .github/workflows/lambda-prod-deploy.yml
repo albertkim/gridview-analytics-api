@@ -3,7 +3,7 @@ name: LambdaDeploy
 on:
   push:
     branches:
-      - wip_lambda_deployment
+      - main
 
 env:
   AWS_REGION: us-west-2
@@ -23,14 +23,12 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: Install dependencies
-        run: npm_config_target_arch=x64 npm_config_target_platform=linux npm_config_target_libc=glibc yarn install
-
       - name: Build package 
         id: build-lambda-package
         env:
           PACKAGE_ID: ${{ github.sha }}
         run: |
+          npm_config_target_arch=x64 npm_config_target_platform=linux npm_config_target_libc=glibc yarn install
           yarn run build
           mkdir package
           cp -r dist/. package
@@ -49,6 +47,4 @@ jobs:
         env:
           PACKAGE_ID: ${{ github.sha }}
         run: |
-          ls -l
-          aws lambda list-functions
-          echo "aws lambda update-function-code function-name $LAMBDA_FUNCTION_NAME --zip-file fileb://package-$PACKAGE_ID.zip"
+          aws lambda update-function-code function-name $LAMBDA_FUNCTION_NAME --zip-file fileb://package-$PACKAGE_ID.zip
