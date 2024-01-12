@@ -54,6 +54,16 @@ News
 }
 ```
 
+`GET /api/v1/rezonings`
+
+Response
+```
+{
+  total: number
+  data: IFullRezoningDetail[]
+}
+```
+
 # Build
 ```
 # Local
