@@ -20,7 +20,8 @@ export type ZoningStatus =
   'denied' |
   'withdrawn'
 
-export interface IRezoningDetail {
+export interface IFullRezoningDetail {
+  id: string
   city: string
   metroCity: string | null
   rezoningId: string | null
@@ -68,7 +69,7 @@ export const RezoningsRepository = {
 
   async getRezonings(filter: IRezoningsFilter) {
 
-    const rezonings: IRezoningDetail[] = require('./rezonings.json')
+    const rezonings: IFullRezoningDetail[] = require('./rezonings.json')
     const filteredRezonings = rezonings.filter((rezoning) => {
       if (filter.city) {
         if (Array.isArray(filter.city)) {
