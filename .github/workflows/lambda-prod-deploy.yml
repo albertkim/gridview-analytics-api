@@ -8,6 +8,7 @@ on:
 env:
   AWS_REGION: us-west-2
   LAMBDA_FUNCTION_NAME: gridview-analytics-api-prod
+  CF_DISTRIBUTION_ID: E90QTKVUQ5WWC
 
 jobs:
   deploy:
@@ -49,3 +50,4 @@ jobs:
           PACKAGE_ID: ${{ github.sha }}
         run: |
           aws lambda update-function-code --function-name $LAMBDA_FUNCTION_NAME --zip-file fileb://package-$PACKAGE_ID.zip
+          aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION_ID --paths "/api/v1/*"
