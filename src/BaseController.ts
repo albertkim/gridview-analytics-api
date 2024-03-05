@@ -1,4 +1,4 @@
-import { Router, Request, Response, NextFunction, ErrorRequestHandler } from 'express'
+import { Router, Request, Response, NextFunction } from 'express'
 import { NewsRepository } from './repositories/NewsRepository'
 import createHttpError from 'http-errors'
 import { RezoningsRepository } from './repositories/RezoningsRepository'
@@ -58,6 +58,20 @@ router.get('/api/v1/rezonings', async (req: Request, res: Response, next: NextFu
     const rawCity = req.query.city as string | undefined
     const city: string[] | string | null = rawCity || null
     const rezonings = await RezoningsRepository.getRezonings({
+      city: city
+    })
+    res.send(rezonings)
+  } catch (error) {
+    next(error)
+  }
+})
+
+// TODO: Add authentication when ready
+router.get('/api/v1/developmentPermits', async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const rawCity = req.query.city as string | undefined
+    const city: string[] | string | null = rawCity || null
+    const rezonings = await RezoningsRepository.getDevelopmentPermits({
       city: city
     })
     res.send(rezonings)

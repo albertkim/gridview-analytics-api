@@ -73,17 +73,46 @@ export const RezoningsRepository = {
   async getRezonings(filter: IRezoningsFilter) {
 
     const rezonings: IFullRezoningDetail[] = require('./rezonings.json')
-    const filteredRezonings = rezonings.filter((rezoning) => {
-      if (filter.city) {
-        if (Array.isArray(filter.city)) {
-          return filter.city.includes(rezoning.city)
+    const filteredRezonings = rezonings
+      .filter((rezonings) => {
+        return rezonings.type === 'rezoning'
+      })
+      .filter((rezoning) => {
+        if (filter.city) {
+          if (Array.isArray(filter.city)) {
+            return filter.city.includes(rezoning.city)
+          } else {
+            return rezoning.city === filter.city
+          }
         } else {
-          return rezoning.city === filter.city
+          return true
         }
-      } else {
-        return true
-      }
-    })
+      })
+    return {
+      total: filteredRezonings.length,
+      data: filteredRezonings
+    }
+
+  },
+
+  async getDevelopmentPermits(filter: IRezoningsFilter) {
+
+    const rezonings: IFullRezoningDetail[] = require('./rezonings.json')
+    const filteredRezonings = rezonings
+      .filter((rezonings) => {
+        return rezonings.type === 'development permit'
+      })
+      .filter((rezoning) => {
+        if (filter.city) {
+          if (Array.isArray(filter.city)) {
+            return filter.city.includes(rezoning.city)
+          } else {
+            return rezoning.city === filter.city
+          }
+        } else {
+          return true
+        }
+      })
     return {
       total: filteredRezonings.length,
       data: filteredRezonings
