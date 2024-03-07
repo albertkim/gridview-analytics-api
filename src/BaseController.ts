@@ -1,6 +1,6 @@
 import { Router, Request, Response, NextFunction } from 'express'
 import { NewsRepository } from './repositories/NewsRepository'
-import { RezoningsRepository } from './repositories/RezoningsRepository'
+import { RecordsRepository } from './repositories/RecordsRepository'
 import createHttpError from 'http-errors'
 
 const router = Router()
@@ -66,7 +66,7 @@ router.get('/api/v1/rezonings', async (req: Request, res: Response, next: NextFu
   try {
     const rawCity = req.query.city as string | undefined
     const city: string[] | string | null = rawCity || null
-    const rezonings = await RezoningsRepository.getRezonings({
+    const rezonings = await RecordsRepository.getRezonings({
       city: city
     })
     res.send(rezonings)
@@ -80,7 +80,7 @@ router.get('/api/v1/developmentPermits', async (req: Request, res: Response, nex
   try {
     const rawCity = req.query.city as string | undefined
     const city: string[] | string | null = rawCity || null
-    const rezonings = await RezoningsRepository.getDevelopmentPermits({
+    const rezonings = await RecordsRepository.getDevelopmentPermits({
       city: city
     })
     res.send(rezonings)

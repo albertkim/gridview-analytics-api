@@ -1,7 +1,7 @@
-import { Router, Request, Response, NextFunction, ErrorRequestHandler } from 'express'
+import { Router, Request, Response, NextFunction } from 'express'
 import { NewsRepository } from './repositories/NewsRepository'
+import { chatGPTTextQuery } from './utilities/AIUtilities'
 import createHttpError from 'http-errors'
-import { chatGPTTextQuery } from './AIUtilities'
 
 const router = Router()
 
