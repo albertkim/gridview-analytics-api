@@ -1,6 +1,7 @@
 import { Router, Request, Response, NextFunction, ErrorRequestHandler } from 'express'
 import { NewsRepository } from './repositories/NewsRepository'
 import createHttpError from 'http-errors'
+import { chatGPTTextQuery } from './AIUtilities'
 
 const router = Router()
 
@@ -104,6 +105,7 @@ router.delete('/api/v1/admin/news/:newsId', async (req: Request, res: Response, 
   try {
 
     const rawNewsId = req.params.newsId as string | undefined
+
     if (!rawNewsId) {
       throw createHttpError(400, 'News ID required')
     }
@@ -113,6 +115,32 @@ router.delete('/api/v1/admin/news/:newsId', async (req: Request, res: Response, 
     await NewsRepository.deleteNews(newsId)
 
     res.send()
+
+  } catch (error) {
+    next(error)
+  }
+
+})
+
+router.post('/api/v1/admin/news/summarize', async (req: Request, res: Response, next: NextFunction) => {
+
+  try {
+
+    const contents = req.body.contents as string | undefined
+
+    if (!contents) {
+      throw createHttpError(400, 'Contents required')
+    }
+
+    const query = `
+      You are a news article summarizing the provided document, crafted for mostly city policy and real estate professionals. Replace the original document by providing an immediate and direct overview of the key points, without referring to yourself as a separate entity. Include specifics and practical details that real estate agents would find useful. Begin with a succinct 1-2 sentence introduction, followed by bullet points for detailed information. Try to keep the number of bullet points between 3-5 if possible. Clearly indicate the current stage of each legislative item, including relevant dates.
+
+      ${contents}
+    `
+
+    const response = await chatGPTTextQuery(query)
+
+    res.send({ summary: response })
 
   } catch (error) {
     next(error)

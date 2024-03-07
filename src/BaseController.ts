@@ -1,7 +1,7 @@
 import { Router, Request, Response, NextFunction } from 'express'
 import { NewsRepository } from './repositories/NewsRepository'
-import createHttpError from 'http-errors'
 import { RezoningsRepository } from './repositories/RezoningsRepository'
+import createHttpError from 'http-errors'
 
 const router = Router()
 
@@ -11,6 +11,15 @@ router.get('/ping', async (req: Request, res: Response, next: NextFunction) => {
       data: 'Hello world',
       date: new Date()
     })
+  } catch (error) {
+    next(error)
+  }
+})
+
+router.get('/api/v1/news/raw', async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const rawNews = await NewsRepository.getRawNews()
+    res.send(rawNews)
   } catch (error) {
     next(error)
   }

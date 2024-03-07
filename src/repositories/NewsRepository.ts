@@ -1,3 +1,4 @@
+import './news.json'
 import createHttpError from 'http-errors'
 import knex from './database'
 
@@ -27,6 +28,22 @@ interface ILinkObject {
   url: string
   summary: string | null
   news_id: number
+}
+
+interface IRawNews {
+  city: string
+  metroCity: string | null
+  url: string
+  date: string
+  meetingType: string
+  title: string
+  resolutionId: string | null
+  contents: string
+  minutesUrl: string | null
+  reportUrls: Array<{
+    title: string
+    url: string
+  }>
 }
 
 interface INews {
@@ -69,6 +86,17 @@ interface IUpdateNews extends ICreateNews {
 }
 
 export const NewsRepository = {
+
+  async getRawNews() {
+
+    const rawNews: IRawNews[] = require('./news.json')
+
+    return {
+      total: rawNews.length,
+      data: rawNews
+    }
+    
+  },
 
   async getNewsById(id: number) {
 

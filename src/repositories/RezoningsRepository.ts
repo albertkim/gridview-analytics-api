@@ -88,6 +88,7 @@ export const RezoningsRepository = {
           return true
         }
       })
+
     return {
       total: filteredRezonings.length,
       data: filteredRezonings
