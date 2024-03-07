@@ -2,6 +2,7 @@ import { Router, Request, Response, NextFunction } from 'express'
 import { NewsRepository } from './repositories/NewsRepository'
 import { RecordsRepository } from './repositories/RecordsRepository'
 import createHttpError from 'http-errors'
+import { RawNewsRepository } from './repositories/RawNewsRepository'
 
 const router = Router()
 
@@ -18,7 +19,7 @@ router.get('/ping', async (req: Request, res: Response, next: NextFunction) => {
 
 router.get('/api/v1/news/raw', async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const rawNews = await NewsRepository.getRawNews()
+    const rawNews = await RawNewsRepository.getNews()
     res.send(rawNews)
   } catch (error) {
     next(error)

@@ -1,7 +1,7 @@
 import './news.json'
 import createHttpError from 'http-errors'
 import knex from './database'
-import { ILinkObject, INews, INewsObject, IRawNews, ICreateNews, IUpdateNews } from '../models/News'
+import { ILinkObject, INews, INewsObject, ICreateNews, IUpdateNews } from '../models/News'
 
 export interface INewsFilter {
   offset: number | null
@@ -11,17 +11,6 @@ export interface INewsFilter {
 }
 
 export const NewsRepository = {
-
-  async getRawNews() {
-
-    const rawNews: IRawNews[] = require('./news.json')
-
-    return {
-      total: rawNews.length,
-      data: rawNews
-    }
-    
-  },
 
   async getNewsById(id: number) {
 
