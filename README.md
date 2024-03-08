@@ -12,6 +12,17 @@ Notion research documentation: https://www.notion.so/albertkim1/Gridview-Analyti
 - Express
 - Sqlite3
 
+# Setup
+
+I use Macbook M series laptops for development. Pre-requisites:
+
+- Install git
+- Install Node LTS
+- Install yarn globally
+- Install Python 3+ and add to system PATH
+- Install XCode command line tools or XCode fully
+- Run: brew install pkg-config cairo pango libpng jpeg giflib librsvg pixman
+
 # API
 
 ### GET all news articles
