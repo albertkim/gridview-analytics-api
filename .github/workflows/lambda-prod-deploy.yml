@@ -34,7 +34,10 @@ jobs:
           mkdir package
           cp -r dist/. package
           cp -r node_modules package
-          cp -r database package
+          mkdir package/database
+          cp database/migrations package/database
+          cp database.db package/database
+          cp rezonings.json package/database
           cd package && zip -r ../package-$PACKAGE_ID.zip *
 
       - name: Configure AWS credentials
