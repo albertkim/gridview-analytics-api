@@ -1,10 +1,12 @@
+import createHttpError from 'http-errors'
 import { Router, Request, Response, NextFunction } from 'express'
 import { NewsRepository } from './repositories/NewsRepository'
 import { RecordsRepository } from './repositories/RecordsRepository'
-import createHttpError from 'http-errors'
 import { RawNewsRepository } from './repositories/RawNewsRepository'
 
 const router = Router()
+
+const recordsRepository = new RecordsRepository('final')
 
 router.get('/ping', async (req: Request, res: Response, next: NextFunction) => {
   try {
@@ -67,7 +69,7 @@ router.get('/api/v1/rezonings', async (req: Request, res: Response, next: NextFu
   try {
     const rawCity = req.query.city as string | undefined
     const city: string[] | string | null = rawCity || null
-    const rezonings = await RecordsRepository.getRezonings({
+    const rezonings = await recordsRepository.getRecords('rezoning', {
       city: city
     })
     res.send(rezonings)
@@ -81,10 +83,10 @@ router.get('/api/v1/developmentPermits', async (req: Request, res: Response, nex
   try {
     const rawCity = req.query.city as string | undefined
     const city: string[] | string | null = rawCity || null
-    const rezonings = await RecordsRepository.getDevelopmentPermits({
+    const developmentPermits = await recordsRepository.getRecords('development permit', {
       city: city
     })
-    res.send(rezonings)
+    res.send(developmentPermits)
   } catch (error) {
     next(error)
   }

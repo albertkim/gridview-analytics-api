@@ -1,4 +1,3 @@
-import './news.json'
 import createHttpError from 'http-errors'
 import knex from './database'
 import { ILinkObject, INews, INewsObject, ICreateNews, IUpdateNews } from '../models/News'

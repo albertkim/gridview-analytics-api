@@ -2,7 +2,7 @@ import axios from 'axios'
 import chalk from 'chalk'
 import { chatGPTTextQuery, imageTextQuery } from './AIUtilities'
 import { PDFRepository } from '../repositories/PDFRepository'
-import { cleanString } from '../scrapers/BulkUtilities'
+import { cleanString } from '../services/scrapers/BulkUtilities'
 import { extractText, getDocumentProxy, renderPageAsImage } from 'unpdf'
 
 interface IParsePDFOptions {

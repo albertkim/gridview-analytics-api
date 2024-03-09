@@ -1,6 +1,6 @@
 import chalk from 'chalk'
 import { chatGPTJSONQuery } from './AIUtilities'
-import { ZoningStatus, ZoningType } from '../models/Records'
+import { ZoningStatus, BuildingType } from '../models/Records'
 import { IExpectedFormat, checkAndFixAIResponse } from './AIFormatChecker'
 
 interface ISummarizeParams {
@@ -148,7 +148,7 @@ export async function AIGetPartialRecords(contents: string, options: BaseRezonin
     rawSummaries: {
       summary: string
     }[]
-    buildingType: ZoningType | null
+    buildingType: BuildingType | null
     zoning: IZoningDetail
     stats: IBuildingStats
     status: ZoningStatus | null
@@ -274,7 +274,7 @@ export async function AIGetPartialRecords(contents: string, options: BaseRezonin
     }
 
     const detailsObject = {
-      buildingType: detailsResponse.buildingType || null as ZoningType | null,
+      buildingType: detailsResponse.buildingType || null as BuildingType | null,
       zoning: detailsResponse.zoning || {
         previousZoningCode: null as string | null,
         previousZoningDescription: null as string | null,
@@ -314,7 +314,7 @@ interface IDetailsParams {
 }
 
 interface IDetailsResponse {
-  buildingType: ZoningType | null
+  buildingType: BuildingType | null
   zoning: IZoningDetail
   stats: IBuildingStats
   status: ZoningStatus | null
