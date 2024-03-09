@@ -1,3 +1,4 @@
+import 'module-alias/register'
 import 'dotenv/config'
 import 'source-map-support/register'
 import knex from './repositories/database'

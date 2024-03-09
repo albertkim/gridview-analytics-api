@@ -6,7 +6,7 @@ import { scrape as scrapeVancouver } from './cities/Vancouver'
 import { scrape as scrapeRichmond } from './cities/Richmond'
 import { scrape as scrapeBurnaby } from './cities/Burnaby'
 import { scrape as scrapeSurrey } from './cities/Surrey'
-import { RawNewsRepository } from '../../repositories/RawNewsRepository'
+import { RawNewsRepository } from '@/repositories/RawNewsRepository'
 
 const concurrency = 5                  // Max number of browser tabs to open
 
@@ -20,14 +20,14 @@ const availableCities: string[] = [
 
 const shouldUpdateDatabase = true      // If true, update database, otherwise just print a local file in this directory
 
-interface IScrapeParams {
+interface IParams {
   startDate: string
   endDate: string
   headless: boolean
   cities: string[]
 }
 
-export async function main(params: IScrapeParams) {
+export async function main(params: IParams) {
 
   if (shouldUpdateDatabase) console.log(chalk.red(`NOTE: The scraper will update the database. Make sure this is what you want.`))
   else console.log(chalk.yellow(`NOTE: The scraper will not update the database.`))

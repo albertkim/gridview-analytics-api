@@ -1,5 +1,5 @@
 import { Page } from 'puppeteer'
-import { formatDateString } from '../../BulkUtilities'
+import { formatDateString } from '@/utilities/StringUtilities'
 import moment from 'moment'
 import chalk from 'chalk'
 

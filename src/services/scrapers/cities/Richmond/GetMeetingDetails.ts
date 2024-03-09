@@ -1,7 +1,7 @@
 import { Page } from 'puppeteer'
-import { IMeetingDetail } from '../../../../repositories/RawNewsRepository'
+import { IRawNews } from '@/models/News'
 
-export async function getMeetingDetails(page: Page, url: string, date: string): Promise<IMeetingDetail> {
+export async function getMeetingDetails(page: Page, url: string, date: string): Promise<IRawNews> {
 
   await page.goto(url)
   await new Promise((resolve) => {setTimeout(resolve, 500)})

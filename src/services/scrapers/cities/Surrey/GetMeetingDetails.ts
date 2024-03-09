@@ -1,6 +1,6 @@
 import { Page } from 'puppeteer'
 import { parseSurreyMeetingMinutes } from './SurreyUtilities'
-import { IMeetingDetail } from '../../../../repositories/RawNewsRepository'
+import { IRawNews } from '@/models/News'
 import moment from 'moment'
 
 interface IParams {
@@ -14,7 +14,7 @@ interface IParams {
 
 export async function getMeetingDetails({page, url, date, meetingType, allCorporateReports, allPlanningReports}: IParams) {
 
-  const results: IMeetingDetail[] = []
+  const results: IRawNews[] = []
 
   const parsedMeetingItems = await parseSurreyMeetingMinutes(url)
 

@@ -1,6 +1,6 @@
-import { parsePDFAsRawArray } from '../../../../utilities/PDFUtilitiesV2'
-import { findApplicationIDsFromTemplate } from '../../../../utilities/RegexUtilities'
-import { cleanString } from '../../BulkUtilities'
+import { parsePDFAsRawArray } from '@/utilities/PDFUtilitiesV2'
+import { findApplicationIDsFromTemplate } from '@/utilities/RegexUtilities'
+import { cleanString } from '@/utilities/StringUtilities'
 
 export interface ISurreyMeetingItems {
   section: string

@@ -1,7 +1,7 @@
 import { Page } from 'puppeteer'
-import { IMeetingDetail } from '../../../../repositories/RawNewsRepository'
+import { IRawNews } from '@/models/News'
 
-export async function getMeetingDetail(page: Page, url: string, date: string): Promise<IMeetingDetail> {
+export async function getMeetingDetail(page: Page, url: string, date: string): Promise<IRawNews> {
 
   await page.goto(url)
   await page.addScriptTag({url: 'https://code.jquery.com/jquery-3.3.1.slim.min.js'})

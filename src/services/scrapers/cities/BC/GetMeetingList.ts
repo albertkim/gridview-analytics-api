@@ -1,7 +1,7 @@
 import chalk from 'chalk'
 import moment from 'moment'
 import { Page } from 'puppeteer'
-import { formatDateString } from '../../BulkUtilities'
+import { formatDateString } from '@/utilities/StringUtilities'
 
 export interface IScrapingDateOptions {
   startDate: string | null

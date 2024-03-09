@@ -1,6 +1,6 @@
 import moment from 'moment'
 import { Page } from 'puppeteer'
-import { formatDateString } from '../../BulkUtilities'
+import { formatDateString } from '@/utilities/StringUtilities'
 
 interface IMeetingListItem {
   goToNextPage: boolean

@@ -1,8 +1,8 @@
 import puppeteer from 'puppeteer'
 import moment from 'moment'
 import chalk from 'chalk'
-import { IMeetingDetail } from '../../../../repositories/RawNewsRepository'
-import { runPromisesInBatches } from '../../BulkUtilities'
+import { IRawNews } from '@/models/News'
+import { runPromisesInBatches } from '@/utilities/PromiseUtilities'
 import { getMeetingList } from './GetMeetingList'
 import { getMeetingDetailsAfterMar2020, getMeetingDetailsBeforeMar2020 } from './GetMeetingDetails'
 
@@ -16,7 +16,7 @@ interface IOptions {
   verbose?: boolean
 }
 
-export async function scrape(options: IOptions): Promise<IMeetingDetail[]> {
+export async function scrape(options: IOptions): Promise<IRawNews[]> {
 
   const browser = await puppeteer.launch({
     headless: options.headless
@@ -73,7 +73,7 @@ export async function scrape(options: IOptions): Promise<IMeetingDetail[]> {
 
         console.log(`Scraping meeting details: ${i}/${meetingList.length} ${meeting.url}`)
 
-        let meetingResults: IMeetingDetail[] = []
+        let meetingResults: IRawNews[] = []
         // Mar 9, 2020 was the last meeting before the format changed
         if (moment(meeting.date).isAfter('2020-03-10')) {
           meetingResults = await getMeetingDetailsAfterMar2020(parallelPage, meeting.url, meeting.date, meeting.meetingType)
@@ -102,7 +102,7 @@ export async function scrape(options: IOptions): Promise<IMeetingDetail[]> {
     }
   })
 
-  const results: IMeetingDetail[] = (await runPromisesInBatches(promiseArray, options.concurrency)).flat()
+  const results: IRawNews[] = (await runPromisesInBatches(promiseArray, options.concurrency)).flat()
 
   await browser.close()
   console.log(`Browser closed`)

@@ -1,13 +1,13 @@
 import { Page } from 'puppeteer'
-import { IMeetingDetail } from '../../../../repositories/RawNewsRepository'
+import { IRawNews } from '@/models/News'
 
-export async function getMeetingDetails(page: Page, url: string, meetingType: string, date: string): Promise<IMeetingDetail[]> {
+export async function getMeetingDetails(page: Page, url: string, meetingType: string, date: string): Promise<IRawNews[]> {
 
   await page.goto(url)
 
   const results = await page.evaluate(async (meetingType, date) => {
     
-    let data: Omit<IMeetingDetail, 'city' | 'metroCity' | 'url' | 'minutesUrl'>[] = []
+    let data: Omit<IRawNews, 'city' | 'metroCity' | 'url' | 'minutesUrl'>[] = []
 
     function cleanTitle(title: string = '') {
       if (title) {

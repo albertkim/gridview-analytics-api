@@ -1,9 +1,9 @@
 import chalk from 'chalk'
 import puppeteer from 'puppeteer'
-import { IMeetingDetail } from '../../../../repositories/RawNewsRepository'
+import { IRawNews } from '@/models/News'
 import { getMeetingList } from './GetMeetingList'
 import { getMeetingDetails } from './GetMeetingDetails'
-import { formatDateString, runPromisesInBatches } from '../../BulkUtilities'
+import { runPromisesInBatches } from '@/utilities/PromiseUtilities'
 
 const startUrl = 'https://covapp.vancouver.ca/councilMeetingPublic/CouncilMeetings.aspx'
 const maxNumberOfPages = 200
@@ -16,7 +16,7 @@ interface IOptions {
   verbose?: boolean
 }
 
-export async function scrape(options: IOptions): Promise<IMeetingDetail[]> {
+export async function scrape(options: IOptions): Promise<IRawNews[]> {
 
   const browser = await puppeteer.launch({
     headless: options.headless

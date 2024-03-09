@@ -1,24 +1,9 @@
 import fs from 'fs'
 import path from 'path'
 import moment from 'moment'
+import { IRawNews } from '@/models/News'
 
-export interface IMeetingDetail {
-  city: string
-  metroCity: string // TODO: Can be null for provinces/states, figure out how to handle this
-  url: string
-  date: string // YYYY-MM-DD
-  meetingType: string
-  title: string
-  resolutionId: string | null
-  contents: string
-  minutesUrl: string | null
-  reportUrls: Array<{
-    title: string
-    url: string
-  }>
-}
-
-function reorderItems(items: IMeetingDetail[]) {
+function reorderItems(items: IRawNews[]) {
   return items.sort((a, b) => {
     const dateA = moment(a.date, 'YYYY-MM-DD')
     const dateB = moment(b.date, 'YYYY-MM-DD')
@@ -39,7 +24,7 @@ export const RawNewsRepository = {
 
   getNews(filter?: {city?: string}) {
     
-    const rawData = JSON.parse(fs.readFileSync(databaseFilePath, 'utf8')) as IMeetingDetail[]
+    const rawData = JSON.parse(fs.readFileSync(databaseFilePath, 'utf8')) as IRawNews[]
     if (filter?.city) {
       return rawData.filter((item) => item.city === filter.city)
     } else {
@@ -57,7 +42,7 @@ export const RawNewsRepository = {
   },
 
   // Replaces all news with the same city
-  dangerouslyUpdateNews(city: string, news: IMeetingDetail[], dateOptions?: {startDate: string, endDate: string}) {
+  dangerouslyUpdateNews(city: string, news: IRawNews[], dateOptions?: {startDate: string, endDate: string}) {
     const previousEntries = this.getNews()
     // Remove all entries with the same city and are in the date range if specified
     const filteredData = previousEntries.filter((item) => {
@@ -77,7 +62,7 @@ export const RawNewsRepository = {
   },
 
   // Add news to the database but ignore ones with the same city/date/meeting type
-  upsertNews(news: IMeetingDetail[]) {
+  upsertNews(news: IRawNews[]) {
     const previousEntries = this.getNews()
     const onlyNewEntries = news.filter((item) => {
       const matchingPreviousEntry = previousEntries.find((entry) => {
@@ -97,7 +82,7 @@ export const RawNewsRepository = {
   },
 
   // Replaces all news
-  dangerouslyUpdateAllNews(news: IMeetingDetail[]) {
+  dangerouslyUpdateAllNews(news: IRawNews[]) {
     const orderedMeetingDetails = reorderItems(news)
     fs.writeFileSync(
       databaseFilePath,

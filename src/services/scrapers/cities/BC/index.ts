@@ -1,9 +1,9 @@
 import chalk from 'chalk'
 import puppeteer from 'puppeteer'
-import { IMeetingDetail } from '../../../../repositories/RawNewsRepository'
+import { IRawNews } from '@/models/News'
 import { getMeetingDetail } from './GetMeetingDetail'
 import { getMeetingList } from './GetMeetingList'
-import { runPromisesInBatches } from '../../BulkUtilities'
+import { runPromisesInBatches } from '@/utilities/PromiseUtilities'
 
 interface IOptions {
   startDate: string | null
@@ -13,7 +13,7 @@ interface IOptions {
   verbose?: boolean
 }
 
-export async function scrape(options: IOptions): Promise<IMeetingDetail[]> {
+export async function scrape(options: IOptions): Promise<IRawNews[]> {
 
   const browser = await puppeteer.launch({
     headless: options.headless
@@ -61,7 +61,7 @@ export async function scrape(options: IOptions): Promise<IMeetingDetail[]> {
 
   })
 
-  const results = (await runPromisesInBatches(promiseArray, options.concurrency)).filter((m) => m !== null) as IMeetingDetail[]
+  const results = (await runPromisesInBatches(promiseArray, options.concurrency)).filter((m) => m !== null) as IRawNews[]
 
   await browser.close()
   console.log(`Browser closed`)

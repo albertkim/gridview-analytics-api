@@ -1,9 +1,9 @@
 import chalk from 'chalk'
 import puppeteer from 'puppeteer'
-import { IMeetingDetail } from '../../../../repositories/RawNewsRepository'
+import { IRawNews } from '@/models/News'
 import { getMeetingList } from './GetMeetingList'
 import { getMeetingDetails } from './GetMeetingDetails'
-import { runPromisesInBatches } from '../../BulkUtilities'
+import { runPromisesInBatches } from '@/utilities/PromiseUtilities'
 
 const startUrl = 'https://citycouncil.richmond.ca/decisions/search/results.aspx?QB0=AND&QF0=ItemTopic%7cResolutionText%7cFullText%7cSubject&QI0=&QB1=AND&QF1=Date&QI1=&QB4=AND&QF4=Date&QI4=%3e%3d%40DATE-1820&TN=minutes&AC=QBE_QUERY&BU=https%3a%2f%2fcitycouncil.richmond.ca%2fdecisions%2fsearch%2fdefault.aspx&RF=WebBriefDate&'
 const maxNumberOfPages = 200
@@ -16,7 +16,7 @@ interface IOptions {
   verbose?: boolean
 }
 
-export async function scrape(options: IOptions): Promise<IMeetingDetail[]> {
+export async function scrape(options: IOptions): Promise<IRawNews[]> {
 
   const browser = await puppeteer.launch({
     headless: options.headless
@@ -83,7 +83,7 @@ export async function scrape(options: IOptions): Promise<IMeetingDetail[]> {
     }
   })
 
-  const results = (await runPromisesInBatches(promiseArray, options.concurrency)).filter((m) => m !== null) as IMeetingDetail[]
+  const results = (await runPromisesInBatches(promiseArray, options.concurrency)).filter((m) => m !== null) as IRawNews[]
 
   await browser.close()
   console.log(`Browser closed`)

@@ -1,5 +1,5 @@
 import { Page } from 'puppeteer'
-import { IMeetingDetail } from '../../../../repositories/RawNewsRepository'
+import { IRawNews } from '@/models/News'
 
 interface IPartialMeetingDetails {
   title: string
@@ -11,7 +11,7 @@ interface IPartialMeetingDetails {
   }[]
 }
 
-export async function getMeetingDetailsAfterMar2020(page: Page, url: string, date: string, meetingType: string): Promise<IMeetingDetail[]> {
+export async function getMeetingDetailsAfterMar2020(page: Page, url: string, date: string, meetingType: string): Promise<IRawNews[]> {
 
   await page.goto(url)
   await new Promise((resolve) => {setTimeout(resolve, 3000)})
@@ -76,7 +76,7 @@ export async function getMeetingDetailsAfterMar2020(page: Page, url: string, dat
 
 }
 
-export async function getMeetingDetailsBeforeMar2020(page: Page, url: string, date: string, meetingType: string): Promise<IMeetingDetail[]> {
+export async function getMeetingDetailsBeforeMar2020(page: Page, url: string, date: string, meetingType: string): Promise<IRawNews[]> {
 
   await page.goto(url)
   await new Promise((resolve) => {setTimeout(resolve, 3000)})

@@ -1,8 +1,8 @@
 import chalk from 'chalk'
 import moment from 'moment'
 import { Page } from 'puppeteer'
-import { formatDateString } from '../../BulkUtilities'
-import { IMeetingDetail } from '../../../../repositories/RawNewsRepository'
+import { formatDateString } from '@/utilities/StringUtilities'
+import { IRawNews } from '@/models/News'
 import { getMeetingDetails } from './GetMeetingDetails'
 
 export interface IScrapingDateOptions {
@@ -28,7 +28,7 @@ const maxNumberOfPages = 200
 export async function getMeetingList(page: Page, options: IScrapingDateOptions) {
 
   // This is the array to return
-  const results: IMeetingDetail[] = []
+  const results: IRawNews[] = []
 
   let corporateReports: {date: string, url: string, title: string, tag: string, contents: string}[] = []
   let planningReports: {date: string, url: string, title: string, tag: string, contents: string}[] = []
