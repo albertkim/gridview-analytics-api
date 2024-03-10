@@ -21,6 +21,10 @@ interface IParams {
 
 export async function main(params: IParams) {
 
+  if (params.cities.includes('all')) {
+    params.cities = availableCities
+  }
+
   if (params.cities.includes('Vancouver')) {
     console.log(chalk.bgWhite(`Analyzing rezonings for Vancouver`))
     await analyzeVancouver(params.startDate, params.endDate)

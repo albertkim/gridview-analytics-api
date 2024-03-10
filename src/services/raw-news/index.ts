@@ -34,6 +34,10 @@ export async function main(params: IParams) {
   else console.log(chalk.yellow(`NOTE: The scraper will not update the database.`))
   console.log(`Concurrency: ${concurrency}`)
 
+  if (params.cities.includes('all')) {
+    params.cities = availableCities
+  }
+
   if (params.cities.includes('BC (province)')) {
     console.log(chalk.bgWhite(`Scraping: BC (province)`))
     const data = await scrapeBC({
