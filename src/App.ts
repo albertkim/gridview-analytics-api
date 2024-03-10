@@ -1,7 +1,7 @@
 import express, { ErrorRequestHandler } from 'express'
 import cors from 'cors'
-import { BaseController } from './BaseController'
-import { AdminController } from './AdminController'
+import { BaseController } from './controllers/BaseController'
+import { AdminController } from './controllers/AdminController'
 
 const app = express()
 

@@ -23,9 +23,10 @@ const shouldUpdateDatabase = true      // If true, update database, otherwise ju
 interface IParams {
   startDate: string
   endDate: string
-  headless: boolean
   cities: string[]
 }
+
+const headless = true
 
 export async function main(params: IParams) {
 
@@ -38,7 +39,7 @@ export async function main(params: IParams) {
     const data = await scrapeBC({
       startDate: params.startDate,
       endDate: params.endDate,
-      headless: params.headless,
+      headless: headless,
       concurrency: concurrency
     })
     if (shouldUpdateDatabase) RawNewsRepository.upsertNews(data)
@@ -50,7 +51,7 @@ export async function main(params: IParams) {
     const data = await scrapeVancouver({
       startDate: params.startDate,
       endDate: params.endDate,
-      headless: params.headless,
+      headless: headless,
       concurrency: concurrency
     })
     if (shouldUpdateDatabase) RawNewsRepository.upsertNews(data)
@@ -62,7 +63,7 @@ export async function main(params: IParams) {
     const data = await scrapeRichmond({
       startDate: params.startDate,
       endDate: params.endDate,
-      headless: params.headless,
+      headless: headless,
       concurrency: concurrency
     })
     if (shouldUpdateDatabase) RawNewsRepository.upsertNews(data)
@@ -75,7 +76,7 @@ export async function main(params: IParams) {
     const data = await scrapeBurnaby({
       startDate: params.startDate,
       endDate: params.endDate,
-      headless: params.headless,
+      headless: headless,
       concurrency: concurrency
     })
     if (shouldUpdateDatabase) RawNewsRepository.upsertNews(data)
@@ -86,7 +87,7 @@ export async function main(params: IParams) {
     const data = await scrapeSurrey({
       startDate: params.startDate,
       endDate: params.endDate,
-      headless: params.headless,
+      headless: headless,
       concurrency: concurrency
     })
     if (shouldUpdateDatabase) RawNewsRepository.upsertNews(data)

@@ -1,8 +1,8 @@
 import createHttpError from 'http-errors'
 import { Router, Request, Response, NextFunction } from 'express'
-import { NewsRepository } from './repositories/NewsRepository'
-import { RecordsRepository } from './repositories/RecordsRepository'
-import { RawNewsRepository } from './repositories/RawNewsRepository'
+import { NewsRepository } from '../repositories/NewsRepository'
+import { RecordsRepository } from '../repositories/RecordsRepository'
+import { RawNewsRepository } from '../repositories/RawNewsRepository'
 
 const router = Router()
 

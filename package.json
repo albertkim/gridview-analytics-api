@@ -67,6 +67,9 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "test": "jest"
+    "test": "jest",
+    "scrape": "ts-node src/CmdEntry.ts scrape",
+    "rezone": "ts-node src/CmdEntry.ts rezone",
+    "permit": "ts-node src/CmdEntry.ts permit"
   }
 }
