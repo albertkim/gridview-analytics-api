@@ -3,6 +3,7 @@ import { Router, Request, Response, NextFunction } from 'express'
 import { NewsRepository } from '../repositories/NewsRepository'
 import { RecordsRepository } from '../repositories/RecordsRepository'
 import { RawNewsRepository } from '../repositories/RawNewsRepository'
+import moment from 'moment'
 
 const router = Router()
 
@@ -21,7 +22,9 @@ router.get('/ping', async (req: Request, res: Response, next: NextFunction) => {
 
 router.get('/api/v1/news/raw', async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const rawNews = await RawNewsRepository.getNews()
+    const rawNews = await RawNewsRepository.getNews({
+      startDate: moment().subtract(2, 'months').format('YYYY-MM-DD')
+    })
     res.send(rawNews)
   } catch (error) {
     next(error)

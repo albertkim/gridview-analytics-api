@@ -22,14 +22,39 @@ const databaseFilePath = path.join(__dirname, '../../database/raw-news.json')
 
 export const RawNewsRepository = {
 
-  getNews(filter?: {city?: string}) {
+  getNews(filter: {city?: string, startDate?: string, endDate?: string, limit?: number, offset?: number}) {
     
     const rawData = JSON.parse(fs.readFileSync(databaseFilePath, 'utf8')) as IRawNews[]
-    if (filter?.city) {
-      return rawData.filter((item) => item.city === filter.city)
-    } else {
-      return rawData
+
+    let filteredData: IRawNews[] = rawData
+
+    if (filter?.startDate) {
+      filteredData = filteredData.filter((item) => moment(item.date).isSameOrAfter(filter.startDate))
     }
+
+    if (filter?.endDate) {
+      filteredData = filteredData.filter((item) => moment(item.date).isBefore(filter.endDate))
+    }
+
+    if (filter?.limit) {
+      filteredData = filteredData.slice(0, filter.limit)
+    }
+
+    if (filter?.offset) {
+      filteredData = filteredData.slice(filter.offset)
+    }
+
+    if (filter?.city) {
+      filteredData = filteredData.filter((item) => item.city === filter.city)
+    }
+
+    return {
+      offset: filter.offset,
+      limit: filter.limit,
+      total: rawData.length,
+      data: filteredData
+    }
+
   },
 
   getLatestDate(city: string) {
