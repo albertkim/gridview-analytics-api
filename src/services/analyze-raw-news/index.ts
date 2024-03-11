@@ -35,27 +35,8 @@ export async function analyzeRawNews(rawNews: IRawNews): Promise<IAnalyzedNews> 
   let newContents: string | null = null
 
   try {
-    newTitle = await chatGPTTextQuery(`
-      Given the following document, provide an appropriate news title for the following contents:
-
-      ${reportContents ? reportContents : rawContents}
-    `)
-    if (!newTitle) {
-      throw createHttpError(500, `Error getting title`)
-    }
-  } catch (error) {
-    throw createHttpError(500, `Error parsing PDF for report contents`)
-  }
-
-  try {
     newContents = await chatGPTTextQuery(`
-      Given the following document, summarize the contents in the following structure for readers who follow municipal city planning news:
-
-      Short summary in a multi-sentence format.
-
-      Bullet points of key points. Include specifics such as dates, dollar values, addresses, names, etc.
-
-      No yapping, exclude fluffy language, and keep it concise.
+      You are a news article summarizing the provided document, crafted for mostly city policy and real estate professionals. Replace the original document by providing an immediate and direct overview of the key points, without referring to yourself as a separate entity. Include specifics and practical details that real estate agents would find useful. Begin with a succinct 2-3 sentence introduction, followed by bullet points for detailed information. Keep the number of bullet points between 3-5 if possible. Clearly indicate the current stage of any legislative item, including relevant dates. No yapping, exclude fluffyu language, and be specific with items, dates, dollar values, address, names, etc.
 
       Here are the contents:
 
@@ -63,6 +44,19 @@ export async function analyzeRawNews(rawNews: IRawNews): Promise<IAnalyzedNews> 
     `)
     if (!newContents) {
       throw createHttpError(500, `Error getting contents`)
+    }
+  } catch (error) {
+    throw createHttpError(500, `Error parsing PDF for report contents`)
+  }
+
+  try {
+    newTitle = await chatGPTTextQuery(`
+      Given the following document, provide an appropriate news title for the following contents:
+
+      ${newContents}
+    `)
+    if (!newTitle) {
+      throw createHttpError(500, `Error getting title`)
     }
   } catch (error) {
     throw createHttpError(500, `Error parsing PDF for report contents`)

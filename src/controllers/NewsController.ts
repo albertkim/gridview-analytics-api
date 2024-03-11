@@ -19,7 +19,7 @@ router.get('/api/v1/news/raw', async (req: Request, res: Response, next: NextFun
   }
 })
 
-router.post('api/v1/news/raw/analyze', async (req: Request, res: Response, next: NextFunction) => {
+router.post('/api/v1/news/raw/analyze', async (req: Request, res: Response, next: NextFunction) => {
   try {
     const rawNews = req.body as IRawNews
     const analyzedNews = await analyzeRawNews(rawNews)
