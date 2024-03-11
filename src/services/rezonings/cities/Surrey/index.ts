@@ -15,7 +15,7 @@ export async function analyze(startDate: string | null, endDate: string | null) 
 
   const validLists: IRawNews[] = []
 
-  for (const n of news) {
+  for (const n of news.data) {
     const isRezoningType = checkIfApplication(n) || checkIfPublicHearing(n) || checkIfBylaw(n)
     let isInDateRange = true
     if (startDate && moment(n.date).isBefore(startDate)) {

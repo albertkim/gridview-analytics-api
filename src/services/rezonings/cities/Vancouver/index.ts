@@ -13,7 +13,7 @@ export async function analyze(startDate: string | null, endDate: string | null) 
   const scrapedList = RawNewsRepository.getNews({city: 'Vancouver'})
 
   // Only keep rezoning-related items
-  const validLists = scrapedList.filter((item) => {
+  const validLists = scrapedList.data.filter((item) => {
     const isRezoningType = checkIfApplication(item) || checkIfPublicHearing(item) || checkIfBylaw(item)
     let isInDateRange = true
     if (startDate && moment(item.date).isBefore(startDate)) {

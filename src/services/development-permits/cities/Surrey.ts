@@ -20,7 +20,7 @@ async function scrape(options: IOptions) {
   const news = RawNewsRepository.getNews({city: 'Surrey'})
 
   // Filter by development permits type, dates, and reports
-  const filteredNews = news
+  const filteredNews = news.data
     .filter((n) => {
       // Check contents and make sure it includes "development permit", case-insensitive
       const regex = /development\s*permit/i

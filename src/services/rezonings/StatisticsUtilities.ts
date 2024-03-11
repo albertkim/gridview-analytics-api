@@ -16,8 +16,8 @@ export async function getStatistics() {
 
   console.log()
 
-  printStatistic('Total news', getNewsCountPerCity(news))
-  printStatistic('News date ranges', getNewsDateRangesPerCity(news))
+  printStatistic('Total news', getNewsCountPerCity(news.data))
+  printStatistic('News date ranges', getNewsDateRangesPerCity(news.data))
   printStatistic('Total rezonings', getRezoningCountPerCity(rezonings))
   printStatistic('Similar addresses', getSimilarAddresses(rezonings, 0.7))
   printStatistic('Addresses without coordinates', getCoordinateErrorsPerCity(rezonings))
