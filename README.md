@@ -2,17 +2,11 @@
 
 This repository is for the protype version of Gridview Analytics. The main purpose is to hold a SQLite database that will not only hold the schema but the data I analyze from city councils meetings for a select few cities.
 
-The API it self will be a simple Node and Express server.
+The API it self will be a simple Node and Express server. The database is a mix of a local Sqlite `database.db` file and static json files.
 
-Notion research documentation: https://www.notion.so/albertkim1/Gridview-Analytics-ffbe17da843540ccab11eeb0eff0f295
+Notion product research documentation: https://www.notion.so/albertkim1/Gridview-Analytics-ffbe17da843540ccab11eeb0eff0f295
 
-# Architecture
-
-- Node.js
-- Express
-- Sqlite3
-
-# Setup
+# Getting started
 
 I use Macbook M series laptops for development. Pre-requisites:
 
@@ -23,7 +17,17 @@ I use Macbook M series laptops for development. Pre-requisites:
 - Install XCode command line tools or XCode fully
 - Run: brew install pkg-config cairo pango libpng jpeg giflib librsvg pixman
 
-# API
+Then, you need to set up your environment variables. The expected environment variables are:
+
+```
+NODE_ENV (recommended development)
+PORT (recommended 3001)
+CHAT_GPT_API_KEY (get from OpenAI developer page)
+GOOGLE_APPLICATION_CREDENTIALS (google cloud json file absolute directory)
+GOOGLE_MAPS_API_KEY (get from Google Cloud maps page)
+```
+
+# API (work in progress)
 
 ### GET all news articles
 
