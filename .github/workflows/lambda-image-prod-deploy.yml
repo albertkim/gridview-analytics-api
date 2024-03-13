@@ -1,4 +1,4 @@
-name: LambdaImageDeploy
+name: LambdaDeploy
 
 on:
   push:
@@ -7,8 +7,7 @@ on:
 
 env:
   AWS_REGION: us-west-2
-  ECR_REPOSITORY: gridview-analytics-api-lambda
-  LAMBDA_FUNCTION_NAME: gridview-analytics-api-prod-img
+  LAMBDA_FUNCTION_NAME: gridview-analytics-api-prod
   CF_DISTRIBUTION_ID: E90QTKVUQ5WWC
 
 jobs:
@@ -20,6 +19,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+
+      - name: Build package 
+        id: build-lambda-package
+        env:
+          PACKAGE_ID: ${{ github.sha }}
+        run: |
+          npm_config_target_arch=x64 npm_config_target_platform=linux npm_config_target_libc=glibc yarn install
+          yarn run build
+          mkdir package
+          cp -r dist/. package
+          cp -r node_modules package
+          mkdir package/database
+          cp -r database/migrations package/database
+          cp -r database/database.db package/database
+          cp -r database/rezonings.json package/database
+          cd package && zip -r ../package-$PACKAGE_ID.zip *
+
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -27,25 +47,11 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_2146 }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Login to Amazon ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v2
-
-      - name: Build, tag, and push image to Amazon ECR
-        id: build-image
-        env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          IMAGE_TAG: ${{ github.sha }}
-        run: |
-          # Build a docker container and push it to ECR so that it can be deployed to ECS.
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-          echo "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
-          echo "::set-output name=IMAGE_URI::$(cat $GITHUB_OUTPUT)"
       - name: Update Lambda function
         id: update-lambda-function
         env:
+          NODE_ENV: production
           PACKAGE_ID: ${{ github.sha }}
         run: |
-          aws lambda update-function-code --function-name $LAMBDA_FUNCTION_NAME --image-uri "${{ steps.build-image.outputs.IMAGE_URI }}"
+          aws lambda update-function-code --function-name $LAMBDA_FUNCTION_NAME --zip-file fileb://package-$PACKAGE_ID.zip
           aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION_ID --paths "/api/v1/*"

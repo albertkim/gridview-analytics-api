@@ -19,15 +19,18 @@ router.get('/api/v1/news/raw', async (req: Request, res: Response, next: NextFun
   }
 })
 
-router.post('/api/v1/news/raw/analyze', async (req: Request, res: Response, next: NextFunction) => {
-  try {
-    const rawNews = req.body as IRawNews
-    const analyzedNews = await analyzeRawNews(rawNews)
-    res.send(analyzedNews)
-  } catch (error) {
-    next(error)
-  }
-})
+// Only available for admins in development
+if (process.env.NODE_ENV === 'development') {
+  router.post('/api/v1/news/raw/analyze', async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const rawNews = req.body as IRawNews
+      const analyzedNews = await analyzeRawNews(rawNews)
+      res.send(analyzedNews)
+    } catch (error) {
+      next(error)
+    }
+  })
+}
 
 router.get('/api/v1/news/:newsId', async (req: Request, res: Response, next: NextFunction) => {
   try {
