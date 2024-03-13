@@ -3,7 +3,7 @@ name: LambdaDeploy
 on:
   push:
     branches:
-      - main
+      - lambdazip # do not deploy for now
 
 env:
   AWS_REGION: us-west-2
