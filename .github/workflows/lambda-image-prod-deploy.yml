@@ -7,8 +7,8 @@ on:
 
 env:
   AWS_REGION: us-west-2
-  ECR_REPOSITORY: gridview-analytics-api-lambda-img
-  LAMBDA_FUNCTION_NAME: gridview-analytics-api-prod
+  ECR_REPOSITORY: gridview-analytics-api-lambda
+  LAMBDA_FUNCTION_NAME: gridview-analytics-api-prod-img
   CF_DISTRIBUTION_ID: E90QTKVUQ5WWC
 
 jobs:
