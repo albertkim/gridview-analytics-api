@@ -155,7 +155,8 @@ export async function downloadPDF(url: string) {
 // Given a PDF file, return a base64 image file of the page at the given index
 async function generateScreenshotFromPDF(pdfData: Uint8Array, pageIndex: number) {
   const result = await renderPageAsImage(new Uint8Array(pdfData), pageIndex + 1, {
-    canvas: () => import('canvas'),
+    // @ts-ignore
+    canvas: () => import('canvas')
   })
   const base64String = Buffer.from(result).toString('base64')
   return base64String
