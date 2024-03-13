@@ -22,7 +22,7 @@ router.post('/api/v1/admin/news', async (req: Request, res: Response, next: Next
     const noLinkEmptyFields = ['title', 'url']
 
     noNewsEmptyFields.forEach((n) => {
-      if (!createNewsObject[n]) {
+      if (createNewsObject[n] === undefined || createNewsObject[n] === null || createNewsObject[n] === '') {
         throw createHttpError(400, `${n} cannot be empty in news object`)
       }
     })
@@ -73,7 +73,7 @@ router.put('/api/v1/admin/news/:newsId', async (req: Request, res: Response, nex
     const noLinkEmptyFields = ['title', 'url']
 
     noNewsEmptyFields.forEach((n) => {
-      if (!updateNewsObject[n]) {
+      if (updateNewsObject[n] === undefined || updateNewsObject[n] === null || updateNewsObject[n] === '') {
         throw createHttpError(400, `${n} cannot be empty in news object`)
       }
     })

@@ -69,7 +69,7 @@ export const NewsRepository = {
         }
       }
       if (filter.important) {
-        query.where('news.important', '>', filter.important)
+        query.where('news.important', '>=', filter.important)
       }
       return query
     }
