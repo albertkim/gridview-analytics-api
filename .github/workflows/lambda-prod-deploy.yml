@@ -34,8 +34,9 @@ jobs:
           rm -rf node_modules/canvas
           rm -rf node_modules/typescript
           mkdir package
-          cp -r dist/. package
-          cp -r node_modules package
+          cp -r dist/. package/dist
+          cp -r node_modules package/node_modules
+          cp package.json package/package.json
           mkdir package/database
           cp -r database/migrations package/database
           cp -r database/database.db package/database
