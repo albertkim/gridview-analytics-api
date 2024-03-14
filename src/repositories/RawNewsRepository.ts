@@ -18,7 +18,7 @@ function reorderItems(items: IRawNews[]) {
   })
 }
 
-const databaseFilePath = path.join(__dirname, '../../database/raw-news.json')
+const databaseFilePath = path.join(__dirname, '@/database/raw-news.json')
 
 export const RawNewsRepository = {
 

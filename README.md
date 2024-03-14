@@ -27,6 +27,12 @@ GOOGLE_APPLICATION_CREDENTIALS (google cloud json file absolute directory)
 GOOGLE_MAPS_API_KEY (get from Google Cloud maps page)
 ```
 
+# Deployments
+
+Log into the AWS console (ask Lisa for URL, hosted on us-west-2)
+
+Currently deployed on AWS Lambda (see `.github/workflows/lambda-prod-deploy.yml` file)
+
 # API (work in progress)
 
 ### GET all news articles

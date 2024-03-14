@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-const directory = path.join(__dirname, '../../database/pdfs.json')
+const directory = path.join(__dirname, '@/database/pdfs.json')
 
 interface IPDFItem {
   url: string
