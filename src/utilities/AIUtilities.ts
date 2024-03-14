@@ -2,16 +2,21 @@ import dotenv from 'dotenv'
 import OpenAI from 'openai'
 import chalk from 'chalk'
 import { ImageAnnotatorClient } from '@google-cloud/vision'
+import createHttpError from 'http-errors'
 
 dotenv.config()
 
 const chatGPTAPIKey = process.env.CHAT_GPT_API_KEY!
 
-const openai = new OpenAI({
-	apiKey: chatGPTAPIKey
-})
+let openai: OpenAI | undefined
 
-// Uses the GOOGLE_APPLICATION_CREDENTIALS environment variable
+if (chatGPTAPIKey) {
+	openai = new OpenAI({
+		apiKey: chatGPTAPIKey
+	})
+}
+
+// Uses the GOOGLE_APPLICATION_CREDENTIALS environment variable implicitly
 const googleVisionClient = new ImageAnnotatorClient()
 
 interface BaseRezoningQueryParams {
@@ -24,6 +29,10 @@ interface BaseRezoningQueryParams {
 // Make sure that the query includes the word 'JSON'
 // Defaults to 3.5, specify 4 if you want to use 4
 export async function chatGPTJSONQuery(query: string, gptVersion?: '3.5' | '4'): Promise<any | null> {
+
+	if (!openai) {
+		throw createHttpError(500, 'ChatGPT API key not found')
+	}
 
 	// Only log if using GPT 4 - otherwise too verbose
 	if (gptVersion === '4') {
@@ -76,6 +85,10 @@ export async function chatGPTJSONQuery(query: string, gptVersion?: '3.5' | '4'):
 
 // Return in text format, not JSON
 export async function chatGPTTextQuery(query: string, gptVersion?: '3.5' | '4'): Promise<string | null> {
+
+	if (!openai) {
+		throw createHttpError(500, 'ChatGPT API key not found')
+	}
 
 	// Only log if using GPT 4 - otherwise too verbose
 	if (gptVersion === '4') {
