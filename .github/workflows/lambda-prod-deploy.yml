@@ -30,8 +30,9 @@ jobs:
           PACKAGE_ID: ${{ github.sha }}
         run: |
           npm_config_target_arch=x64 npm_config_target_platform=linux npm_config_target_libc=glibc yarn install --production
-          rm -r node_modules/canvas
           yarn run build
+          rm -rf node_modules/canvas
+          rm -rf node_modules/typescript
           mkdir package
           cp -r dist/. package
           cp -r node_modules package
