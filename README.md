@@ -33,6 +33,30 @@ Log into the AWS console (ask Lisa for URL, hosted on us-west-2)
 
 Currently deployed on AWS Lambda (see `.github/workflows/lambda-prod-deploy.yml` file)
 
+When developing, the file structure looks like this:
+
+Root
+- /database
+- /src
+- /dist
+- package.json
+
+During the production deployment process, we move the contents of the /dist folder into a new folder that becomes the deploy folder.
+
+Package (new root)
+- /database
+- (contents of /dist)
+- package.json
+
+During this process, we also remove the `canvas` npm package due to its size. Not needed in production, and the code checks for its availability at runtime so that it does not error out.
+
+Shifting the file directory structure in the new Package folder means that all the relative paths that use the @ module alias or references the /database folder will be incorrect. These are fixed with the following:
+
+- `sed -i 's/"@": "\.\/dist"/"@": "\.\/"/g' package.json` inside `lambda-prod-deploy.yml`, which shifts the @ module alias directory.
+- `getDatabasePath(filename: string)` function in the `DatabaseUtilities.ts` file, which checks NODE_ENV and adjusts the path accordingly.
+
+These approaches will not be necessary once the SQLite database is moved out into it's own remote instance. But for now it is sufficient.
+
 # API (work in progress)
 
 ### GET all news articles

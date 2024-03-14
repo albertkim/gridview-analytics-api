@@ -4,6 +4,7 @@ import chalk from 'chalk'
 import moment from 'moment'
 import similarity from 'similarity'
 import { FullRecord, IFullRecordParams } from '../models/Records'
+import { getDatabasePath } from './DatabaseUtilities'
 
 export class RecordsRepository {
 
@@ -11,10 +12,10 @@ export class RecordsRepository {
 
   // Object where key is databaseMode, value is string
   private databaseMapping: Record<'final' | 'draft' | 'draft2' | 'test', string> = {
-    final: path.join(__dirname, '@/database/rezonings.json'),
-    draft: path.join(__dirname, '@/database/rezonings-draft.json'),
-    draft2: path.join(__dirname, '@/database/rezonings-draft-2.json'),
-    test: path.join(__dirname, '@/database/rezonings-test.json')
+    final: getDatabasePath('rezonings.json'),
+    draft: getDatabasePath('rezonings-draft.json'),
+    draft2: getDatabasePath('rezonings-draft-2.json'),
+    test: getDatabasePath('rezonings-test.json')
   }
 
   constructor(databaseMode: 'final' | 'draft' | 'draft2' | 'test') {

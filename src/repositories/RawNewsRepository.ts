@@ -1,7 +1,7 @@
 import fs from 'fs'
-import path from 'path'
 import moment from 'moment'
 import { IRawNews } from '@/models/News'
+import { getDatabasePath } from './DatabaseUtilities'
 
 function reorderItems(items: IRawNews[]) {
   return items.sort((a, b) => {
@@ -18,7 +18,7 @@ function reorderItems(items: IRawNews[]) {
   })
 }
 
-const databaseFilePath = path.join(__dirname, '@/database/raw-news.json')
+const databaseFilePath = getDatabasePath('raw-news.json')
 
 export const RawNewsRepository = {
 

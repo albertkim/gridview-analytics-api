@@ -1,7 +1,7 @@
 import fs from 'fs'
-import path from 'path'
+import { getDatabasePath } from './DatabaseUtilities'
 
-const directory = path.join(__dirname, '@/database/pdfs.json')
+const databaseFilePath = getDatabasePath('pdfs.json')
 
 interface IPDFItem {
   url: string
@@ -17,7 +17,7 @@ export const PDFRepository = {
 
   check(url: string, options: {maxPages?: number, pages?: number[]}): string | null {
 
-    const pdfs = JSON.parse(fs.readFileSync(directory, 'utf8')) as IPDFItem[]
+    const pdfs = JSON.parse(fs.readFileSync(databaseFilePath, 'utf8')) as IPDFItem[]
 
     const matchingURL = pdfs.find((item) => item.url === url)
 
@@ -49,7 +49,7 @@ export const PDFRepository = {
 
   add(url: string, text: string | null, options: {maxPages?: number, pages?: number[]}, type: 'text' | 'image') {
 
-    const pdfs = JSON.parse(fs.readFileSync(directory, 'utf8')) as IPDFItem[]
+    const pdfs = JSON.parse(fs.readFileSync(databaseFilePath, 'utf8')) as IPDFItem[]
 
     const matchingURL = pdfs.find((item) => item.url === url)
 
@@ -63,7 +63,7 @@ export const PDFRepository = {
         createDate: new Date().toISOString(),
         updateDate: new Date().toISOString()
       }, ...pdfs]
-      fs.writeFileSync(directory, JSON.stringify(newPDFs, null, 2), 'utf8')
+      fs.writeFileSync(databaseFilePath, JSON.stringify(newPDFs, null, 2), 'utf8')
       return
     }
 
@@ -74,7 +74,7 @@ export const PDFRepository = {
       matchingURL.maxPages = options.maxPages
       matchingURL.type = type
       matchingURL.updateDate = new Date().toISOString()
-      fs.writeFileSync(directory, JSON.stringify(pdfs, null, 2), 'utf8')
+      fs.writeFileSync(databaseFilePath, JSON.stringify(pdfs, null, 2), 'utf8')
 
     } else if (options.pages && options.pages.length > matchingURL.pages.length) {
 
@@ -83,7 +83,7 @@ export const PDFRepository = {
       matchingURL.pages = options.pages
       matchingURL.type = type
       matchingURL.updateDate = new Date().toISOString()
-      fs.writeFileSync(directory, JSON.stringify(pdfs, null, 2), 'utf8')
+      fs.writeFileSync(databaseFilePath, JSON.stringify(pdfs, null, 2), 'utf8')
 
     }
 

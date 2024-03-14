@@ -1,8 +1,8 @@
 import { IRawNews } from '@/models/News'
 import fs from 'fs'
-import path from 'path'
+import { getDatabasePath } from './DatabaseUtilities'
 
-const databaseFilePath = path.join(__dirname, '@/../database/errors.json')
+const databaseFilePath = getDatabasePath('errors.json')
 
 export const ErrorsRepository = {
 
