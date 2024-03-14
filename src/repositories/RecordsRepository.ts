@@ -34,7 +34,13 @@ export class RecordsRepository {
         records = records.filter((item) => item.city === filter.city)
       }
     }
-    return records.map((record) => new FullRecord(record))
+    const filteredRecords = records.map((record) => new FullRecord(record))
+    return {
+      data: filteredRecords,
+      offset: 0,
+      limit: null,
+      total: filteredRecords.length
+    }
   }
 
   // Get all records with similar addresses to the provided record (but not including the record)
@@ -48,7 +54,7 @@ export class RecordsRepository {
 
     if (!numbersInAddress) return []
 
-    const allRecords = this.getRecords(type)
+    const allRecords = (this.getRecords(type)).data
 
     const recordsWithMatchingNumbers: {
       index: number
@@ -81,7 +87,7 @@ export class RecordsRepository {
   }
 
   dangerouslyReplaceRecordsForCity(type: 'rezoning' | 'development permit', city: string, newRecords: FullRecord[]) {
-    const previousRecords = this.getRecords('all')
+    const previousRecords = (this.getRecords('all')).data
     const recordsToKeep = previousRecords.filter((item) => item.type !== type || item.city !== city)
     const recordsToWrite = [...recordsToKeep, ...newRecords]
     fs.writeFileSync(
@@ -92,7 +98,7 @@ export class RecordsRepository {
   }
 
   dangerouslyReplaceAllRecords(type: 'all' | 'rezoning' | 'development permit', newRecords: FullRecord[]) {
-    const allRecords = this.getRecords('all')
+    const allRecords = (this.getRecords('all')).data
     const recordsToKeep = type === 'all' ? [] : allRecords.filter((item) => item.type !== type) // will be empty if 'all' type is provided, meaning everything should be replaced
     const recordsToWrite = reorderItems([...recordsToKeep, ...newRecords])
     fs.writeFileSync(
@@ -103,7 +109,7 @@ export class RecordsRepository {
   }
 
   createRecord(record: FullRecord) {
-    const previousEntries = this.getRecords('all')
+    const previousEntries = (this.getRecords('all')).data
     const orderedEntries = reorderItems([...previousEntries, record])
     fs.writeFileSync(
       this.database,
@@ -116,7 +122,7 @@ export class RecordsRepository {
   // Most use cases will require the upsertRecords() function, defined below
   updateRecord(id: string, record: FullRecord) {
     record.id = id
-    const previousEntries = this.getRecords('all')
+    const previousEntries = (this.getRecords('all')).data
     const matchingRezoningIndex = previousEntries.findIndex((item) => item.id === id)
     if (matchingRezoningIndex === -1) throw new Error(`Could not find rezoning with id ${id}`)
     previousEntries[matchingRezoningIndex] = record
@@ -133,7 +139,7 @@ export class RecordsRepository {
     for (const record of records) {
 
       // Get records for each iteration so that it can properly merge with the provided new records, at the cost of performance
-      const previousRecords = this.getRecords(type)
+      const previousRecords = (this.getRecords(type)).data
 
       // Check for any entries with the same ID (not application ID)
       const recordWithMatchingID = previousRecords.find((item) => item.id === record.id)
@@ -180,7 +186,7 @@ export class RecordsRepository {
   }
 
   reorderRecords() {
-    const allRecords = this.getRecords('all')
+    const allRecords = (this.getRecords('all')).data
     const reorderedRecords = reorderItems(allRecords)
     this.dangerouslyReplaceAllRecords('all', reorderedRecords)
   }

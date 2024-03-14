@@ -12,7 +12,7 @@ const recordsRepository = new RecordsRepository('final')
 export async function getStatistics() {
 
   const news = RawNewsRepository.getNews()
-  const rezonings = recordsRepository.getRecords('rezoning')
+  const rezonings = (recordsRepository.getRecords('rezoning')).data
 
   console.log()
 

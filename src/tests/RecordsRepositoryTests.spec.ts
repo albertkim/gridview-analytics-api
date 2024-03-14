@@ -5,12 +5,12 @@ const recordsRepository = new RecordsRepository('test')
 
 beforeEach(() => {
   recordsRepository.dangerouslyReplaceAllRecords('all', [])
-  expect(recordsRepository.getRecords('all').length).toBe(0)
+  expect(recordsRepository.getRecords('all').data.length).toBe(0)
 })
 
 afterEach(() => {
   recordsRepository.dangerouslyReplaceAllRecords('all', [])
-  expect(recordsRepository.getRecords('all').length).toBe(0)
+  expect(recordsRepository.getRecords('all').data.length).toBe(0)
 })
 
 test('Check that FullRecord fields are correctly added to database with upsert', () => {
@@ -73,10 +73,10 @@ test('Check that FullRecord fields are correctly added to database with upsert',
   recordsRepository.upsertRecords('rezoning', ([entry]))
 
   const allRecords = recordsRepository.getRecords('all')
-  expect(allRecords.length).toBe(1)
+  expect(allRecords.data.length).toBe(1)
 
   // Should be a perfect match except for id, createDate, and updateDate
-  const matchingRecord = allRecords[0]
+  const matchingRecord = allRecords.data[0]
   const matchingRecordWithoutIdAndDates = {
     ...matchingRecord,
     id: undefined,
@@ -115,8 +115,8 @@ test('Check that merging 2 records with the same application uses values from th
   recordsRepository.upsertRecords('rezoning', [entry2])
 
   const allRecords = recordsRepository.getRecords('all')
-  expect(allRecords.length).toBe(1)
-  expect(allRecords[0].description).toBe(entry2.description)
+  expect(allRecords.data.length).toBe(1)
+  expect(allRecords.data[0].description).toBe(entry2.description)
 
 })
 
@@ -153,9 +153,9 @@ test('Check that upsert with same application IDs works correctly', () => {
   recordsRepository.upsertRecords('rezoning', [entry2])
 
   const allRecords = recordsRepository.getRecords('all')
-  expect(allRecords.length).toBe(1)
-  expect(allRecords[0].id).toBe(entry1.id)
-  expect(allRecords[0].applicationId).toBe(applicationId)
+  expect(allRecords.data.length).toBe(1)
+  expect(allRecords.data[0].id).toBe(entry1.id)
+  expect(allRecords.data[0].applicationId).toBe(applicationId)
 
 })
 
@@ -171,7 +171,7 @@ test('Check that upsert with similar address works correctly', () => {
   })
 
   recordsRepository.upsertRecords('rezoning', [entry1])
-  expect(recordsRepository.getRecords('all').length).toBe(1)
+  expect(recordsRepository.getRecords('all').data.length).toBe(1)
 
   const entry2 = new FullRecord({
     type: 'rezoning',
@@ -183,7 +183,7 @@ test('Check that upsert with similar address works correctly', () => {
   })
 
   recordsRepository.upsertRecords('rezoning', [entry2])
-  expect(recordsRepository.getRecords('all').length).toBe(2)
+  expect(recordsRepository.getRecords('all').data.length).toBe(2)
 
   // This entry has the same address as entry 1, so it should be merged
   const description = 'Merged description'
@@ -199,8 +199,8 @@ test('Check that upsert with similar address works correctly', () => {
 
   recordsRepository.upsertRecords('rezoning', [entry3])
   const allRecords = recordsRepository.getRecords('all')
-  expect(allRecords.length).toBe(2)
-  const matchingEntry1Record = allRecords.find((record) => record.id === entry1.id)
+  expect(allRecords.data.length).toBe(2)
+  const matchingEntry1Record = allRecords.data.find((record) => record.id === entry1.id)
   expect(!!matchingEntry1Record)
   expect(matchingEntry1Record?.description).toBe(description)
 
@@ -250,15 +250,15 @@ test('Check that dangerouslyReplaceRecordsForCity works correctly', () => {
   recordsRepository.createRecord(cityDevelopmentPermit)
 
   const allRecords = recordsRepository.getRecords('all')
-  expect(allRecords.length).toBe(4)
+  expect(allRecords.data.length).toBe(4)
 
   // Remove all items from city and type rezoning
   recordsRepository.dangerouslyReplaceRecordsForCity('rezoning', 'city', [])
 
   const allRecordsAfterReplacement = recordsRepository.getRecords('all')
-  expect(allRecordsAfterReplacement.length).toBe(3)
+  expect(allRecordsAfterReplacement.data.length).toBe(3)
 
-  const allRecordsAfterReplacementIDs = allRecordsAfterReplacement.map((record) => record.id)
+  const allRecordsAfterReplacementIDs = allRecordsAfterReplacement.data.map((record) => record.id)
   expect(allRecordsAfterReplacementIDs.includes(nonCityRezoning.id)).toBe(true)
   expect(allRecordsAfterReplacementIDs.includes(nonCityDevelopmentPermit.id)).toBe(true)
   expect(allRecordsAfterReplacementIDs.includes(cityRezoning.id)).toBe(false) // This one should be removed
