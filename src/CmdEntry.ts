@@ -40,7 +40,7 @@ async function commandLineEntry() {
 
   // Second argument should be end date in YYYY-MM-DD format or the word "now"
   let endDate: string | undefined = args[2]
-  if (!endDate || endDate !== 'now') {
+  if (!endDate) {
     console.error('Invalid end date - please provide an end date in the format YYYY-MM-DD or the word "now" as the second parameter')
     process.exit(1)
   }

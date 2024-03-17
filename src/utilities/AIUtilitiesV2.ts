@@ -65,7 +65,7 @@ export async function AISummarizeDocument(contents: string, {expectedWords, inst
     }
   }
 
-  let response = await chatGPTJSONQuery(fullQuery, '3.5')
+  let response = await chatGPTJSONQuery(fullQuery, 'Claude Haiku')
   let valid = checkAndFixAIResponse(response, fullQueryFormat)
   let includesExpectedWords = (response && expectedWords && expectedWords.length > 0) ? expectedWords.every((word) => JSON.stringify(response.data).includes(word)) : true
 
@@ -74,7 +74,7 @@ export async function AISummarizeDocument(contents: string, {expectedWords, inst
   while (count < 2 && (!valid || !includesExpectedWords)) {
 
     console.log(chalk.yellow(`Invalid summary response, trying again`))
-    response = await chatGPTJSONQuery(fullQuery, '3.5')
+    response = await chatGPTJSONQuery(fullQuery, 'Claude Haiku')
     valid = checkAndFixAIResponse(response, fullQueryFormat)
     includesExpectedWords = (response && expectedWords && expectedWords.length > 0) ? expectedWords.every((word) => JSON.stringify(response.data).includes(word)) : true
     count++
@@ -206,7 +206,7 @@ export async function AIGetPartialRecords(contents: string, options: BaseRezonin
       }
     }
 
-    let baseResponse = await chatGPTJSONQuery(baseQuery, '3.5')
+    let baseResponse = await chatGPTJSONQuery(baseQuery, 'Claude Haiku')
     let baseResponseValid = checkAndFixAIResponse(baseResponse, baseQueryFormat)
     let count = 1
 
@@ -216,7 +216,7 @@ export async function AIGetPartialRecords(contents: string, options: BaseRezonin
         This is the ${count}th time you've failed to find the address. Look at the start of the document. Try again, you can do it.
         
         ${baseQuery}
-      `, '3.5')
+      `, 'Claude Haiku')
       baseResponseValid = checkAndFixAIResponse(baseResponse, baseQueryFormat)
       count++
     }
@@ -238,14 +238,14 @@ export async function AIGetPartialRecords(contents: string, options: BaseRezonin
 
         Here is the document:
         ${summaryItem.split(' ').slice(0, 40).join(' ')}
-      `, '4')
+      `, 'Claude Haiku')
 
       if (addressResponse && !addressResponse.error && addressResponse.address && !addressResponse.address.toLowerCase().includes('error')) {
         console.log(`Address found: ${addressResponse.address}`)
         baseResponse = await chatGPTJSONQuery(`
           NOTE: I've found the address for you: ${addressResponse.address} - please use this for your response below.
           
-          ${baseQuery}`, '3.5')
+          ${baseQuery}`, 'Claude Haiku')
         baseResponseValid = checkAndFixAIResponse(baseResponse, baseQueryFormat)
       }
 
@@ -398,12 +398,12 @@ export async function AIGetRecordDetails(contents: string, options: IDetailsPara
     possibleValues: ['applied', 'public hearing', 'approved', 'denied', 'withdrawn']
   }
 
-  let detailsResponse = await chatGPTJSONQuery(detailsQuery, '3.5')
+  let detailsResponse = await chatGPTJSONQuery(detailsQuery, 'Claude Haiku')
   const detailsResponseValid1 = checkAndFixAIResponse(detailsResponse, detailsQueryFormat)
 
   if (!detailsResponseValid1) {
     console.log(chalk.yellow(`Invalid response, trying again`))
-    detailsResponse = await chatGPTJSONQuery(detailsQuery, '3.5')
+    detailsResponse = await chatGPTJSONQuery(detailsQuery, 'Claude Haiku')
     const detailsResponseValid2 = checkAndFixAIResponse(detailsResponse, detailsQueryFormat)
     if (!detailsResponseValid2) {
       console.log(chalk.red(`Invalid record details response, skipping`))
