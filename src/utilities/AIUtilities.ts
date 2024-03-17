@@ -30,59 +30,85 @@ if (anthropicAPIKey) {
 // Uses the GOOGLE_APPLICATION_CREDENTIALS environment variable implicitly
 const googleVisionClient = new ImageAnnotatorClient()
 
-interface BaseRezoningQueryParams {
-	introduction?: string
-  applicationId?: string
-	status?: string
-}
-
 // Send a text query to ChatGPT 3.5 turbo and get data back in JSON format
 // Make sure that the query includes the word 'JSON'
 // Defaults to 3.5, specify 4 if you want to use 4
-export async function chatGPTJSONQuery(query: string, gptVersion?: '3.5' | '4'): Promise<any | null> {
+export async function chatGPTJSONQuery(query: string, llm?: 'Claude Haiku' | '3.5' | '4'): Promise<any | null> {
 
-	if (!openai) {
+	// Default to GPT 3.5 if not specified
+	llm = llm || '3.5'
+
+	if ((llm === '3.5' || llm === '4') && !openai) {
 		throw createHttpError(500, 'ChatGPT API key not found')
 	}
 
-	// Only log if using GPT 4 - otherwise too verbose
-	if (gptVersion === '4') {
-		console.log(`Sending JSON query to ChatGPT ${gptVersion || '3.5'}`)
+	if (llm === 'Claude Haiku' && !anthropic) {
+		throw createHttpError(500, 'Anthropic API key not found')
 	}
 
-	const gptVersionMapping = {
-		'3.5': 'gpt-3.5-turbo-0125',
-		'4': 'gpt-4-0125-preview'
+	// Only log if using GPT 4 - otherwise too verbose
+	if (llm === '4') {
+		console.log(`Sending JSON query to ChatGPT ${llm || '3.5'}`)
 	}
+
 
 	try {
 
-		const response = await openai.chat.completions.create({
-			model: gptVersionMapping[gptVersion || '3.5'],
-			messages:[
-				{
-					'role': 'user',
-					'content': query
-				}
-			],
-			response_format: {
-				type: 'json_object'
-			},
-			temperature: 0.2
-		})
-
-		if (!response) {
-			return null
+		if (llm === '3.5' || llm === '4') {
+			const gptVersionMapping = {
+				'3.5': 'gpt-3.5-turbo-0125',
+				'4': 'gpt-4-0125-preview'
+			}
+			const response = await openai!.chat.completions.create({
+				model: gptVersionMapping[llm || '3.5'],
+				messages:[
+					{
+						'role': 'user',
+						'content': query
+					}
+				],
+				response_format: {
+					type: 'json_object'
+				},
+				temperature: 0.2
+			})
+			if (!response) {
+				return null
+			}
+			const content = JSON.parse(response.choices[0].message.content!)
+			if (content.error) {
+				console.log(chalk.yellow(JSON.stringify(content, null, 2)))
+				return null
+			}
+			return content
 		}
 
-		const content = JSON.parse(response.choices[0].message.content!)
-
-		if (content.error) {
-			console.log(chalk.yellow(JSON.stringify(content, null, 2)))
-			return null
+		if (llm === 'Claude Haiku') {
+			const response = await anthropic.messages.create({
+				model: 'claude-3-haiku-20240307',
+				max_tokens: 1000,
+				temperature: 0,
+				system: 'You are an expert in city land use, planning, real estate, and development. Return in JSON format.',
+				messages: [
+					{
+						role: 'user',
+						content: [
+							{
+								type: 'text',
+								text: query
+							}
+						]
+					}
+				]
+			})
+			if (!response) {
+				return null
+			}
+			const textContent = response.content[0].text
+			const jsonContent = JSON.parse(textContent)
+			return jsonContent
+		
 		}
-
-		return content
 
 	} catch (error: any) {
 		if (error.response && error.response.data) {
@@ -95,41 +121,77 @@ export async function chatGPTJSONQuery(query: string, gptVersion?: '3.5' | '4'):
 }
 
 // Return in text format, not JSON
-export async function chatGPTTextQuery(query: string, gptVersion?: '3.5' | '4'): Promise<string | null> {
+export async function chatGPTTextQuery(query: string, llm?: 'Claude Haiku' | '3.5' | '4'): Promise<string | null> {
 
-	if (!openai) {
+	// Default to GPT 3.5 if not specified
+	llm = llm || '3.5'
+
+	if ((llm === '3.5' || llm === '4') && !openai) {
 		throw createHttpError(500, 'ChatGPT API key not found')
 	}
 
-	// Only log if using GPT 4 - otherwise too verbose
-	if (gptVersion === '4') {
-		console.log(`Sending text query to ChatGPT ${gptVersion || '3.5'}`)
+	if (llm === 'Claude Haiku' && !anthropic) {
+		throw createHttpError(500, 'Anthropic API key not found')
 	}
 
-	const gptVersionMapping = {
-		'3.5': 'gpt-3.5-turbo',
-		'4': 'gpt-4-turbo-preview'
+	// Only log if using GPT 4 - otherwise too verbose
+	if (llm === '4') {
+		console.log(`Sending text query to ChatGPT ${llm || '3.5'}`)
 	}
 
 	try {
 
-		const response = await openai.chat.completions.create({
-			model: gptVersionMapping[gptVersion || '3.5'],
-			messages:[
-				{
-					'role': 'user',
-					'content': query
-				}
-			],
-			temperature: 0.2
-		})
-
-		if (!response) {
-			return null
+		// If 3.5 or 4, use OpenAI
+		if (llm === '3.5' || llm === '4') {
+			const gptVersionMapping = {
+				'3.5': 'gpt-3.5-turbo',
+				'4': 'gpt-4-turbo-preview'
+			}
+			const response = await openai!.chat.completions.create({
+				model: gptVersionMapping[llm || '3.5'],
+				messages:[
+					{
+						'role': 'user',
+						'content': query
+					}
+				],
+				temperature: 0.2
+			})
+			if (!response) {
+				return null
+			}
+			const content = response.choices[0].message.content
+			return content
 		}
 
-		const content = response.choices[0].message.content
-		return content
+		// If Claude Haiku, use Anthropic
+		if (llm === 'Claude Haiku') {
+			const response = await anthropic.messages.create({
+				model: 'claude-3-haiku-20240307',
+				max_tokens: 1000,
+				temperature: 0,
+				system: 'You are an expert in city land use, planning, real estate, and development',
+				messages: [
+					{
+						role: 'user',
+						content: [
+							{
+								type: 'text',
+								text: query
+							}
+						]
+					}
+				]
+			})
+			if (!response) {
+				return null
+			}
+			const content = response.content[0].text
+			return content
+		}
+
+		// If for some reason none of the conditionals are hit, return null
+		return null
 
 	} catch (error: any) {
 		if (error.response && error.response.data) {
