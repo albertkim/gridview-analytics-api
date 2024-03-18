@@ -30,7 +30,7 @@ export async function AISummarizeDocument(contents: string, {expectedWords, inst
     
     {
       data: {
-        title: string - identifying information about the zoning or development permit - street address and/or an ID, code - look very carefully for addresses, it definitely exists in the document usually near the start
+        title: string - identifying information about the zoning or development permit - street address and/or an ID, code
         summary: string - formatted summary of item
       }[]
     }
@@ -343,11 +343,11 @@ export async function AIGetRecordDetails(contents: string, options: IDetailsPara
       fsr: number | null - total floor space ratio - null if unclear
       storeys: number | null - total number of storeys - pick the tallest if multiple - null if unclear
     }`,
-    status: options.status ? `status: ${options.status}` : `status: one of "applied", "public hearing", "approved", "denied", or "withdrawn"`
+    status: options.status ? `status: ${options.status}` : `application status, one of "applied", "public hearing", "approved", "denied", or "withdrawn"`
   }
 
   const detailsQuery = `
-    You are an expert in land use planning and development. Carefully read the following description and get the following information in JSON format. If you manage to fill out everything accurately, I will tip you $10.
+    You are an expert in land use planning and development. Carefully read the following description and get the following information in JSON format.
     {
       ${shouldAnalyzeBuildingType ? detailedQueryReference.buildingType : ''}
       ${shouldAnalyzeZoning ? detailedQueryReference.zoning : ''}
@@ -398,12 +398,12 @@ export async function AIGetRecordDetails(contents: string, options: IDetailsPara
     possibleValues: ['applied', 'public hearing', 'approved', 'denied', 'withdrawn']
   }
 
-  let detailsResponse = await chatGPTJSONQuery(detailsQuery, 'Claude Haiku')
+  let detailsResponse = await chatGPTJSONQuery(detailsQuery, 'Claude Sonnet')
   const detailsResponseValid1 = checkAndFixAIResponse(detailsResponse, detailsQueryFormat)
 
   if (!detailsResponseValid1) {
     console.log(chalk.yellow(`Invalid response, trying again`))
-    detailsResponse = await chatGPTJSONQuery(detailsQuery, 'Claude Haiku')
+    detailsResponse = await chatGPTJSONQuery(detailsQuery, 'Claude Sonnet')
     const detailsResponseValid2 = checkAndFixAIResponse(detailsResponse, detailsQueryFormat)
     if (!detailsResponseValid2) {
       console.log(chalk.red(`Invalid record details response, skipping`))

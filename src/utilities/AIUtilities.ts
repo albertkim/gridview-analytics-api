@@ -7,6 +7,16 @@ import createHttpError from 'http-errors'
 
 dotenv.config()
 
+const gptVersionMapping = {
+	'3.5': 'gpt-3.5-turbo',
+	'4': 'gpt-4-turbo-preview'
+}
+
+const anthropicVersionMapping = {
+	'Claude Haiku': 'claude-3-haiku-20240307',
+	'Claude Sonnet': 'claude-3-sonnet-20240229',
+}
+
 const chatGPTAPIKey = process.env.CHAT_GPT_API_KEY
 
 let openai: OpenAI | undefined
@@ -33,7 +43,7 @@ const googleVisionClient = new ImageAnnotatorClient()
 // Send a text query to ChatGPT 3.5 turbo and get data back in JSON format
 // Make sure that the query includes the word 'JSON'
 // Defaults to 3.5, specify 4 if you want to use 4
-export async function chatGPTJSONQuery(query: string, llm?: 'Claude Haiku' | '3.5' | '4'): Promise<any | null> {
+export async function chatGPTJSONQuery(query: string, llm?: 'Claude Haiku' | 'Claude Sonnet' | '3.5' | '4'): Promise<any | null> {
 
 	// Default to GPT 3.5 if not specified
 	llm = llm || '3.5'
@@ -42,7 +52,7 @@ export async function chatGPTJSONQuery(query: string, llm?: 'Claude Haiku' | '3.
 		throw createHttpError(500, 'ChatGPT API key not found')
 	}
 
-	if (llm === 'Claude Haiku' && !anthropic) {
+	if ((llm === 'Claude Haiku' || 'Claude Sonnet') && !anthropic) {
 		throw createHttpError(500, 'Anthropic API key not found')
 	}
 
@@ -55,12 +65,8 @@ export async function chatGPTJSONQuery(query: string, llm?: 'Claude Haiku' | '3.
 	try {
 
 		if (llm === '3.5' || llm === '4') {
-			const gptVersionMapping = {
-				'3.5': 'gpt-3.5-turbo-0125',
-				'4': 'gpt-4-0125-preview'
-			}
 			const response = await openai!.chat.completions.create({
-				model: gptVersionMapping[llm || '3.5'],
+				model: gptVersionMapping[llm],
 				messages:[
 					{
 						'role': 'user',
@@ -83,12 +89,12 @@ export async function chatGPTJSONQuery(query: string, llm?: 'Claude Haiku' | '3.
 			return content
 		}
 
-		if (llm === 'Claude Haiku') {
+		if (llm === 'Claude Haiku' || llm === 'Claude Sonnet') {
 			const response = await anthropic.messages.create({
-				model: 'claude-3-haiku-20240307',
+				model: anthropicVersionMapping[llm],
 				max_tokens: 1000,
 				temperature: 0,
-				system: 'You are an expert in city land use, planning, real estate, and development. Return in JSON format.',
+				system: 'You are an expert in city land use, planning, real estate, and development. Reply only JSON format, no other text.',
 				messages: [
 					{
 						role: 'user',
@@ -121,7 +127,7 @@ export async function chatGPTJSONQuery(query: string, llm?: 'Claude Haiku' | '3.
 }
 
 // Return in text format, not JSON
-export async function chatGPTTextQuery(query: string, llm?: 'Claude Haiku' | '3.5' | '4'): Promise<string | null> {
+export async function chatGPTTextQuery(query: string, llm?: 'Claude Haiku' | 'Claude Sonnet' | '3.5' | '4'): Promise<string | null> {
 
 	// Default to GPT 3.5 if not specified
 	llm = llm || '3.5'
@@ -130,7 +136,7 @@ export async function chatGPTTextQuery(query: string, llm?: 'Claude Haiku' | '3.
 		throw createHttpError(500, 'ChatGPT API key not found')
 	}
 
-	if (llm === 'Claude Haiku' && !anthropic) {
+	if ((llm === 'Claude Haiku' || llm === 'Claude Sonnet') && !anthropic) {
 		throw createHttpError(500, 'Anthropic API key not found')
 	}
 
@@ -143,12 +149,8 @@ export async function chatGPTTextQuery(query: string, llm?: 'Claude Haiku' | '3.
 
 		// If 3.5 or 4, use OpenAI
 		if (llm === '3.5' || llm === '4') {
-			const gptVersionMapping = {
-				'3.5': 'gpt-3.5-turbo',
-				'4': 'gpt-4-turbo-preview'
-			}
 			const response = await openai!.chat.completions.create({
-				model: gptVersionMapping[llm || '3.5'],
+				model: gptVersionMapping[llm],
 				messages:[
 					{
 						'role': 'user',
@@ -170,7 +172,7 @@ export async function chatGPTTextQuery(query: string, llm?: 'Claude Haiku' | '3.
 				model: 'claude-3-haiku-20240307',
 				max_tokens: 1000,
 				temperature: 0,
-				system: 'You are an expert in city land use, planning, real estate, and development',
+				system: 'You are an expert in city land use, planning, real estate, and development.',
 				messages: [
 					{
 						role: 'user',
