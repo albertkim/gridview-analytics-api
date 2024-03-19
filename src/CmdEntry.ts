@@ -6,6 +6,7 @@ import moment from 'moment'
 import { main as rawNewsMain } from '@/services/raw-news'
 import { main as rezoneMain } from '@/services/rezonings'
 import { main as permitMain } from '@/services/development-permits'
+import { RecordsRepository } from './repositories/RecordsRepository'
 
 /**
  * In order to run the raw news scraper, rezoning analyzer, or development permit analyzer, you will need to run commands in the terminal.
@@ -27,7 +28,14 @@ async function commandLineEntry() {
   console.log(args)
 
   // Identify which command is being called (news, rezone, or permit)
-  const command = args[0] as 'news' | 'rezone' | 'permit'
+  const command = args[0] as 'news' | 'rezone' | 'permit' | 'check-in'
+
+  if (command === 'check-in') {
+    const recordsRepository = new RecordsRepository('final')
+    recordsRepository.finalCheckIn()
+    console.log(chalk.green('Check-in completed successfully'))
+    process.exit(0)
+  }
 
   // First argument should be start date in YYYY-MM-DD format
   const startDate: string | undefined = args[1]

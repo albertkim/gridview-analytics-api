@@ -69,6 +69,7 @@
     "test": "jest",
     "news": "ts-node src/CmdEntry.ts news",
     "rezone": "ts-node src/CmdEntry.ts rezone",
-    "permit": "ts-node src/CmdEntry.ts permit"
+    "permit": "ts-node src/CmdEntry.ts permit",
+    "check-in": "ts-node src/CmdEntry.ts check-in"
   }
 }
