@@ -2,8 +2,8 @@ import dotenv from 'dotenv'
 import OpenAI from 'openai'
 import Anthropic from '@anthropic-ai/sdk'
 import chalk from 'chalk'
-import { ImageAnnotatorClient } from '@google-cloud/vision'
 import createHttpError from 'http-errors'
+import { ImageAnnotatorClient } from '@google-cloud/vision'
 
 dotenv.config()
 
@@ -40,13 +40,13 @@ if (anthropicAPIKey) {
 // Uses the GOOGLE_APPLICATION_CREDENTIALS environment variable implicitly
 const googleVisionClient = new ImageAnnotatorClient()
 
-// Send a text query to ChatGPT 3.5 turbo and get data back in JSON format
+// Send a text query to LLM and get data back in JSON format
 // Make sure that the query includes the word 'JSON'
 // Defaults to 3.5, specify 4 if you want to use 4
 export async function chatGPTJSONQuery(query: string, llm?: 'Claude Haiku' | 'Claude Sonnet' | '3.5' | '4'): Promise<any | null> {
 
-	// Default to GPT 3.5 if not specified
-	llm = llm || '3.5'
+	// Default to Clause Haiku if not specified
+	llm = llm || 'Claude Haiku'
 
 	if ((llm === '3.5' || llm === '4') && !openai) {
 		throw createHttpError(500, 'ChatGPT API key not found')
@@ -129,8 +129,8 @@ export async function chatGPTJSONQuery(query: string, llm?: 'Claude Haiku' | 'Cl
 // Return in text format, not JSON
 export async function chatGPTTextQuery(query: string, llm?: 'Claude Haiku' | 'Claude Sonnet' | '3.5' | '4'): Promise<string | null> {
 
-	// Default to GPT 3.5 if not specified
-	llm = llm || '3.5'
+	// Default to Claude Haiku if not specified
+	llm = llm || 'Claude Haiku'
 
 	if ((llm === '3.5' || llm === '4') && !openai) {
 		throw createHttpError(500, 'ChatGPT API key not found')
