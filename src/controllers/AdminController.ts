@@ -16,7 +16,7 @@ router.post('/api/v1/admin/news', async (req: Request, res: Response, next: Next
     }
 
     // News summary can be empty
-    const noNewsEmptyFields = ['title', 'meetingType', 'cityId', 'date', 'sentiment', 'important']
+    const noNewsEmptyFields = ['title', 'meetingType', 'cityId', 'date', 'important']
 
     // Link summary can be empty
     const noLinkEmptyFields = ['title', 'url']

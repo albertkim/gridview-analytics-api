@@ -87,7 +87,6 @@ News
   title: string
   date: string
   summary: string
-  sentiment: string
   meetingType: string
   links: [
     {
