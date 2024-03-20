@@ -167,7 +167,7 @@ export async function chatGPTTextQuery(query: string, llm?: 'Claude Haiku' | 'Cl
 		}
 
 		// If Claude Haiku, use Anthropic
-		if (llm === 'Claude Haiku') {
+		if (llm === 'Claude Haiku' || llm === 'Claude Sonnet') {
 			const response = await anthropic.messages.create({
 				model: 'claude-3-haiku-20240307',
 				max_tokens: 3000,
