@@ -14,30 +14,34 @@ interface ISummarizeParams {
 export async function AISummarizeDocument(contents: string, {expectedWords, instructions, applicationIDFormat}: ISummarizeParams): Promise<string[]> {
 
   const fullQuery = `
-    You are an expert in land use planning and development.
-    
-    In the provided document, identify the specific zoning/development permits that are discussed. These should be something like an address and/or an ID. Then, for each item, provide one detailed summary. Do not break up content about the same permit into multiple parts. Note that an item may include a rezoning and development permit and contain multiple buildings/towers, should be summarized into one. Pay attention to the headers and identifiers to know where each item starts and ends.
+    You are an expert in land use planning and development. You are provided a municipal document that talks about one (or more) rezoning/development permit.
 
-    ${instructions ? instructions : ''}
-    
-    Within the description of one permit, previous related permits may be discussed. Do not include those description permits, only the main permits that are the subject of the document.
+    <Document>
+      ${contents}
+    </Document>
 
-    In each summary, make sure to retain anything that looks like ${applicationIDFormat ? `${applicationIDFormat}` : 'an alphanumeric application/permit code/id/number (preserve numbers, letters, and dashes)'}, dates, all street addresses, applicants and their behalfs, building construction, building description, number and type of units, zoning codes, zoning descriptions, fsr, dollar values, and any other relevant details if exists. Make sure to check for this information in what looks like the section title/header. Include info about any final decisions made. Exclude any irrelevant information. When it comes to long info about legal and meeting processes, please shorten or remove them. Format the summary to be easy to read by adding newlines where you think appropriate.
+    <Instructions>
+      Your task is to summarize the document into a structured format.
 
-    ${(expectedWords && expectedWords.length > 0) ? `You are expected to include ${expectedWords.map((w) => `"${w}"`).join(', ')} in from this document.` : ''}
-    
-    Return as a JSON object strictly in this format:
-    
-    {
-      data: {
-        title: string - identifying information about the zoning or development permit - street address and/or an ID, code
-        summary: string - formatted summary of item
-      }[]
-    }
+      First, identify the specific zoning/development permits that are discussed.These should be something like an address and/or an ID. Then, for each item, provide a detailed summary. Do not break up content about the same permit into multiple parts. Note that an item may include a rezoning and development permit and contain multiple buildings/towers, should be summarized into one. Pay attention to the headers and identifiers to know where each item starts and ends.
 
-    DO NOT give me an item where the title is not a specific zoning or development permit.
+      ${instructions ? instructions : ''}
 
-    Here is the document: ${contents}
+      In each summary, make sure to retain anything that looks like ${applicationIDFormat ? `${applicationIDFormat}` : 'an alphanumeric application/permit code/id/number (preserve numbers, letters, and dashes)'}, dates, all street addresses, applicants and their behalfs, building construction, building description, number of stories, number and type of units, zoning codes, zoning descriptions, fsr, dollar values, and any other important details if exists. Make sure to check for this information in what looks like the section title/header. Include info about any final decisions made. When it comes to long info about legal and meeting processes, please shorten or remove them. Format the summary to be easy to read by adding newlines where you think appropriate.
+
+      ${(expectedWords && expectedWords.length > 0) ? `You are expected to include ${expectedWords.map((w) => `"${w}"`).join(', ')} in from this document.` : ''}
+      
+      Return as a JSON object strictly in this format:
+      
+      {
+        data: {
+          title: string - identifying information about the zoning or development permit - street address and/or an ID, code
+          summary: string - formatted summary of item
+        }[]
+      }
+
+      Only give me items where the title is for a specific zoning or development permit.
+    </Instructions>
   `
 
   const fullQueryFormat: IExpectedFormat = {
@@ -157,26 +161,27 @@ export async function AIGetPartialRecords(contents: string, options: BaseRezonin
   for (const summaryItem of summary) {
 
     const baseQuery = `
-      You are an expert in land use planning and development. Your objective is make structured data from the following document.
+      You are an expert in land use planning and development. You are provided a document that talks about a rezoning/development permit.
+
+      <Document>
+        ${summaryItem}
+      </Document>
       
-      First, carefully read through it and identify the street address(es) - usually found near the start of the document with numbers and words like "road", "avenue", "street", "crescent", etc. If multiple addresses, comma separate - do not include city - if you can't find address, try again harder, it definitely exists usually near the start of the document
-      
-      Second, read the rest of the document and structure your findings in the following JSON format - otherwise return a {error: message, reason: detailed explanation}. Only when you successfully return an entry with an address I will tip you $10. I will take $10 away from your pay if you cannot find an address.
+      <Instructions>
+        Your objective is make structured data from the following document.
+        
+        First, carefully read through it and identify the street address(es) - usually found near the start of the document with numbers and words like "road", "avenue", "street", "crescent", etc. If multiple addresses, comma separate - do not include city.
+        
+        Second, read the rest of the document and structure your findings in the following JSON format - otherwise return a {error: message, reason: detailed explanation}.
 
-      {
-        applicationId: ${options?.applicationId ? options.applicationId : 'the unique alphanumeric identifier for this development, null if not specified'}
-        address: the address(es) you found - comma separated if multiple - do not include city
-        applicant: who the applicant is - null if doesn't exist
-        behalf: if the applicant is applying on behalf of someone else, who is it - null if doesn't exist
-        description: a detailed description of the new development in question - be be specific, include any details such as address, applicants, buildings, number/types of units, rentals, fsr, storeys, rezoning details, dollar values etc. - do not mention legal/meeting/process details, only development details
-      }
-
-      Document here:
-      ${summaryItem}
-
-      ---
-
-      If the address is, make a concerted effort to re-examine the document, as addresses are generally present near the beginning. Again, look for simple indicators of addresses.
+        {
+          applicationId: ${options?.applicationId ? options.applicationId : 'the unique alphanumeric identifier for this development, null if not specified'}
+          address: the address(es) you found - comma separated if multiple - do not include city
+          applicant: who the applicant is - null if doesn't exist
+          behalf: if the applicant is applying on behalf of someone else, who is it - null if doesn't exist
+          description: a detailed description of the new development in question - be be specific, include any details such as address, applicants, buildings, number/types of units, rentals, fsr, storeys, rezoning details, dollar values etc. - do not mention legal/meeting/process details, only development details
+        }
+      </Instructions>
     `
 
     const baseQueryFormat: IExpectedFormat = {
@@ -337,24 +342,32 @@ export async function AIGetRecordDetails(contents: string, options: IDetailsPara
     }`,
     stats: `stats: {
       buildings: number | null - your best guess as to the number of new buildings being proposed - null if unclear
-      stratas: number | null - your best guess as to the total number of non-rental residential units/houses/townhouses - 0 if no residential units mentioned - if single family, use number of buildings - null if unclear
+      stratas: number | null - the total number of non-rental residential units/houses/townhouses - 0 if no residential units mentioned - if single family, use number of buildings - null if unclear
       rentals: number | null - total number of rental units - 0 if no rentals mentioned
-      hotels: number | null - total number of hotel units (not buildings) - 0 if no hotels mentioned
+      hotels: number | null - total number of hotel units - 0 if no hotels mentioned
       fsr: number | null - total floor space ratio - null if unclear
-      storeys: number | null - total number of storeys - pick the tallest if multiple - null if unclear
+      storeys: number | null - total number of storeys - pick the tallest if there are multiple buildings - null if unclear
     }`,
     status: options.status ? `status: ${options.status}` : `application status, one of "applied", "public hearing", "approved", "denied", or "withdrawn"`
   }
 
   const detailsQuery = `
-    You are an expert in land use planning and development. Carefully read the following description and get the following information in JSON format.
-    {
-      ${shouldAnalyzeBuildingType ? detailedQueryReference.buildingType : ''}
-      ${shouldAnalyzeZoning ? detailedQueryReference.zoning : ''}
-      ${shouldAnalyzeStats ? detailedQueryReference.stats : ''}
-      ${shouldAnalyzeStatus ? detailedQueryReference.status : ''}
-    }
-    Description here: ${contents}
+    You are an expert in land use planning and development. You are given the following document:
+
+    <Document>
+      ${contents}
+    </Document>
+
+    <Instructions>
+      Now, get the following information from the provided text in JSON format.
+      
+      {
+        ${shouldAnalyzeBuildingType ? detailedQueryReference.buildingType : ''}
+        ${shouldAnalyzeZoning ? detailedQueryReference.zoning : ''}
+        ${shouldAnalyzeStats ? detailedQueryReference.stats : ''}
+        ${shouldAnalyzeStatus ? detailedQueryReference.status : ''}
+      }
+    </Instructions>
   `
 
   const detailsQueryFormat: IExpectedFormat = {

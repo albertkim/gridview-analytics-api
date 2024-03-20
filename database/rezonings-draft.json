@@ -1,17 +1,17 @@
 [
   {
-    "id": "rez-jq5io4nespy2nerze2xqc",
+    "id": "rez-ru1gwiurerpuh8098ysdx",
     "city": "Vancouver",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
     "applicationId": null,
     "address": "2726-2734 West 16th Avenue",
     "applicant": "Studio One Architecture Inc.",
-    "behalf": null,
+    "behalf": "Papigon Holdings Ltd.",
     "description": "To rezone 2726-2734 West 16th Avenue from RT-2 (Residential) District to RR-2B (Residential Rental) District, to permit the development of a five-storey rental building. A floor space ratio (FSR) of 2.40 and height of 16.8 m (55 ft.) are proposed.",
     "rawSummaries": [
       {
-        "summary": "2726-2734 West 16th Avenue\nTo rezone 2726-2734 West 16th Avenue from RT-2 (Residential) District to RR-2B (Residential Rental) District, to permit the development of a five-storey rental building. A floor space ratio (FSR) of 2.40 and height of 16.8 m (55 ft.) are proposed. Applicant: Studio One Architecture Inc. Recommended Approval by the General Manager of Planning, Urban Design and Sustainability, subject to conditions including the preparation of a Housing Agreement By-law.",
+        "summary": "2726-2734 West 16th Avenue\nTo rezone 2726-2734 West 16th Avenue from RT-2 (Residential) District to RR-2B (Residential Rental) District, to permit the development of a five-storey rental building. A floor space ratio (FSR) of 2.40 and height of 16.8 m (55 ft.) are proposed. Applicant: Studio One Architecture Inc. on behalf of Papigon Holdings Ltd. Recommended Approval by the General Manager of Planning, Urban Design and Sustainability, subject to conditions including a Housing Agreement By-law.",
         "date": "2024-03-01",
         "status": "public hearing",
         "reportUrl": "https://council.vancouver.ca/20240229/documents/phea1sr.pdf"
@@ -89,11 +89,11 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:01:45.258Z",
-    "updateDate": "2024-03-18T00:46:18.245Z"
+    "createDate": "2024-03-20T20:52:26.872Z",
+    "updateDate": "2024-03-20T20:52:26.872Z"
   },
   {
-    "id": "rez-mczg0w61ptqxxdo5u52hk",
+    "id": "rez-siul3g7t2z1pudnryaiy2",
     "city": "Vancouver",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
@@ -104,7 +104,7 @@
     "description": "To rezone 6095 Fraser Street from C-2 (Commercial) District to CD-1 (Comprehensive Development) District for a seven-storey mixed-use building with 36 secured rental units and commercial space, with a floor space ratio (FSR) of 4.0 and a height of 24.7 m (81 ft.), including rooftop amenity.",
     "rawSummaries": [
       {
-        "summary": "6095 Fraser Street\nTo rezone 6095 Fraser Street from C-2 (Commercial) District to CD-1 (Comprehensive Development) District for a seven-storey mixed-use building with 36 secured rental units and commercial space, with a floor space ratio (FSR) of 4.0 and a height of 24.7 m (81 ft.), including rooftop amenity. Applicant: Kenneth E King Architecture & Planning. Recommended Approval: Approval in principle of the rezoning, approval of the draft CD-1 By-law, approval of the proposed form of development, approval of the Housing Agreement By-law, approval of amending the Sign By-law and Noise Control By-law, and adoption of Recommendations A to D with specified conditions.",
+        "summary": "CD-1 REZONING: 6095 Fraser Street\nTo rezone 6095 Fraser Street from C-2 (Commercial) District to CD-1 (Comprehensive Development) District for a seven-storey mixed-use building with 36 secured rental units and commercial space, with a floor space ratio (FSR) of 4.0 and a height of 24.7 m (81 ft.), including rooftop amenity. Applicant: Kenneth E King Architecture & Planning. Recommended Approval: Approval in principle of the rezoning, approval of the draft CD-1 By-law, approval of the proposed form of development, approval of the Housing Agreement By-law, approval of amending the Sign By-law and Noise Control By-law, and adoption of Recommendations A to D with specified conditions.",
         "date": "2024-03-01",
         "status": "public hearing",
         "reportUrl": "https://council.vancouver.ca/20240229/documents/phea2sr.pdf"
@@ -129,9 +129,9 @@
     },
     "zoning": {
       "previousZoningCode": "C-2",
-      "previousZoningDescription": "Commercial District",
+      "previousZoningDescription": "Commercial",
       "newZoningCode": "CD-1",
-      "newZoningDescription": "Comprehensive Development District"
+      "newZoningDescription": "Comprehensive Development"
     },
     "reportUrls": [
       {
@@ -188,11 +188,11 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:01:50.208Z",
-    "updateDate": "2024-03-18T00:46:26.079Z"
+    "createDate": "2024-03-20T20:52:33.576Z",
+    "updateDate": "2024-03-20T20:52:33.576Z"
   },
   {
-    "id": "rez-4dqt0ph44mc3r1dvfj204",
+    "id": "rez-kl5kb1gw520lb5c0enpuw",
     "city": "Vancouver",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
@@ -228,9 +228,9 @@
     },
     "zoning": {
       "previousZoningCode": "C-1",
-      "previousZoningDescription": "Commercial District",
+      "previousZoningDescription": "Commercial",
       "newZoningCode": "CD-1",
-      "newZoningDescription": "Comprehensive Development District"
+      "newZoningDescription": "Comprehensive Development"
     },
     "reportUrls": [
       {
@@ -293,11 +293,11 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:01:56.751Z",
-    "updateDate": "2024-03-18T00:46:34.146Z"
+    "createDate": "2024-03-20T20:52:41.036Z",
+    "updateDate": "2024-03-20T20:52:41.036Z"
   },
   {
-    "id": "rez-6jx3pxipbg2faxxz4ip5v",
+    "id": "rez-bhobc84io2jdq4bzm1342",
     "city": "Vancouver",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
@@ -314,7 +314,7 @@
         "reportUrl": "https://council.vancouver.ca/20240227/documents/phea2SR.pdf"
       }
     ],
-    "buildingType": "mixed use",
+    "buildingType": "commercial",
     "status": "public hearing",
     "dates": {
       "appliedDate": null,
@@ -398,11 +398,11 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:02:02.404Z",
-    "updateDate": "2024-03-18T00:46:42.976Z"
+    "createDate": "2024-03-20T20:52:48.382Z",
+    "updateDate": "2024-03-20T20:52:48.382Z"
   },
   {
-    "id": "rez-4atw3ge1k6rwxpgtmo30w",
+    "id": "rez-4viir2j2ij1o9prwes8fi",
     "city": "Vancouver",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
@@ -461,22 +461,148 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:02:11.010Z",
-    "updateDate": "2024-03-18T00:46:49.855Z"
+    "createDate": "2024-03-20T20:52:59.719Z",
+    "updateDate": "2024-03-20T20:52:59.719Z"
   },
   {
-    "id": "rez-s4aumjb2s5jvcmmoryzdq",
+    "id": "rez-kzgyxb59d8usp271ybevt",
+    "city": "Richmond",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "RZ 22-009024",
+    "address": "18431 Westminster Highway",
+    "applicant": "Jason Levelton (East Richmond Nurseries)",
+    "behalf": null,
+    "description": "The application is for a rezoning from 'Agriculture (AG1)' to 'Agriculture (AG3)' zone to allow the existing seasonal farm labour accommodation at 18431 Westminster Highway. The subject property is currently occupied by two single-family dwellings, an active farm operation, and associated farm buildings and seasonal farm labour accommodation. The purpose of the rezoning is to allow the existing seasonal farm labour accommodation on-site, as the current 'Agriculture (AG1)' zone does not permit seasonal farm labour accommodation. The proposal is consistent with the Official Community Plan (OCP) and Farming First Strategy, which allow for seasonal farm labour accommodation as an additional residential use accessory to the principal agricultural purposes and to support the farm operation in the Agricultural Land Reserve (ALR). The application also requires approval from the Agricultural Land Commission (ALC) for a Non-Adhering Residential Use (NARU). Final approval from the Ministry of Transportation and Infrastructure (MOTI) is required prior to final adoption of the rezoning bylaw, and the proposal must meet the requirements of the Richmond Flood Plain Designation and Protection Bylaw 8204.",
+    "rawSummaries": [
+      {
+        "summary": "RZ 22-009024\nThe application by Jason Levelton (East Richmond Nurseries) is for a rezoning from \"Agriculture (AG1)\" to \"Agriculture (AG3)\" zone to allow the existing seasonal farm labour accommodation at 18431 Westminster Highway. The subject property is currently occupied by two single-family dwellings, an active farm operation, and associated farm buildings and seasonal farm labour accommodation. The purpose of the rezoning is to allow the existing seasonal farm labour accommodation on-site, as the current \"Agriculture (AG1)\" zone does not permit seasonal farm labour accommodation. The proposal is consistent with the Official Community Plan (OCP) and Farming First Strategy, which allow for seasonal farm labour accommodation as an additional residential use accessory to the principal agricultural purposes and to support the farm operation in the Agricultural Land Reserve (ALR). The application also requires approval from the Agricultural Land Commission (ALC) for a Non-Adhering Residential Use (NARU). Final approval from the Ministry of Transportation and Infrastructure (MOTI) is required prior to final adoption of the rezoning bylaw, and the proposal must meet the requirements of the Richmond Flood Plain Designation and Protection Bylaw 8204.",
+        "date": "2024-02-26",
+        "status": "applied",
+        "reportUrl": "https://citycouncil.richmond.ca/__shared/assets/_4_-_Application_by_Jason_Levelton_-_at_18431_Westminster_Highway72209.pdf"
+      }
+    ],
+    "buildingType": "single-family residential",
+    "status": "applied",
+    "dates": {
+      "appliedDate": "2024-02-26",
+      "publicHearingDate": null,
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 2,
+      "stratas": null,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 2
+    },
+    "zoning": {
+      "previousZoningCode": "AG1",
+      "previousZoningDescription": "Agriculture",
+      "newZoningCode": "AG3",
+      "newZoningDescription": "Agriculture"
+    },
+    "reportUrls": [
+      {
+        "date": "2024-02-26",
+        "title": "Report",
+        "url": "https://citycouncil.richmond.ca/__shared/assets/_4_-_Application_by_Jason_Levelton_-_at_18431_Westminster_Highway72209.pdf",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-02-26",
+        "url": "https://citycouncil.richmond.ca/agendas/council/022624_minutes.htm",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-03-20T20:53:55.263Z",
+    "updateDate": "2024-03-20T20:53:55.263Z"
+  },
+  {
+    "id": "rez-xwf2kyei6it357t0s6ttf",
+    "city": "Richmond",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "RZ 22-011635",
+    "address": "12900 Steveston Highway, 11311 Rice Mill Road",
+    "applicant": "Lucas Hogler",
+    "behalf": "Harry Hogler (Richmond Country Farms)",
+    "description": "The application is for a rezoning from the 'Agriculture (AG1)' zone to the 'Agriculture (AG3)' zone to allow the existing seasonal farm labour accommodation on a portion of 12900 Steveston Highway & 11311 Rice Mill Road. The proposal also involves a site-specific zoning text amendment to the 'Agriculture (AG3)' zone to permit more than one seasonal farm labour accommodation located on a lot without an existing single detached housing, to accommodate the existing condition on this site. The purpose of the rezoning is to allow the existing seasonal farm labour accommodation on-site. The proposal is consistent with the Official Community Plan (OCP) and Farming First Strategy, which allow for seasonal farm labour accommodation as an additional residential use accessory to the principal agricultural purposes.",
+    "rawSummaries": [
+      {
+        "summary": "RZ 22-011635\nThe application by Lucas Hogler on behalf of Harry Hogler (Richmond Country Farms) is for a rezoning from the \"Agriculture (AG1)\" zone to the \"Agriculture (AG3)\" zone to allow the existing seasonal farm labour accommodation on a portion of 12900 Steveston Highway & 11311 Rice Mill Road. The proposal also involves a site-specific zoning text amendment to the \"Agriculture (AG3)\" zone to permit more than one seasonal farm labour accommodation located on a lot without an existing single detached housing, to accommodate the existing condition on this site. The subject site is currently zoned \"Agriculture (AG1)\", which does not permit seasonal farm labour accommodation. The purpose of the rezoning is to allow the existing seasonal farm labour accommodation on-site. The proposal is consistent with the Official Community Plan (OCP) and Farming First Strategy, which allow for seasonal farm labour accommodation as an additional residential use accessory to the principal agricultural purposes. The proposal was reviewed and supported by the Food Security and Agricultural Advisory Committee (FSAAC).",
+        "date": "2024-02-26",
+        "status": "applied",
+        "reportUrl": "https://citycouncil.richmond.ca/__shared/assets/_3_-_Application_by_Lucas_Hogler_-_12900_Steveston_Hwy72208.pdf"
+      }
+    ],
+    "buildingType": "other",
+    "status": "applied",
+    "dates": {
+      "appliedDate": "2024-02-26",
+      "publicHearingDate": null,
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": "AG1",
+      "previousZoningDescription": "Agriculture",
+      "newZoningCode": "AG3",
+      "newZoningDescription": "Agriculture"
+    },
+    "reportUrls": [
+      {
+        "date": "2024-02-26",
+        "title": "Report",
+        "url": "https://citycouncil.richmond.ca/__shared/assets/_3_-_Application_by_Lucas_Hogler_-_12900_Steveston_Hwy72208.pdf",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-02-26",
+        "url": "https://citycouncil.richmond.ca/agendas/council/022624_minutes.htm",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-03-20T20:54:13.333Z",
+    "updateDate": "2024-03-20T20:54:13.333Z"
+  },
+  {
+    "id": "rez-ojpnh99llwdo8wbsz98cz",
     "city": "Burnaby",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
     "applicationId": "REZ #23-13",
     "address": "6505 SUSSEX AVENUE",
-    "applicant": "Thind Properties Ltd.",
+    "applicant": null,
     "behalf": null,
-    "description": "The rezoning application is to permit the conversion of the existing 10 storeys of commercial office space to a 159-unit hotel with a ground-level hotel lobby, and a liquor primary pub or food primary restaurant. The proposed zoning is an amended CD Comprehensive Development District based on the RM5s and RM4 Multiple Family Residential Districts, C2 Community Commercial District, and C3 and C3f General Commercial Districts. The rezoning is consistent with various City policies and plans. The subject site has been previously redeveloped under Rezoning Reference #16-42 to accommodate a high-rise mixed-use tower with retail, office, and residential uses.",
+    "description": "The rezoning application is to permit the conversion of the existing 10 storeys of commercial office space to a 159-unit hotel with a ground-level hotel lobby, and a liquor primary pub or food primary restaurant. The proposed zoning is an amended CD Comprehensive Development District based on the RM5s and RM4 Multiple Family Residential Districts, C2 Community Commercial District, and C3 and C3f General Commercial Districts. The rezoning is consistent with various City policies and plans. The subject site is located at the corner of Sussex Avenue and Beresford Street within the Metrotown Downtown Plan area, and was previously redeveloped under Rezoning Reference #16-42 for a high-rise mixed-use tower. The proposed C3 and C3f Districts are for land use purposes only, and the operators would need to secure a liquor licence, which would be subject to the Council's recommendations for processing liquor licence applications.",
     "rawSummaries": [
       {
-        "summary": "REZ #23-13 – 6505 SUSSEX AVENUE – HOTEL USE\nThe rezoning application is to permit the conversion of the existing 10 storeys of commercial office space to a 159-unit hotel with a ground-level hotel lobby, and a liquor primary pub or food primary restaurant. The proposed zoning is an amended CD Comprehensive Development District based on the RM5s and RM4 Multiple Family Residential Districts, C2 Community Commercial District, and C3 and C3f General Commercial Districts. The rezoning is consistent with various City policies and plans. The subject site has been previously redeveloped under Rezoning Reference #16-42 to accommodate a high-rise mixed-use tower with retail, office, and residential uses. The applicant is Thind Properties Ltd. and the recommendation is to advance the Rezoning Bylaw to First and Second Reading, approve an amendment to the Metrotown Downtown Plan, and establish prerequisites for Final Adoption.",
+        "summary": "REZ #23-13 – 6505 SUSSEX AVENUE – HOTEL USE\nThe rezoning application is to permit the conversion of the existing 10 storeys of commercial office space to a 159-unit hotel with a ground-level hotel lobby, and a liquor primary pub or food primary restaurant. The proposed zoning is an amended CD Comprehensive Development District based on the RM5s and RM4 Multiple Family Residential Districts, C2 Community Commercial District, and C3 and C3f General Commercial Districts. The rezoning is consistent with various City policies and plans. The subject site is located at the corner of Sussex Avenue and Beresford Street within the Metrotown Downtown Plan area, and was previously redeveloped under Rezoning Reference #16-42 for a high-rise mixed-use tower. The proposed C3 and C3f Districts are for land use purposes only, and the operators would need to secure a liquor licence, which would be subject to the Council's recommendations for processing liquor licence applications.",
         "date": "2024-02-26",
         "status": "applied",
         "reportUrl": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=74646"
@@ -503,7 +629,7 @@
       "previousZoningCode": "CD",
       "previousZoningDescription": "Comprehensive Development District",
       "newZoningCode": "CD",
-      "newZoningDescription": "Amended Comprehensive Development District"
+      "newZoningDescription": "Amended Comprehensive Development District based on RM5s, RM4, C2, C3, C3f"
     },
     "reportUrls": [
       {
@@ -548,11 +674,11 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:53:14.959Z",
-    "updateDate": "2024-03-18T00:53:14.959Z"
+    "createDate": "2024-03-20T20:54:33.915Z",
+    "updateDate": "2024-03-20T20:54:33.915Z"
   },
   {
-    "id": "rez-t0gfz42h5vmohh86074he",
+    "id": "rez-ue4eixkjmyu0ioqg1de4g",
     "city": "Burnaby",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
@@ -560,10 +686,10 @@
     "address": "4244 Norland Avenue",
     "applicant": null,
     "behalf": null,
-    "description": "The purpose of this rezoning is to permit the full range of use and development opportunities under the P2 Administration and Assembly District at 4244 Norland Avenue, recognizing the temporary works yard will cease operation in Spring 2024. There is no development proposed as part of this rezoning, and future development proposals would require planning and building approvals. The P2 District would support the proposed development of the new RCMP detachment. The subject property's site area (1.83 ha), lot width (40.21 m), and lot depth (160.73 m) remain unchanged. This rezoning requires the approval of the Ministry of Transportation and Infrastructure due to the proximity of the site to the Trans-Canada Highway.",
+    "description": "The purpose of this rezoning is to permit the full range of use and development opportunities under the P2 Administration and Assembly District at 4244 Norland Avenue, recognizing the temporary works yard will cease operation in Spring 2024. There is no development proposed as part of this rezoning, and future development proposals would require planning and building approvals. The P2 District would support the proposed development of the new RCMP detachment. The subject property's site area (1.83 ha), lot width (40.21 m), and lot depth (160.73 m) remain unchanged. Due to the proximity of the site to the Trans-Canada Highway, this rezoning requires the approval of the Ministry of Transportation and Infrastructure.",
     "rawSummaries": [
       {
-        "summary": "REZ #23-21 - 4244 Norland Avenue\nThe purpose of this rezoning is to permit the full range of use and development opportunities under the P2 Administration and Assembly District at 4244 Norland Avenue, recognizing the temporary works yard will cease operation in Spring 2024. There is no development proposed as part of this rezoning, and future development proposals would require planning and building approvals. The P2 District would support the proposed development of the new RCMP detachment. The subject property's site area (1.83 ha), lot width (40.21 m), and lot depth (160.73 m) remain unchanged. This rezoning requires the approval of the Ministry of Transportation and Infrastructure due to the proximity of the site to the Trans-Canada Highway.",
+        "summary": "REZ #23-21 - 4244 Norland Avenue\nThe purpose of this rezoning is to permit the full range of use and development opportunities under the P2 Administration and Assembly District at 4244 Norland Avenue, recognizing the temporary works yard will cease operation in Spring 2024. There is no development proposed as part of this rezoning, and future development proposals would require planning and building approvals. The P2 District would support the proposed development of the new RCMP detachment. The subject property's site area (1.83 ha), lot width (40.21 m), and lot depth (160.73 m) remain unchanged. Due to the proximity of the site to the Trans-Canada Highway, this rezoning requires the approval of the Ministry of Transportation and Infrastructure.",
         "date": "2024-02-26",
         "status": "applied",
         "reportUrl": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=74651"
@@ -617,11 +743,11 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:53:29.879Z",
-    "updateDate": "2024-03-18T00:53:29.879Z"
+    "createDate": "2024-03-20T20:54:42.158Z",
+    "updateDate": "2024-03-20T20:54:42.158Z"
   },
   {
-    "id": "rez-u2x3pzuqwknq4rfj1urfm",
+    "id": "rez-616m8tu0h05yhax7idayx",
     "city": "Surrey",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
@@ -680,11 +806,11 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:53:55.500Z",
-    "updateDate": "2024-03-18T00:53:55.500Z"
+    "createDate": "2024-03-20T20:54:51.251Z",
+    "updateDate": "2024-03-20T20:54:51.251Z"
   },
   {
-    "id": "rez-s12m5zc063iozdteoze7z",
+    "id": "rez-3h2uiz5eiczyffyt1tjks",
     "city": "Surrey",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
@@ -692,10 +818,10 @@
     "address": "19054 - 80 Avenue",
     "applicant": "G. Grewal",
     "behalf": null,
-    "description": "Rezoning of a portion from A-2 to PA-2 to permit the development of a future place of worship. Key details: Rezone portion of site (Block A) from \"Intensive Agriculture Zone (A-2)\" to \"Assembly Hall 2 Zone (PA-2)\", Authorize staff to draft Development Permit No. 7922-0035-00 generally in accordance with attached drawings and finalized Ecosystem Development Plan and Geotechnical Report, Require resolution of various engineering, landscaping, fire protection, environmental, and legal requirements prior to final adoption.",
+    "description": "Rezoning of a portion from A-2 to PA-2 to permit the development of a future place of worship. The key details are: Rezone a portion of the site from \"Intensive Agriculture Zone (A-2)\" to \"Assembly Hall 2 Zone (PA-2)\", Authorize staff to draft Development Permit No. 7922-0035-00 generally in accordance with the attached drawings, finalized Ecosystem Development Plan and Geotechnical Report, Require the applicant to address various engineering, landscaping, environmental, and other requirements prior to final adoption, including addressing engineering requirements and issues, submitting a road dedication plan, submitting a finalized tree survey and tree preservation statement, satisfying the deficiency in tree replacement, demonstrating feasibility of on-site fire protection, submitting finalized and peer-reviewed Ecosystem Development Plan, Impact Mitigation Plan, and Geotechnical Report, and demolishing existing buildings and structures.",
     "rawSummaries": [
       {
-        "summary": "7922-0035-00 - 19054 - 80 Avenue\nRezoning of a portion from A-2 to PA-2 to permit the development of a future place of worship. Key details:\n\n- Owner: G. Grewal\n- Agent: G. Grewal\n- Rezone portion of site (Block A) from \"Intensive Agriculture Zone (A-2)\" to \"Assembly Hall 2 Zone (PA-2)\"\n- Authorize staff to draft Development Permit No. 7922-0035-00 generally in accordance with attached drawings and finalized Ecosystem Development Plan and Geotechnical Report\n- Require resolution of various engineering, landscaping, fire protection, environmental, and legal requirements prior to final adoption",
+        "summary": "7922-0035-00 - 19054 - 80 Avenue\nRezoning of a portion from A-2 to PA-2 to permit the development of a future place of worship. The key details are:\n\n- Owner: G. Grewal\n- Agent: G. Grewal\n- Rezone a portion of the site from \"Intensive Agriculture Zone (A-2)\" to \"Assembly Hall 2 Zone (PA-2)\"\n- Authorize staff to draft Development Permit No. 7922-0035-00 generally in accordance with the attached drawings, finalized Ecosystem Development Plan and Geotechnical Report\n- Require the applicant to address various engineering, landscaping, environmental, and other requirements prior to final adoption, including:\n  - Addressing engineering requirements and issues\n  - Submitting a road dedication plan\n  - Submitting a finalized tree survey and tree preservation statement\n  - Satisfying the deficiency in tree replacement\n  - Demonstrating feasibility of on-site fire protection\n  - Submitting finalized and peer-reviewed Ecosystem Development Plan, Impact Mitigation Plan, and Geotechnical Report\n  - Demolishing existing buildings and structures\n  - Registering restrictive covenants for public art, geotechnical requirements, and streamside protection area",
         "date": "2024-02-12",
         "status": "applied",
         "reportUrl": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7922-0035-00.pdf"
@@ -743,11 +869,11 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:54:03.488Z",
-    "updateDate": "2024-03-18T00:54:03.488Z"
+    "createDate": "2024-03-20T20:55:01.812Z",
+    "updateDate": "2024-03-20T20:55:01.812Z"
   },
   {
-    "id": "rez-rw3o63kl6cx9gu4x1lvnd",
+    "id": "rez-mute8p9he262lkze9asoc",
     "city": "Surrey",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
@@ -755,10 +881,10 @@
     "address": "9331 Bothwell Drive",
     "applicant": "R. Chen, J. Chen",
     "behalf": "Hub Engineering Inc. (Mike Kompter)",
-    "description": "Rezoning from 'General Agriculture Zone (A-1)' to 'Single Family Residential (13) Zone (RF-13)' and Development Permit / Development Variance Permit to allow subdivision into twenty-one single family residential lots. The Development Variance Permit is to reduce the minimum Type II - Interior lot width of RF-13 Zone from 13.4m to 12.5m for Lot 10, reduce the minimum Type II - Interior lot depth of RF-13 Zone from 24m to 22m for Lots 6-7, 9-10, 13-14, and permit a front access, side-by-side double garage on a lot less than 13.4m wide in RF-13 Zone for Lot 10. The development requires resolution of engineering requirements, subdivision layout, landscaping, tree preservation, Ecosystem Development Plan, Geotechnical Report, P-15 agreement, affordable housing, demolition of existing buildings, restrictive covenants for geotechnical conditions and floodplain, and streamside protection area.",
+    "description": "Rezoning from A-1 to RF-13 and Development Permit / Development Variance Permit to allow subdivision into twenty-one single family residential lots. The rezoning is from 'General Agriculture Zone (A-1)' to 'Single Family Residential (13) Zone (RF-13)'. The Development Variance Permit is to: (a) Reduce minimum Type II - Interior lot width of RF-13 Zone from 13.4m to 12.5m for Lot 10, (b) Reduce minimum Type II - Interior lot depth of RF-13 Zone from 24m to 22m for Lots 6-7, 9-10, and 13-14, and (c) Permit a front access, side-by-side double garage on a lot less than 13.4m wide in RF-13 Zone for Lot 10. The development requires resolution of various engineering, landscaping, geotechnical, and other requirements prior to final adoption.",
     "rawSummaries": [
       {
-        "summary": "7923-0030-00 - 9331 Bothwell Drive\nRezoning from A-1 to RF-13 and Development Permit / Development Variance Permit to allow subdivision into twenty-one single family residential lots.\n\nKey details:\n- Owners: R. Chen, J. Chen\n- Agent: Hub Engineering Inc. (Mike Kompter)\n- Rezoning from \"General Agriculture Zone (A-1)\" to \"Single Family Residential (13) Zone (RF-13)\"\n- Development Variance Permit to:\n  (a) Reduce minimum Type II - Interior lot width of RF-13 Zone from 13.4m to 12.5m for Lot 10\n  (b) Reduce minimum Type II - Interior lot depth of RF-13 Zone from 24m to 22m for Lots 6-7, 9-10, 13-14\n  (c) Permit a front access, side-by-side double garage on a lot less than 13.4m wide in RF-13 Zone for Lot 10\n- Requires resolution of engineering requirements, subdivision layout, landscaping, tree preservation, Ecosystem Development Plan, Geotechnical Report, P-15 agreement, affordable housing, demolition of existing buildings, restrictive covenants for geotechnical conditions and floodplain, and streamside protection area.",
+        "summary": "7923-0030-00 - 9331 Bothwell Drive\nRezoning from A-1 to RF-13 and Development Permit / Development Variance Permit to allow subdivision into twenty-one single family residential lots.\n\nKey details:\n- Owners: R. Chen, J. Chen\n- Agent: Hub Engineering Inc. (Mike Kompter)\n- Rezoning from \"General Agriculture Zone (A-1)\" to \"Single Family Residential (13) Zone (RF-13)\"\n- Development Variance Permit to:\n  (a) Reduce minimum Type II - Interior lot width of RF-13 Zone from 13.4m to 12.5m for Lot 10\n  (b) Reduce minimum Type II - Interior lot depth of RF-13 Zone from 24m to 22m for Lots 6-7, 9-10, and 13-14\n  (c) Permit a front access, side-by-side double garage on a lot less than 13.4m wide in RF-13 Zone for Lot 10\n- Requires resolution of various engineering, landscaping, geotechnical, and other requirements prior to final adoption",
         "date": "2024-02-12",
         "status": "applied",
         "reportUrl": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7923-0030-00.pdf"
@@ -779,7 +905,7 @@
       "rentals": 0,
       "hotels": 0,
       "fsr": null,
-      "storeys": 2
+      "storeys": null
     },
     "zoning": {
       "previousZoningCode": "A-1",
@@ -806,22 +932,22 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:54:13.139Z",
-    "updateDate": "2024-03-18T00:54:13.139Z"
+    "createDate": "2024-03-20T20:55:12.554Z",
+    "updateDate": "2024-03-20T20:55:12.554Z"
   },
   {
-    "id": "rez-9c4jj9lpwjy8mbvh8b7fi",
+    "id": "rez-c3jyu59377hctxr9ylq7y",
     "city": "Surrey",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
     "applicationId": "7922-0361-00",
     "address": "15336, 15346, 15356, and 15360 – 101A Avenue",
     "applicant": "Youngearth Developments (Guildford Citti) Ltd.",
-    "behalf": null,
-    "description": "Proposal to amend the TCP from 'Low Rise Transition Residential' to 'Low to Mid Rise Residential', rezone from RA to CD (based on RM-70), and develop a 5-storey apartment building with approximately 101 dwelling units and underground parking on a consolidated site in Guildford.",
+    "behalf": "ParaMorph Architecture Inc. (Manpreet Singh)",
+    "description": "The application is for a TCP amendment from 'Low Rise Transition Residential' to 'Low to Mid Rise Residential', a rezoning from RA to CD (based on RM-70), and a development permit to permit the development of a 5-storey apartment building with approximately 101 dwelling units and underground parking on a consolidated site at 15336, 15346, 15356, and 15360 – 101A Avenue, and a portion of unopened lane in Guildford.",
     "rawSummaries": [
       {
-        "summary": "7922-0361-00\n15336, 15346, 15356, and 15360 – 101A Avenue; Portion of unopened lane\nOwner: Youngearth Developments (Guildford Citti) Ltd.\nDirector Information: M. Iyer, P. Janghu, S. Jhanghu, R. Saini\nAgent: ParaMorph Architecture Inc. (Manpreet Singh)\nProposal:\n- TCP Amendment from \"Low Rise Transition Residential\" to \"Low to Mid Rise Residential\"\n- Rezoning from RA to CD (based on RM-70)\n- Development Permit to permit the development of a 5-storey apartment building with approximately 101 dwelling units and underground parking on a consolidated site in Guildford.\nDecisions:\n- Council endorsed the Public Notification to proceed for Bylaw No. 21167 to rezone the subject site.\n- Council authorized staff to draft Development Permit No. 7922-0361-00.\n- Council instructed staff to resolve various engineering, subdivision, urban design, landscaping, tree preservation, density bonus amenity contribution, demolition, and restrictive covenant requirements prior to final adoption.",
+        "summary": "7922-0361-00\nThe application is for a TCP amendment from 'Low Rise Transition Residential' to 'Low to Mid Rise Residential', a rezoning from RA to CD (based on RM-70), and a development permit to permit the development of a 5-storey apartment building with approximately 101 dwelling units and underground parking on a consolidated site at 15336, 15346, 15356, and 15360 – 101A Avenue, and a portion of unopened lane in Guildford. The owner is Youngearth Developments (Guildford Citti) Ltd. and the agent is ParaMorph Architecture Inc. (Manpreet Singh). Council has endorsed the public notification to proceed for the rezoning bylaw, authorized staff to draft the development permit, and instructed staff to resolve various engineering, subdivision, urban design, landscaping, tree preservation, density bonus amenity contribution, demolition, and restrictive covenant requirements prior to final adoption. Council also passed a resolution to amend the Guildford Town Centre Plan to re-designate the subject site from 'Low Rise Transition Residential' to 'Low to Mid Rise Residential' when the project is considered for Final Adoption.",
         "date": "2024-02-12",
         "status": "applied",
         "reportUrl": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7922-0361-00.pdf"
@@ -847,7 +973,7 @@
     "zoning": {
       "previousZoningCode": "RA",
       "previousZoningDescription": "Low Rise Transition Residential",
-      "newZoningCode": "CD (based on RM-70)",
+      "newZoningCode": "CD",
       "newZoningDescription": "Low to Mid Rise Residential"
     },
     "reportUrls": [
@@ -869,28 +995,28 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:54:23.723Z",
-    "updateDate": "2024-03-18T00:54:23.723Z"
+    "createDate": "2024-03-20T20:55:21.473Z",
+    "updateDate": "2024-03-20T20:55:21.473Z"
   },
   {
-    "id": "rez-rwn6kwwevr6zgne0alx7j",
+    "id": "rez-uynfq98n3s2e2fjbooymu",
     "city": "Surrey",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
     "applicationId": "7924-0006-00",
     "address": "19330 Fairway Drive, 6298 192 Street, 6302 192 Street, 6306 192 Street, 6310 192 Street, 19310 Fraser Highway",
-    "applicant": "192nd Street Development Ltd.",
+    "applicant": "192nd Street Development Ltd., Director: S. Rai",
     "behalf": null,
     "description": "Rezoning from CD (Bylaw No. 20151) to CD to allow for subdivision from 1 lot into 3 lots within a previously approved low-rise apartment and ground-oriented townhouse development.",
     "rawSummaries": [
       {
-        "summary": "7924-0006-00 - 19330 Fairway Drive (6298, 6302, 6306 and 6310 – 192 Street and 19310 Fraser Highway)\nOwner: 192nd Street Development Ltd., Director: S. Rai. Agent: RBI Group of Companies (Trevor Massey). Rezoning from CD (Bylaw No. 20151) to CD to allow for subdivision from 1 lot into 3 lots within a previously approved low-rise apartment and ground-oriented townhouse development. Council endorsed the Public Notification to proceed for Bylaw No. 21168 to rezone the subject site. Council instructed staff to resolve engineering requirements, submit a subdivision layout, obtain approval from the Ministry of Transportation & Infrastructure, and register access easements prior to final adoption.",
+        "summary": "7924-0006-00 - 19330 Fairway Drive (6298, 6302, 6306 and 6310 – 192 Street and 19310 Fraser Highway)\nOwner: 192nd Street Development Ltd., Director: S. Rai. Agent: RBI Group of Companies (Trevor Massey). Rezoning from CD (Bylaw No. 20151) to CD to allow for subdivision from 1 lot into 3 lots within a previously approved low-rise apartment and ground-oriented townhouse development. Council endorsed the Public Notification to proceed for Bylaw No. 21168 to rezone the subject site and instructed staff to resolve engineering requirements, submit a subdivision layout, obtain approval from the Ministry of Transportation & Infrastructure, and register access easements to ensure access to the internal drive aisle(s), parking and shared indoor amenity space, per the original development proposal approved by Council under General Development Permit No. 7915-0393-00.",
         "date": "2024-02-12",
         "status": "applied",
         "reportUrl": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7924-0006-00.pdf"
       }
     ],
-    "buildingType": "townhouse",
+    "buildingType": "mixed use",
     "status": "applied",
     "dates": {
       "appliedDate": "2024-02-12",
@@ -932,22 +1058,22 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:54:31.135Z",
-    "updateDate": "2024-03-18T00:54:31.135Z"
+    "createDate": "2024-03-20T20:55:29.620Z",
+    "updateDate": "2024-03-20T20:55:29.620Z"
   },
   {
-    "id": "rez-2rv3pglmb7v8uqawujnus",
+    "id": "rez-sr7auyxpmp4vggjx7dg71",
     "city": "Surrey",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
     "applicationId": "7923-0065-00",
     "address": "6568 - 129A Street",
     "applicant": "P. Sunnerd, S. Sunnerd",
-    "behalf": "G&S Construction Ltd. (Karamjit Sidhu)",
-    "description": "To develop a new single-family dwelling on an existing lot. The property was rezoned from RF-G to RF.",
+    "behalf": null,
+    "description": "To develop a new single-family dwelling on an existing lot. The property is being rezoned from RF-G to RF.",
     "rawSummaries": [
       {
-        "summary": "7923-0065-00\nOwners: P. Sunnerd, S. Sunnerd\nAgent: G&S Construction Ltd. (Karamjit Sidhu)\n6568 - 129A Street\nRF-G to RF – to develop a new single-family dwelling on an existing lot.\nCouncil direction received November 20, 2023\nThe bylaw was finally adopted.",
+        "summary": "7923-0065-00\nOwners: P. Sunnerd, S. Sunnerd\nAgent: G&S Construction Ltd. (Karamjit Sidhu)\n6568 - 129A Street\nRF-G to RF – to develop a new single-family dwelling on an existing lot.\nCouncil direction received November 20, 2023\nFinally adopted.",
         "date": "2024-02-12",
         "status": "approved",
         "reportUrl": null
@@ -988,11 +1114,11 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:54:39.027Z",
-    "updateDate": "2024-03-18T00:54:39.027Z"
+    "createDate": "2024-03-20T20:55:36.483Z",
+    "updateDate": "2024-03-20T20:55:36.483Z"
   },
   {
-    "id": "rez-cqj1qc35nwjj5z6786rfb",
+    "id": "rez-whus2pre78oth4e4mbt4x",
     "city": "Vancouver",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
@@ -1000,7 +1126,7 @@
     "address": "1065 Pacific Street",
     "applicant": null,
     "behalf": null,
-    "description": "The application is to rezone the lands at 1065 Pacific Street to CD-1 District, increase the FSR to 11.2, and building height to 91.4 m for a 32-storey residential building containing 180 secured-rental units, with 20% as below-market rental units. The application is enabled by the West End Community Plan, Rezoning Policy for the West End, and West End Rental Policy.",
+    "description": "The application is to rezone the lands at 1065 Pacific Street to CD-1 District, increase the FSR to 11.2, and building height to 91.4 m for a 32-storey residential building containing 180 secured-rental units, with 20% as below-market rental units.",
     "rawSummaries": [
       {
         "summary": "CD-1 Rezoning: 1065 Pacific Street\nThe application is to rezone the lands at 1065 Pacific Street to CD-1 District, increase the FSR to 11.2, and building height to 91.4 m for a 32-storey residential building containing 180 secured-rental units, with 20% as below-market rental units. The application is enabled by the West End Community Plan, Rezoning Policy for the West End, and West End Rental Policy. Staff recommend referral to a Public Hearing with approval in principle.",
@@ -1051,11 +1177,11 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:02:16.030Z",
-    "updateDate": "2024-03-18T00:46:57.103Z"
+    "createDate": "2024-03-20T20:53:06.564Z",
+    "updateDate": "2024-03-20T20:53:06.564Z"
   },
   {
-    "id": "rez-2sd5mqwvjfrc9zn3enzll",
+    "id": "rez-jzsawg8nfuowlknsw8qns",
     "city": "Vancouver",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
@@ -1063,10 +1189,10 @@
     "address": "2108-2476 Cassiar Street, 2105-2394 Hermon Drive, 3426-3476 East 5th Avenue, 2105-2291 Skeena Street",
     "applicant": null,
     "behalf": null,
-    "description": "The application is for a CD-1 rezoning of the 4.4 hectare (10.8 acre) Skeena Terrace site located north of Lougheed Highway, south of East 5th Avenue, east of Cassiar Street, and west of Skeena Street. The site is currently zoned CD-1(11B) and is home to 230 social housing units managed by BC Housing. The proposal is for a mixed-use development with social housing units, a childcare facility, community space, and commercial uses.",
+    "description": "The application is to rezone the Skeena Terrace site, which is 4.4 hectares (10.8 acres) in size and located north of Lougheed Highway, south of East 5th Avenue, east of Cassiar Street, and west of Skeena Street. The site is currently zoned CD-1(11B) and is one of Vancouver's first social housing sites, managed and operated by the British Columbia Housing Management Commission (BC Housing) on behalf of the Provincial Rental Housing Corporation (PRHC). The existing buildings are aging, and the rezoning application proposes a mixed-use development with social housing units, a childcare facility, community space, and commercial uses.",
     "rawSummaries": [
       {
-        "summary": "CD-1 Rezoning: 2108-2476 Cassiar Street, 2105-2394 Hermon Drive, 3426-3476 East 5th Avenue and 2105-2291 Skeena Street (Skeena Terrace)\nThe application is for a CD-1 rezoning of the 4.4 hectare (10.8 acre) Skeena Terrace site located north of Lougheed Highway, south of East 5th Avenue, east of Cassiar Street, and west of Skeena Street. The site is currently zoned CD-1(11B) and is home to 230 social housing units managed by BC Housing. The proposal is for a mixed-use development with social housing units, a childcare facility, community space, and commercial uses. The application has been referred to public hearing with recommendations for approval, subject to conditions. The existing CD-1(11B) by-law for 3476 East 5th Avenue will be repealed, and amendments to the Sign By-law and Noise Control By-law are also approved. Skeena Terrace Design Guidelines will be prepared for adoption.",
+        "summary": "CD-1 Rezoning: 2108-2476 Cassiar Street, 2105-2394 Hermon Drive, 3426-3476 East 5th Avenue and 2105-2291 Skeena Street (Skeena Terrace)\nThe application is to rezone the Skeena Terrace site, which is 4.4 hectares (10.8 acres) in size and located north of Lougheed Highway, south of East 5th Avenue, east of Cassiar Street, and west of Skeena Street. The site is currently zoned CD-1(11B) and is one of Vancouver's first social housing sites, managed and operated by the British Columbia Housing Management Commission (BC Housing) on behalf of the Provincial Rental Housing Corporation (PRHC). The existing buildings are aging, and the rezoning application proposes a mixed-use development with social housing units, a childcare facility, community space, and commercial uses. The application has been referred to Public Hearing with recommendations for approval, subject to conditions. The existing CD-1(11B) By-law for 3476 East 5th Avenue will be repealed, and amendments to the Sign By-law and Noise Control By-law are also approved. Skeena Terrace Design Guidelines will be prepared for adoption.",
         "date": "2024-02-06",
         "status": "applied",
         "reportUrl": "https://council.vancouver.ca/20240206/documents/rr4.pdf"
@@ -1084,7 +1210,7 @@
     "stats": {
       "buildings": null,
       "stratas": null,
-      "rentals": 230,
+      "rentals": null,
       "hotels": 0,
       "fsr": null,
       "storeys": null
@@ -1092,7 +1218,7 @@
     "zoning": {
       "previousZoningCode": "CD-1(11B)",
       "previousZoningDescription": null,
-      "newZoningCode": "CD-1",
+      "newZoningCode": null,
       "newZoningDescription": null
     },
     "reportUrls": [
@@ -1120,11 +1246,11 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:02:22.709Z",
-    "updateDate": "2024-03-18T00:47:05.134Z"
+    "createDate": "2024-03-20T20:53:16.527Z",
+    "updateDate": "2024-03-20T20:53:16.527Z"
   },
   {
-    "id": "rez-yznzw2lptk4or8z5mung4",
+    "id": "rez-qteo6q2w0fk1j8wr2riv8",
     "city": "Vancouver",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
@@ -1183,11 +1309,11 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:02:33.757Z",
-    "updateDate": "2024-03-18T00:47:26.856Z"
+    "createDate": "2024-03-20T20:53:23.131Z",
+    "updateDate": "2024-03-20T20:53:23.131Z"
   },
   {
-    "id": "rez-5stgxh2uhc5z9ve7d090u",
+    "id": "rez-pv4oeroohuic9r5pv5itl",
     "city": "Vancouver",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
@@ -1195,10 +1321,10 @@
     "address": "3205 Arbutus Street",
     "applicant": "the land owner",
     "behalf": null,
-    "description": "The land owner applied to rezone the property from C-1 (Commercial) District to CD-1 (Comprehensive Development) District. After a public hearing on April 25, 2023, Council approved the rezoning in principle, subject to the land owner entering into a Housing Agreement with the City on terms satisfactory to the General Manager of Planning, Urban Design and Sustainability and the Director of Legal Services. The Housing Agreement was accepted and executed by the applicant, and the City now seeks enactment of a By-law to authorize the Housing Agreement.",
+    "description": "The land owner applied to rezone the property from C-1 (Commercial) District to CD-1 (Comprehensive Development) District. After a public hearing on April 25, 2023, Council approved the rezoning in principle, subject to the land owner entering into a Housing Agreement with the City on terms satisfactory to the General Manager of Planning, Urban Design and Sustainability and the Director of Legal Services. The Housing Agreement was accepted and executed by the applicant, and the City now seeks enactment of a By-law to authorize the Housing Agreement and allow the City to enter into it with the land owner.",
     "rawSummaries": [
       {
-        "summary": "3205 Arbutus Street\nThe land owner applied to rezone the property from C-1 (Commercial) District to CD-1 (Comprehensive Development) District. After a public hearing on April 25, 2023, Council approved the rezoning in principle, subject to the land owner entering into a Housing Agreement with the City on terms satisfactory to the General Manager of Planning, Urban Design and Sustainability and the Director of Legal Services. The Housing Agreement was accepted and executed by the applicant, and the City now seeks enactment of a By-law to authorize the Housing Agreement.",
+        "summary": "3205 Arbutus Street\nThe land owner applied to rezone the property from C-1 (Commercial) District to CD-1 (Comprehensive Development) District. After a public hearing on April 25, 2023, Council approved the rezoning in principle, subject to the land owner entering into a Housing Agreement with the City on terms satisfactory to the General Manager of Planning, Urban Design and Sustainability and the Director of Legal Services. The Housing Agreement was accepted and executed by the applicant, and the City now seeks enactment of a By-law to authorize the Housing Agreement and allow the City to enter into it with the land owner.",
         "date": "2024-02-06",
         "status": "approved",
         "reportUrl": "https://council.vancouver.ca/20240206/documents/by-laws1to6.pdf"
@@ -1246,11 +1372,11 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:02:38.539Z",
-    "updateDate": "2024-03-18T00:47:26.861Z"
+    "createDate": "2024-03-20T20:53:27.451Z",
+    "updateDate": "2024-03-20T20:53:27.451Z"
   },
   {
-    "id": "rez-nl050wmx5qmuuiak13aaz",
+    "id": "rez-tblzq1ewyjgfpwyr9njnc",
     "city": "Vancouver",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
@@ -1258,10 +1384,10 @@
     "address": "427-449 West 39th Avenue",
     "applicant": null,
     "behalf": null,
-    "description": "The City of Vancouver approved in principle the rezoning of the property at 427-449 West 39th Avenue from RS-1 (Residential) District to CD-1 (Comprehensive Development) District, subject to the land owner entering into a Housing Agreement with the City. The Housing Agreement has been accepted and executed by the applicant, and the City now seeks enactment of a By-law to authorize the Housing Agreement.",
+    "description": "The City of Vancouver approved in principle the land owner's application to rezone the property from RS-1 (Residential) District to CD-1 (Comprehensive Development) District, subject to a Housing Agreement being entered into by the City and the land owner. The Housing Agreement was accepted and executed by the applicant, and the City now seeks enactment of a By-law to authorize the Housing Agreement.",
     "rawSummaries": [
       {
-        "summary": "427-449 West 39th Avenue\nThe City of Vancouver approved in principle the rezoning of the property at 427-449 West 39th Avenue from RS-1 (Residential) District to CD-1 (Comprehensive Development) District, subject to the land owner entering into a Housing Agreement with the City. The Housing Agreement has been accepted and executed by the applicant, and the City now seeks enactment of a By-law to authorize the Housing Agreement.",
+        "summary": "427-449 West 39th Avenue\nThe City of Vancouver approved in principle the land owner's application to rezone the property from RS-1 (Residential) District to CD-1 (Comprehensive Development) District, subject to a Housing Agreement being entered into by the City and the land owner. The Housing Agreement was accepted and executed by the applicant, and the City now seeks enactment of a By-law to authorize the Housing Agreement.",
         "date": "2024-02-06",
         "status": "approved",
         "reportUrl": "https://council.vancouver.ca/20240206/documents/by-laws1to6.pdf"
@@ -1309,11 +1435,11 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:02:42.967Z",
-    "updateDate": "2024-03-18T00:47:26.866Z"
+    "createDate": "2024-03-20T20:53:31.222Z",
+    "updateDate": "2024-03-20T20:53:31.222Z"
   },
   {
-    "id": "rez-4dm75jzm0snfcbhg74qkx",
+    "id": "rez-7bp2m1uwuj77ve4ylp7xo",
     "city": "Vancouver",
     "metroCity": "Metro Vancouver",
     "type": "rezoning",
@@ -1321,10 +1447,10 @@
     "address": "2325 – 2377 West 49th Avenue",
     "applicant": "the land owner",
     "behalf": null,
-    "description": "The land owner applied to rezone the property from RS-5 (Residential) District to RR-2B (Residential) District. Council approved the rezoning in principle, subject to the land owner entering into a Housing Agreement with the City on terms satisfactory to the General Manager of Planning, Urban Design and Sustainability and the Director of Legal Services. The Housing Agreement was accepted and executed by the applicant, and the City now seeks enactment of a By-law to authorize the Housing Agreement.",
+    "description": "The land owner applied to rezone the property from RS-5 (Residential) District to RR-2B (Residential) District. After a public hearing on June 15, 2023, Council approved the rezoning in principle, subject to the land owner entering into a Housing Agreement with the City on terms satisfactory to the General Manager of Planning, Urban Design and Sustainability and the Director of Legal Services. The Housing Agreement was accepted and executed by the applicant, and the City now seeks enactment of a By-law to authorize the Housing Agreement and allow the City to enter into it with the land owner.",
     "rawSummaries": [
       {
-        "summary": "2325 – 2377 West 49th Avenue\nThe land owner applied to rezone the property from RS-5 (Residential) District to RR-2B (Residential) District. Council approved the rezoning in principle, subject to the land owner entering into a Housing Agreement with the City on terms satisfactory to the General Manager of Planning, Urban Design and Sustainability and the Director of Legal Services. The Housing Agreement was accepted and executed by the applicant, and the City now seeks enactment of a By-law to authorize the Housing Agreement.",
+        "summary": "2325 – 2377 West 49th Avenue\nThe land owner applied to rezone the property from RS-5 (Residential) District to RR-2B (Residential) District. After a public hearing on June 15, 2023, Council approved the rezoning in principle, subject to the land owner entering into a Housing Agreement with the City on terms satisfactory to the General Manager of Planning, Urban Design and Sustainability and the Director of Legal Services. The Housing Agreement was accepted and executed by the applicant, and the City now seeks enactment of a By-law to authorize the Housing Agreement and allow the City to enter into it with the land owner.",
         "date": "2024-02-06",
         "status": "approved",
         "reportUrl": "https://council.vancouver.ca/20240206/documents/by-laws1to6.pdf"
@@ -1372,7 +1498,7 @@
       "latitude": null,
       "longitude": null
     },
-    "createDate": "2024-03-18T00:47:26.854Z",
-    "updateDate": "2024-03-18T00:47:26.854Z"
+    "createDate": "2024-03-20T20:53:36.348Z",
+    "updateDate": "2024-03-20T20:53:36.348Z"
   }
 ]

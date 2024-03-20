@@ -92,7 +92,7 @@ export async function chatGPTJSONQuery(query: string, llm?: 'Claude Haiku' | 'Cl
 		if (llm === 'Claude Haiku' || llm === 'Claude Sonnet') {
 			const response = await anthropic.messages.create({
 				model: anthropicVersionMapping[llm],
-				max_tokens: 1000,
+				max_tokens: 3000,
 				temperature: 0,
 				system: 'You are an expert in city land use, planning, real estate, and development. Reply only JSON format, no other text.',
 				messages: [
@@ -170,7 +170,7 @@ export async function chatGPTTextQuery(query: string, llm?: 'Claude Haiku' | 'Cl
 		if (llm === 'Claude Haiku') {
 			const response = await anthropic.messages.create({
 				model: 'claude-3-haiku-20240307',
-				max_tokens: 1000,
+				max_tokens: 3000,
 				temperature: 0,
 				system: 'You are an expert in city land use, planning, real estate, and development.',
 				messages: [
