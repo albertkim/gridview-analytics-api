@@ -76,7 +76,7 @@ export async function chatGPTJSONQuery(query: string, llm?: 'Claude Haiku' | 'Cl
 				response_format: {
 					type: 'json_object'
 				},
-				temperature: 0.2
+				temperature: 0
 			})
 			if (!response) {
 				return null
@@ -157,7 +157,7 @@ export async function chatGPTTextQuery(query: string, llm?: 'Claude Haiku' | 'Cl
 						'content': query
 					}
 				],
-				temperature: 0.2
+				temperature: 0
 			})
 			if (!response) {
 				return null
