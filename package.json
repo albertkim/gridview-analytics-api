@@ -5,6 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/albertkim/gridview-analytics-api.git",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.18.0",
     "@google-cloud/vision": "^4.1.0",
     "@googlemaps/google-maps-services-js": "^3.3.42",
     "@types/cors": "^2.8.17",
@@ -68,6 +69,7 @@
     "test": "jest",
     "news": "ts-node src/CmdEntry.ts news",
     "rezone": "ts-node src/CmdEntry.ts rezone",
-    "permit": "ts-node src/CmdEntry.ts permit"
+    "permit": "ts-node src/CmdEntry.ts permit",
+    "check-in": "ts-node src/CmdEntry.ts check-in"
   }
 }

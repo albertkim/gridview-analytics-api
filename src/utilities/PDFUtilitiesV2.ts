@@ -30,7 +30,7 @@ interface IParsePDFOptions {
 export async function parseCleanPDF(url: string, options: IParsePDFOptions) {
 
   if (options.maxPages === undefined) {
-    options.maxPages = 5
+    options.maxPages = 10
   }
 
   const cached = PDFRepository.check(url, {
@@ -88,9 +88,9 @@ export async function parseCleanPDF(url: string, options: IParsePDFOptions) {
 
   let finalText: string | null = ''
 
-  // Chunk the text into 2500 character chunks with a 500 character overlap between the chunks to avoid GPT 3.5's token limit, avoid splitting words
+  // Chunk the text into X character chunks with a character overlap (2nd param) between the chunks to avoid LLM token limits, avoid splitting words
   console.log(`Parsed PDF length is ${parsedPDF.length}`)
-  let chunkedText = chunkTextWithOverlapAvoidingWordSplit(parsedPDF, 7000, 100)
+  let chunkedText = chunkTextWithOverlapAvoidingWordSplit(parsedPDF, 100000, 100)
 
   // Can realistically have a max of 3 chunks before things get very unwieldy
   chunkedText = chunkedText.slice(0, 3)
@@ -105,7 +105,7 @@ export async function parseCleanPDF(url: string, options: IParsePDFOptions) {
 
       Here is the document:
       ${chunk}
-    `)
+    `, 'Claude Haiku')
     if (chunkSummary) {
       finalText += `${chunkSummary}\n`
     } else {
