@@ -41,8 +41,6 @@ export async function getMeetingList(page: Page, options: IScrapingDateOptions):
 
   for (const year of yearsArray) {
 
-    console.log(`Scraping ${year} meeting list page`)
-
     // Get all city council meetings (may not exist at the start of new year)
     await page.goto(`https://pub-burnaby.escribemeetings.com/?FillWidth=1&Year=${year}&Expanded=City%20Council%20Meeting`)
     await new Promise((resolve) => {setTimeout(resolve, 2000)})
@@ -57,6 +55,13 @@ export async function getMeetingList(page: Page, options: IScrapingDateOptions):
 
     let publicHearingMeetingObjects = await parseMeetingListEntries(page, 'Public Hearing')
 
+    // Get all finance meetings (may not exist at the start of new year)
+    await page.goto(`https://pub-burnaby.escribemeetings.com/?FillWidth=1&Year=${year}&Expanded=Financial%20Management%20Committee`)
+    await new Promise((resolve) => {setTimeout(resolve, 2000)})
+    await page.waitForSelector('.MeetingTypeList:not([style*="display: none"])')
+
+    let financeMeetingObjects = await parseMeetingListEntries(page, 'Financial Management Committee')
+
     // Legacy city council meetings before feb 2020
     await page.goto(`https://pub-burnaby.escribemeetings.com/?FillWidth=1&Year=${year}&Expanded=City%20Council`)
     await new Promise((resolve) => {setTimeout(resolve, 2000)})
@@ -66,9 +71,10 @@ export async function getMeetingList(page: Page, options: IScrapingDateOptions):
 
     console.log(chalk.bgGreen(`${year} council meetings: ${councilMeetingObjects.length}`))
     console.log(chalk.bgGreen(`${year} public hearings: ${publicHearingMeetingObjects.length}`))
+    console.log(chalk.bgGreen(`${year} finance meetings: ${financeMeetingObjects.length}`))
     console.log(chalk.bgGreen(`${year} legacy council meetings: ${legacyCouncilMeetingObjects.length}`))
 
-    meetingList.push(...councilMeetingObjects, ...publicHearingMeetingObjects, ...legacyCouncilMeetingObjects)
+    meetingList.push(...councilMeetingObjects, ...publicHearingMeetingObjects, ...financeMeetingObjects, ...legacyCouncilMeetingObjects)
 
   }
 
@@ -97,6 +103,7 @@ export async function getMeetingList(page: Page, options: IScrapingDateOptions):
 // Burnaby meeting types:
 // City Council Meeting - main city council meeting type as of Mar 9, 2020
 // City Council - legacy city council meeting type before Mar 9, 2020
+// Finance Management Committee - finance meeting type
 // Public Hearing - public hearing meeting type
 async function parseMeetingListEntries(page: Page, meetingType: string): Promise<IMeetingListItem[]> {
 

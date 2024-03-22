@@ -2877,6 +2877,86 @@
     ]
   },
   {
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "url": "https://pub-burnaby.escribemeetings.com/Meeting.aspx?Id=f59991f4-83f6-4f85-853f-390662e7e08a&Agenda=Agenda&lang=English&Item=16&Tab=attachments",
+    "title": "INFORMATION REPORTS - CITY INVESTMENTS - 2023 YEAR END REPORT",
+    "resolutionId": null,
+    "contents": "Purpose: To provide an update on the 2023 Investment Program and present a forecast for 2024.",
+    "reportUrls": [
+      {
+        "title": "City Investments - 2023 Year End Report 2024-02-20.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=74600"
+      },
+      {
+        "title": "Attachment 1 - City of Burnaby Investment Limits for 2024.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=74601"
+      }
+    ],
+    "date": "2024-02-20",
+    "meetingType": "Financial Management Committee",
+    "minutesUrl": "https://pub-burnaby.escribemeetings.com/Meeting.aspx?Id=f59991f4-83f6-4f85-853f-390662e7e08a&lang=English"
+  },
+  {
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "url": "https://pub-burnaby.escribemeetings.com/Meeting.aspx?Id=f59991f4-83f6-4f85-853f-390662e7e08a&Agenda=Agenda&lang=English&Item=16&Tab=attachments",
+    "title": "INFORMATION REPORTS - MRDT RENEWAL - APPROVED",
+    "resolutionId": null,
+    "contents": "Purpose: To provide an update on the MRDT Renewal Application and 3% rate for affordable housing contributions.",
+    "reportUrls": [
+      {
+        "title": "MRDT Renewal - Approved 2024-02-20.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=74597"
+      },
+      {
+        "title": "Attachment 1 - MRDT Renewal 2023-07-18.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=74598"
+      },
+      {
+        "title": "Attachment 2 - Province of BC - Order in Council No 34-2024.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=74599"
+      }
+    ],
+    "date": "2024-02-20",
+    "meetingType": "Financial Management Committee",
+    "minutesUrl": "https://pub-burnaby.escribemeetings.com/Meeting.aspx?Id=f59991f4-83f6-4f85-853f-390662e7e08a&lang=English"
+  },
+  {
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "url": "https://pub-burnaby.escribemeetings.com/Meeting.aspx?Id=f59991f4-83f6-4f85-853f-390662e7e08a&Agenda=Agenda&lang=English&Item=16&Tab=attachments",
+    "title": "INFORMATION REPORTS - MAJOR ENGINEERING PROJECTS STATUS UPDATE",
+    "resolutionId": null,
+    "contents": "Purpose: To provide an update on select Engineering Projects.",
+    "reportUrls": [
+      {
+        "title": "Major Engineering Project Status Update 2024-02-20.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=74595"
+      }
+    ],
+    "date": "2024-02-20",
+    "meetingType": "Financial Management Committee",
+    "minutesUrl": "https://pub-burnaby.escribemeetings.com/Meeting.aspx?Id=f59991f4-83f6-4f85-853f-390662e7e08a&lang=English"
+  },
+  {
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "url": "https://pub-burnaby.escribemeetings.com/Meeting.aspx?Id=f59991f4-83f6-4f85-853f-390662e7e08a&Agenda=Agenda&lang=English&Item=16&Tab=attachments",
+    "title": "INFORMATION REPORTS - MAJOR CIVIC BUILDING PROJECTS STATUS UPDATE",
+    "resolutionId": null,
+    "contents": "Purpose: To provide an update on the current status of major civic building projects.",
+    "reportUrls": [
+      {
+        "title": "Major Civic Building Projects Status Update 2024-02-20.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=74596"
+      }
+    ],
+    "date": "2024-02-20",
+    "meetingType": "Financial Management Committee",
+    "minutesUrl": "https://pub-burnaby.escribemeetings.com/Meeting.aspx?Id=f59991f4-83f6-4f85-853f-390662e7e08a&lang=English"
+  },
+  {
     "city": "BC (province)",
     "metroCity": null,
     "title": "Sixty-six affordable homes underway for Songhees Nation members",

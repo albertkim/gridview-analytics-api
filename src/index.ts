@@ -29,7 +29,6 @@ async function runMigrations() {
 const app = App
 
 // Run as serverless function in production
-// Must use before any routes are defined, otherwise query parameters are null (reference: https://stackoverflow.com/questions/70890442/how-do-i-get-my-parameters-to-pass-from-serverless-to-my-express-router)
 module.exports.handler = serverless(app)
 
 // Run as a regular server on development, including running database migrations for the time being
