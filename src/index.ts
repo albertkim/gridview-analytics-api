@@ -2,7 +2,6 @@ import 'module-alias/register'
 import 'dotenv/config'
 import 'source-map-support/register'
 import knex from './repositories/database'
-import serverless from 'serverless-http'
 import { App } from './App'
 
 const port = process.env.PORT || 3000
@@ -27,9 +26,6 @@ async function runMigrations() {
 
 // Start the API server
 const app = App
-
-// Run as serverless function in production
-module.exports.handler = serverless(app)
 
 // Run as a regular server on development, including running database migrations for the time being
 async function startServer() {
