@@ -1,6 +1,7 @@
 import 'module-alias/register'
 import 'dotenv/config'
 import 'source-map-support/register'
+import serverless from 'serverless-http'
 import knex from './repositories/database'
 import { App } from './App'
 
@@ -26,6 +27,10 @@ async function runMigrations() {
 
 // Start the API server
 const app = App
+
+// Run as serverless function in production
+// Must use before any routes are defined, otherwise query parameters are null (reference: https://stackoverflow.com/questions/70890442/how-do-i-get-my-parameters-to-pass-from-serverless-to-my-express-router)
+module.exports.handler = serverless(app)
 
 // Run as a regular server on development, including running database migrations for the time being
 async function startServer() {

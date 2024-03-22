@@ -1,15 +1,10 @@
 import express, { ErrorRequestHandler } from 'express'
 import cors from 'cors'
-import serverless from 'serverless-http'
 import { BaseController } from '@/controllers/BaseController'
 import { AdminController } from '@/controllers/AdminController'
 import { NewsController } from '@/controllers/NewsController'
 
 const app = express()
-
-// Run as serverless function in production
-// Must use before any routes are defined, otherwise query parameters are null (reference: https://stackoverflow.com/questions/70890442/how-do-i-get-my-parameters-to-pass-from-serverless-to-my-express-router)
-module.exports.handler = serverless(app)
 
 // Allow requests from all origins (change in the future for security)
 app.use(cors())
