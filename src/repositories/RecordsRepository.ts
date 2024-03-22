@@ -22,7 +22,7 @@ export class RecordsRepository {
     this.database = this.databaseMapping[databaseMode]
   }
 
-  getRecords(type: 'all' | 'rezoning' | 'development permit', filter?: {city?: string | string[] | null}) {
+  getRecords(type: 'all' | 'rezoning' | 'development permit', filter?: {id?: string, city?: string | string[] | null}) {
     let records = JSON.parse(fs.readFileSync(this.database, 'utf8')) as IFullRecordParams[]
     if (type !== 'all') {
       records = records.filter((item) => item.type === type)
@@ -33,6 +33,9 @@ export class RecordsRepository {
       } else {
         records = records.filter((item) => item.city === filter.city)
       }
+    }
+    if (filter && filter.id) {
+      records = records.filter((item) => item.id === filter.id)
     }
     const filteredRecords = records.map((record) => new FullRecord(record))
     return {

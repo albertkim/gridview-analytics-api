@@ -62,7 +62,10 @@ router.get('/api/v1/news', async (req: Request, res: Response, next: NextFunctio
       city: city,
       important: important
     })
-    res.send(news)
+    res.send({
+      ...news,
+      city: city
+    })
   } catch (error) {
     next(error)
   }
