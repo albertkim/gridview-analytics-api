@@ -1,5 +1,5 @@
 import { IRawNews } from '@/models/News'
-import { chatGPTTextQuery } from '@/utilities/AIUtilities'
+import { chatGPTJSONQuery, chatGPTTextQuery } from '@/utilities/AIUtilities'
 import { parseCleanPDF } from '@/utilities/PDFUtilitiesV2'
 import createHttpError from 'http-errors'
 
@@ -10,6 +10,7 @@ interface IAnalyzedNews {
   meetingType: string
   title: string
   contents: string
+  tags: string[]
   minuteUrl: string | null
   reportUrls: { url: string, title: string }[]
 }
@@ -31,7 +32,11 @@ export async function analyzeRawNews(rawNews: IRawNews): Promise<IAnalyzedNews> 
 
   }
 
-  let newTitle: string | null = null
+  let newMetadata: {
+    title: string
+    tags: string[]
+  } | null = null
+
   let newContents: string | null = null
 
   try {
@@ -76,14 +81,25 @@ export async function analyzeRawNews(rawNews: IRawNews): Promise<IAnalyzedNews> 
   }
 
   try {
-    newTitle = await chatGPTTextQuery(`
-      Given the following document, provide an appropriate news title for the following contents while excluding fluffy/political language. Do not include quotation marks in the title.
-
+    newMetadata = await chatGPTJSONQuery(`
       <Document>
         ${newContents}
       </Document>
+
+      <Instructions>
+        Given the municipal document above, return in the following JSON format:
+
+        {
+          "title": "appropriate title here",
+          "tags": ["tag1", "tag2", "tag3"]
+        }
+
+        Title: Exclude fluffy/political language. Do not include quotation marks in the title.
+        Tags: An array of "transportation" (highways, roads, public transit), "development" (rezonings, development permits, construction of new structures), "finance" (budgets, etc.), "services" (police, fire, etc.), "community" (parks, events, etc.), or "other" if none of the above.
+      </Instructions>
     `)
-    if (!newTitle) {
+
+    if (!newMetadata) {
       throw createHttpError(500, `Error getting title`)
     }
   } catch (error) {
@@ -96,8 +112,9 @@ export async function analyzeRawNews(rawNews: IRawNews): Promise<IAnalyzedNews> 
     city: rawNews.city,
     metroCity: rawNews.metroCity,
     meetingType: rawNews.meetingType,
-    title: newTitle.replace('"', ''),
+    title: newMetadata.title,
     contents: newContents,
+    tags: newMetadata.tags,
     minuteUrl: rawNews.minutesUrl,
     reportUrls: rawNews.reportUrls
   }

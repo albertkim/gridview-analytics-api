@@ -16,7 +16,7 @@ router.post('/api/v1/admin/news', async (req: Request, res: Response, next: Next
     }
 
     // News summary can be empty
-    const noNewsEmptyFields = ['title', 'meetingType', 'cityId', 'date', 'important']
+    const noNewsEmptyFields = ['title', 'meetingType', 'cityId', 'date', 'tags', 'important']
 
     // Link summary can be empty
     const noLinkEmptyFields = ['title', 'url']
@@ -66,7 +66,7 @@ router.put('/api/v1/admin/news/:newsId', async (req: Request, res: Response, nex
     }
 
     // News summary can be empty
-    const noNewsEmptyFields = ['id', 'title', 'meetingType', 'cityId', 'date', 'sentiment', 'important']
+    const noNewsEmptyFields = ['id', 'title', 'meetingType', 'cityId', 'date', 'important']
 
     // Link summary can be empty
     // Link IDs are not necessary, all entries are re-created in database

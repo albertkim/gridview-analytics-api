@@ -1,6 +1,6 @@
 import createHttpError from 'http-errors'
 import knex from './database'
-import { ILinkObject, INews, INewsObject, ICreateNews, IUpdateNews } from '../models/News'
+import { ILinkObject, INews, INewsObject, ICreateNews, IUpdateNews, INewsTagObject } from '../models/News'
 
 export interface INewsFilter {
   offset: number | null
@@ -29,6 +29,9 @@ export const NewsRepository = {
     const linkObjects: ILinkObject[] = await knex('news_links')
       .where('news_id', newsObject.id)
 
+    const tagObjects: INewsTagObject[] = await knex('news_tags')
+      .where('news_id', newsObject.id)
+
     const news: INews = {
       id: newsObject.id,
       title: newsObject.title,
@@ -38,7 +41,7 @@ export const NewsRepository = {
       cityName: newsObject.city_name,
       date: newsObject.date,
       createDate: newsObject.create_date,
-      sentiment: newsObject.sentiment,
+      tags: tagObjects.map((t) => t.tag_name),
       important: newsObject.important,
       links: linkObjects.filter((l) => l.news_id === newsObject.id).map((l) => {
         return {
@@ -89,6 +92,8 @@ export const NewsRepository = {
 
     const linkObjects: ILinkObject[] = await knex('news_links').whereIn('news_id', newsIds)
 
+    const tagObjects: INewsTagObject[] = await knex('news_tags').whereIn('news_id', newsIds)
+
     const news: INews[] = newsObject.map((n) => {
       return {
         id: n.id,
@@ -98,9 +103,9 @@ export const NewsRepository = {
         cityId: n.city_id,
         cityName: n.city_name,
         date: n.date,
-        sentiment: n.sentiment,
         createDate: n.create_date,
         important: n.important,
+        tags: tagObjects.filter((t) => t.news_id === n.id).map((t) => t.tag_name),
         links: linkObjects.filter((l) => l.news_id === n.id).map((l) => {
           return {
             id: l.id,
@@ -129,11 +134,21 @@ export const NewsRepository = {
       meeting_type: createNews.meetingType,
       city_id: createNews.cityId,
       date: createNews.date,
-      sentiment: createNews.sentiment,
       important: createNews.important
     })
     const createdNewsId = createdNewsObject[0]
 
+    // Create tags
+    const createTagObjects = createNews.tags.map((tag) => {
+      return {
+        tag_name: tag,
+        news_id: createdNewsId
+      }
+    })
+
+    await knex('news_tags').insert(createTagObjects)
+
+    // Create links
     const createLinkObjects = createNews.links.map((link) => {
       return {
         title: link.title,
@@ -160,9 +175,22 @@ export const NewsRepository = {
         meeting_type: updateObject.meetingType,
         city_id: updateObject.cityId,
         date: updateObject.date,
-        sentiment: updateObject.sentiment,
         important: updateObject.important
       })
+
+    // Delete all tags and re-create (to easily handle create, edit, and delete cases)
+    await knex('news_tags')
+      .where('news_id', newsId)
+      .delete()
+
+    // Re-create each tag
+    for (const tag of updateObject.tags) {
+      await knex('news_tags')
+        .insert({
+          tag_name: tag,
+          news_id: newsId
+        })
+    }
 
     // Delete all links and re-create (to easily handle create, edit, and delete cases)
     await knex('news_links')
@@ -186,7 +214,12 @@ export const NewsRepository = {
 
   async deleteNews(newsId: number) {
 
-    // Delete links first
+    // Delete tags first
+    await knex('news_tags')
+      .where('news_id', newsId)
+      .delete()
+
+    // Delete links
     await knex('news_links')
       .where('news_id', newsId)
       .delete()

@@ -7,7 +7,6 @@ export interface INewsObject {
   city_name: string
   date: string
   create_date: string
-  sentiment: string | null
   important: number | null
 }
 
@@ -17,6 +16,12 @@ export interface ILinkObject {
   url: string
   summary: string | null
   news_id: number
+}
+
+export interface INewsTagObject {
+  tag_id: number
+  news_id: number
+  tag_name: string
 }
 
 export interface IRawNews {
@@ -44,8 +49,8 @@ export interface INews {
   cityName: string
   date: string
   createDate: string | null
-  sentiment: string | null
   important: number | null // 0 - not important, 1 - locally important, 2 - globally important
+  tags: string[]
   links: Array<{
     id: number
     title: string
@@ -61,8 +66,8 @@ export interface ICreateNews {
   cityId: number
   cityName: string
   date: string
-  sentiment: string | null
   important: number | null
+  tags: string[]
   links: Array<{
     title: string
     summary: string | null
