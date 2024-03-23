@@ -95,7 +95,7 @@ export async function analyzeRawNews(rawNews: IRawNews): Promise<IAnalyzedNews> 
         }
 
         Title: Exclude fluffy/political language. Do not include quotation marks in the title.
-        Tags: An array of tags, can be one of "transportation" (highways, roads, public transit), "development" (rezonings, development permits, construction of new structures), "finance" (budgets, etc.), "services" (police, fire, etc.), "community" (parks, events, etc., don't include with development), or "other" if none of the above. Try to only have 1 tag.
+        Tags: An array of tags, can be one of "transportation" (highways, roads, public transit), "development" (rezonings, development permits, construction of new structures), "finance" (budgets, etc.), "services" (police, fire, etc.), "community" (parks, events, etc., don't include with development), "infrastructure" (public utilities, not transportation-related), or "other" if none of the above. Try to only have 1 tag.
       </Instructions>
     `)
 

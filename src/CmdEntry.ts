@@ -60,7 +60,7 @@ async function commandLineEntry() {
   console.log(chalk.yellow(`End date: ${endDate}`))
 
   // 3rd value onwards is list of cities to analyze (ex. "Los Angeles", "Vancouver")
-  let cities: string[] = args.slice(2).map(city => city.replace('"', '').trim())
+  let cities: string[] = args.slice(4).map(city => city.replace('"', '').trim())
 
   if (cities.length === 0) {
     console.error('Invalid cities argument - please provide a list of cities to analyze or "all" as the fourth parameter')
