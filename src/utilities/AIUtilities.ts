@@ -61,7 +61,6 @@ export async function chatGPTJSONQuery(query: string, llm?: 'Claude Haiku' | 'Cl
 		console.log(`Sending JSON query to ChatGPT ${llm || '3.5'}`)
 	}
 
-
 	try {
 
 		if (llm === '3.5' || llm === '4') {

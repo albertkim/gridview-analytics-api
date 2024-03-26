@@ -37,6 +37,7 @@ function checkTypeAndFix(parent: any, key: string | number, format: IExpectedFor
   } else if (!format.required && value === undefined) {
     // If not required and undefined, set to null
     parent[key] = null
+    return true
   }
 
   // Handle nullable scenario
