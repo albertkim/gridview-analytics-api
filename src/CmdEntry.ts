@@ -7,6 +7,7 @@ import { main as rawNewsMain } from '@/services/raw-news'
 import { main as rezoneMain } from '@/services/rezonings'
 import { main as permitMain } from '@/services/development-permits'
 import { RecordsRepository } from './repositories/RecordsRepository'
+import { populateCoordinates } from './services/google-maps'
 
 /**
  * In order to run the raw news scraper, rezoning analyzer, or development permit analyzer, you will need to run commands in the terminal.
@@ -28,12 +29,18 @@ async function commandLineEntry() {
   console.log(args)
 
   // Identify which command is being called (news, rezone, or permit)
-  const command = args[0] as 'news' | 'rezone' | 'permit' | 'check-in'
+  const command = args[0] as 'news' | 'rezone' | 'permit' | 'check-in' | 'coordinates'
 
   if (command === 'check-in') {
     const recordsRepository = new RecordsRepository('final')
     recordsRepository.finalCheckIn()
     console.log(chalk.green('Check-in completed successfully'))
+    process.exit(0)
+  }
+
+  if (command === 'coordinates') {
+    await populateCoordinates()
+    console.log(chalk.green('Coordinates updated successfully'))
     process.exit(0)
   }
 

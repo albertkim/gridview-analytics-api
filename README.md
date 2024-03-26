@@ -8,7 +8,7 @@ Notion product research documentation: https://www.notion.so/albertkim1/Gridview
 
 # Getting started
 
-I use Macbook M series laptops for development. Pre-requisites:
+I use Macbook M series laptops for development, but it also tested on Windows. All code is intended to be multi-platform. Pre-requisites:
 
 - Install git
 - Install Node LTS
@@ -56,6 +56,20 @@ Shifting the file directory structure in the new Package folder means that all t
 - `getDatabasePath(filename: string)` function in the `DatabaseUtilities.ts` file, which checks NODE_ENV and adjusts the path accordingly.
 
 These approaches will not be necessary once the SQLite database is moved out into it's own remote instance. But for now it is sufficient.
+
+# Database structure
+
+Coming soon...
+
+# Commands
+
+This repository comes built-in with a series of commands to extract data from city government websites, process them, and put them into the database.
+
+- `yarn run news YYYY-MM-DD now all`
+- `yarn run rezone YYYY-MM-DD now all`
+- `yarn run permit YYYY-MM-DD now all`
+- `yarn run check-in`
+- `yarn run coordinates`
 
 # API (work in progress)
 
@@ -109,6 +123,7 @@ Response
 ```
 
 # Build
+
 ```
 # Local
 yarn install
