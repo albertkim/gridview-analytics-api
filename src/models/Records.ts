@@ -133,6 +133,7 @@ export class FullRecord {
   }
   createDate: string
   updateDate: string
+  lastUpdateDate: string
 
   constructor(params: IFullRecordParams) {
 
@@ -182,6 +183,7 @@ export class FullRecord {
     }
     this.createDate = params.createDate || new Date().toISOString()
     this.updateDate = params.updateDate || new Date().toISOString()
+    this.lastUpdateDate = this.getLatestDate()
 
   }
 
