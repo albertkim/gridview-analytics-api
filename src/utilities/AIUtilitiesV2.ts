@@ -23,7 +23,7 @@ export async function AISummarizeDocument(contents: string, {expectedWords, inst
     <Instructions>
       Your task is to summarize the document into a structured format.
 
-      First, identify the specific zoning/development permits that are discussed.These should be something like an address and/or an ID. Then, for each item, provide a detailed summary. Do not break up content about the same permit into multiple parts. Note that an item may include a rezoning and development permit and contain multiple buildings/towers, should be summarized into one. Pay attention to the headers and identifiers to know where each item starts and ends.
+      First, identify the specific zoning/development permits that are discussed. These should be something like an address and/or an ID. Then, for each item, provide a detailed summary. Do not break up content about the same permit into multiple parts. Only include items that refer to the development of new structures, not just alterations. Note that an item may include a rezoning and development permit and contain multiple buildings/towers, should be summarized into one. Pay attention to the headers and identifiers to know where each item starts and ends.
 
       ${instructions ? instructions : ''}
 
