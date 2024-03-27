@@ -6,9 +6,12 @@ import { chatGPTJSONQuery } from '@/utilities/AIUtilities'
 
   const news = await NewsRepository.getNews({offset: 0, limit: null, city: null, important: null})
 
-  console.log(news.data.length)
-
   for (const newsItem of news.data) {
+
+    // Only will news items without tags
+    if (newsItem.tags.length > 0) {
+      continue
+    }
 
     const tagsResult = await chatGPTJSONQuery(`
       <Document>
@@ -35,5 +38,7 @@ import { chatGPTJSONQuery } from '@/utilities/AIUtilities'
     await NewsRepository.updateNews(newsItem.id, newsItem)
 
   }
+
+  process.exit()
 
 })()
