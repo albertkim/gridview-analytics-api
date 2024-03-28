@@ -66,7 +66,7 @@ export async function analyzeRawNews(rawNews: IRawNews): Promise<IAnalyzedNews> 
           <li>Bullet point contents</li>
         </ul>
         
-        Do not include a title. Keep the number of bullet points between 3-5 if possible. If a line is only a bolded header, do not put it in a ul/li and just have it as its own line. You can have nested bullet points. DO NOT mention "this article", "document", or "summary" or anything that refers to yourself a third-person. You are the summary. Clearly indicate the current stage of any legislative item, including relevant dates. No yapping, exclude fluffy language, and be specific with items, dates, dollar values, address, names, etc.
+        Do not include a title. Keep the number of bullet points between 3-5 if possible. If a line is only a bolded header, do not put it in a ul/li and just have it as its own line. You can have nested bullet points. DO NOT mention "this article", "document", or "summary" or anything that refers to yourself a third-person. You are the summary. Clearly indicate the current stage of any legislative item, including relevant dates. No yapping, exclude fluffy/political language, and be specific with items, dates, dollar values, address, names, etc.
         
         Return in HTML format using only p ul li and b tags. Only bold list items, do not bold anything at the start.
       </Format>
