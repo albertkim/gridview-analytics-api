@@ -5,8 +5,9 @@ import { ILinkObject, INews, INewsObject, ICreateNews, IUpdateNews, INewsTagObje
 export interface INewsFilter {
   offset: number | null
   limit: number | null
-  city: string[] | string | null
-  important: number | null
+  city?: string[] | string | null
+  tag?: string[] | string | null
+  important?: number | null
 }
 
 export const NewsRepository = {
@@ -74,11 +75,24 @@ export const NewsRepository = {
       if (filter.important) {
         query.where('news.important', '>=', filter.important)
       }
+      if (filter.tag) {
+        if (Array.isArray(filter.tag)) {
+          const tagsArray = filter.tag as string[]
+          query.whereIn('news.id', (qb) => {
+            qb.from('news_tags').whereIn('tag_name', tagsArray).select('news_id')
+          })
+        } else {
+          query.whereIn('news.id', (qb) => {
+            qb.from('news_tags').where('tag_name', filter.tag).select('news_id')
+          })
+        }
+      }
       return query
     }
 
     const baseQuery = baseNewsQuery()
       .select('news.*', 'cities.name as city_name')
+
     if ((filter.limit !== null) && (filter.offset !== null)) {
       baseQuery.limit(filter.limit).offset(filter.offset)
     }

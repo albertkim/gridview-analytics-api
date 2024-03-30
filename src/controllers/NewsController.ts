@@ -51,15 +51,18 @@ router.get('/api/v1/news', async (req: Request, res: Response, next: NextFunctio
     const rawLimit = req.query.limit as string | undefined
     const rawOffset = req.query.offset as string | undefined
     const rawCity = req.query.city as string | undefined
+    const rawTag = req.query.tag as string | undefined
     const rawImportant = req.query.important as string | undefined
     const limit = rawLimit ? parseInt(rawLimit) : 10
     const offset = rawOffset ? parseInt(rawOffset) : 0
     const city: string[] | string | null = rawCity || null
+    const tag: string[] | string | null = rawTag || null
     const important = rawImportant ? parseInt(rawImportant) : null
     const news = await NewsRepository.getNews({
       offset: offset,
       limit: limit,
       city: city,
+      tag: tag,
       important: important
     })
     res.send({
