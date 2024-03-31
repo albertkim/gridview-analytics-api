@@ -17,11 +17,10 @@ export const AnalyticsService = {
    *           single-family residential: 5,
    *           multi-family residential: 3,
    *           townhouse: 5,
-   *           mixed-use: 3,
+   *           mixed use: 3,
    *           commercial: 1,
    *           industrial: 0,
-   *           other: 1,
-   *           total: 10
+   *           other: 1
    *         },
    *         city2: {
    *           ...
@@ -64,7 +63,7 @@ export const AnalyticsService = {
         year: string,
         data: {
           [key: string]: {
-            [key in BuildingType | 'total']: number
+            [key in BuildingType]: number
           }
         }
       } = { year, data: {} }
@@ -73,16 +72,14 @@ export const AnalyticsService = {
           'single-family residential': 0,
           'multi-family residential': 0,
           'townhouse': 0,
-          'mixed-use': 0,
+          'mixed use': 0,
           'commercial': 0,
           'industrial': 0,
-          'other': 0,
-          'total': 0
+          'other': 0
         }
         for (const record of groupedRecords[year]) {
           if (record.buildingType && record.city === city && record.status === status) {
             yearData.data[city][record.buildingType]++
-            yearData.data[city]['total']++
           }
         }
       }

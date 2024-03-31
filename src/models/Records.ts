@@ -4,7 +4,7 @@ import { customAlphabet } from 'nanoid'
 export type BuildingType =
   'single-family residential' |
   'townhouse' |
-  'mixed-use' |
+  'mixed use' |
   'multi-family residential' |
   'industrial' |
   'commercial' |
