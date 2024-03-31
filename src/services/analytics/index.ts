@@ -78,7 +78,8 @@ export const AnalyticsService = {
           'other': 0
         }
         for (const record of groupedRecords[year]) {
-          if (record.buildingType && record.city === city && record.status === status) {
+
+          if (!!record.buildingType && record.city === city) {
             yearData.data[city][record.buildingType]++
           }
         }
