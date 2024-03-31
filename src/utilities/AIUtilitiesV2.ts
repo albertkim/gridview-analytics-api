@@ -333,7 +333,7 @@ export async function AIGetRecordDetails(contents: string, options: IDetailsPara
   const shouldAnalyzeStatus = options.fieldsToAnalyze.includes('status')
 
   const detailedQueryReference = {
-    buildingType: 'buildingType: one of "single-family residential" (including duplexes), "townhouse", "mixed-use" (only if there is residential + commercial), "multi-family residential" (only if there is no commercial), "industrial" (manufacturing, utilities, etc.), "commercial", or "other"',
+    buildingType: 'buildingType: one of "single-family residential" (including duplexes), "townhouse", "mixed use" (only if there is residential + commercial), "multi-family residential" (only if there is no commercial), "industrial" (manufacturing, utilities, etc.), "commercial", or "other"',
     zoning: `zoning: {
       previousZoningCode: string | null - city zoning code before rezoning - null if unclear - keep short
       previousZoningDescription: string | null - best description of previous zoning code (ex. low density residential) - null if unclear
