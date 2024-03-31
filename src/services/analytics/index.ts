@@ -48,7 +48,7 @@ export const AnalyticsService = {
    *   ]
    * }
    */
-  analysisByBuildingType: async function(type: 'rezoning' | 'development permit', status: 'applied' | 'approved') {
+  analyticsByBuildingType: async function(type: 'rezoning' | 'development permit', status: 'applied' | 'approved') {
     const records = (await recordsRepository.getRecords(type)).data
     const statusMapping: {
       [key in 'applied' | 'approved']: RecordDateField

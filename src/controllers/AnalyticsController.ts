@@ -7,7 +7,7 @@ router.get('/api/v1/analytics/buildingType', async (req: Request, res: Response,
   try {
     const typeParam = req.query.type as 'rezoning' | 'development permit'
     const dateParam = req.query.date as 'applied' | 'approved'
-    const data = await AnalyticsService.analysisByBuildingType(typeParam, dateParam)
+    const data = await AnalyticsService.analyticsByBuildingType(typeParam, dateParam)
     res.send(data)
   } catch (error) {
     next(error)
