@@ -3,6 +3,7 @@ import cors from 'cors'
 import { BaseController } from '@/controllers/BaseController'
 import { AdminController } from '@/controllers/AdminController'
 import { NewsController } from '@/controllers/NewsController'
+import { AnalyticsController } from './controllers/AnalyticsController'
 
 const app = express()
 
@@ -15,6 +16,7 @@ app.use(express.json())
 
 app.use(BaseController)
 app.use(NewsController)
+app.use(AnalyticsController)
 
 if (process.env.NODE_ENV === 'development') {
   app.use(AdminController)

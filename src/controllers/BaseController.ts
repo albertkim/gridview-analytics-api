@@ -126,24 +126,4 @@ router.get('/api/v1/developmentPermits', async (req: Request, res: Response, nex
   }
 })
 
-// TODO: Add authentication when ready
-router.get('/api/v1/record/:recordId', async (req: Request, res: Response, next: NextFunction) => {
-  try {
-    const recordId = req.params.recordId
-    const rezoning = await recordsRepository.getRecords('all', {
-      id: recordId
-    })
-    if (rezoning.data.length === 0) {
-      res.status(404).send({
-        error: 'Record not found'
-      })
-      return
-    } else {
-      res.send(rezoning.data[0])
-    }
-  } catch (error) {
-    next(error)
-  }
-})
-
 export const BaseController = router

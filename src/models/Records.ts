@@ -7,7 +7,8 @@ export type BuildingType =
   'mixed-use' |
   'multi-family residential' |
   'industrial' |
-  'commercial'
+  'commercial' |
+  'other'
 
 export type ZoningStatus =
   'applied' |
