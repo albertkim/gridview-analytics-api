@@ -1,5 +1,4 @@
 import fs from 'fs'
-import path from 'path'
 import chalk from 'chalk'
 import moment from 'moment'
 import similarity from 'similarity'
@@ -192,6 +191,18 @@ export class RecordsRepository {
     const allRecords = (this.getRecords('all')).data
     const reorderedRecords = reorderItems(allRecords)
     this.dangerouslyReplaceAllRecords('all', reorderedRecords)
+  }
+
+  deleteRecord(recordId: string) {
+    const previousEntries = (this.getRecords('all')).data
+    const matchingRezoningIndex = previousEntries.findIndex((item) => item.id === recordId)
+    if (matchingRezoningIndex === -1) throw new Error(`Could not find rezoning with id ${recordId}`)
+    previousEntries.splice(matchingRezoningIndex, 1)
+    fs.writeFileSync(
+      this.database,
+      JSON.stringify(previousEntries, null, 2),
+      'utf8'
+    )
   }
 
   // Upserts all draft records into the final database - must be in draft mode
