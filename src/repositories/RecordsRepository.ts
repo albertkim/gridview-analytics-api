@@ -22,6 +22,7 @@ export class RecordsRepository {
   }
 
   getRecords(type: 'all' | 'rezoning' | 'development permit', filter?: {id?: string, city?: string | string[] | null}) {
+
     let records = JSON.parse(fs.readFileSync(this.database, 'utf8')) as IFullRecordParams[]
     if (type !== 'all') {
       records = records.filter((item) => item.type === type)
@@ -36,6 +37,7 @@ export class RecordsRepository {
     if (filter && filter.id) {
       records = records.filter((item) => item.id === filter.id)
     }
+
     const filteredRecords = records.map((record) => new FullRecord(record))
     return {
       data: filteredRecords,
@@ -43,6 +45,7 @@ export class RecordsRepository {
       limit: null,
       total: filteredRecords.length
     }
+
   }
 
   // Get all records with similar addresses to the provided record (but not including the record)

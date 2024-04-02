@@ -118,11 +118,13 @@ export async function analyze(options: IOptions) {
       </Content>
 
       <Instructions>
-        Given the following development permit, identify if it is for the construction of a new structure or not. Anything that refers to an alteration, renovation, or an additional to an existing structure should be considered as not a new structure.
+        Given the following development permit, identify if it is for the construction of a new structure or not. Anything that refers to an alteration, renovation, or an additional to an existing structure should be considered as not a new structure. Only include structures that are more substantial than single-family homes, laneway houses, or duplexes because these items are not significant.
+
         {
           newStructure: boolean
           reason: string
         }
+
       </Instructions>
     `, 'Claude Haiku')
 
