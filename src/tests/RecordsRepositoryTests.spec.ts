@@ -77,13 +77,7 @@ test('Check that FullRecord fields are correctly added to database with upsert',
 
   // Should be a perfect match except for id, createDate, and updateDate
   const matchingRecord = allRecords.data[0]
-  const matchingRecordWithoutIdAndDates = {
-    ...matchingRecord,
-    id: undefined,
-    createDate: undefined,
-    updateDate: undefined
-  }
-  expect(matchingRecordWithoutIdAndDates).toEqual(object)
+  expect(matchingRecord).toEqual(entry)
 
 })
 
@@ -268,30 +262,30 @@ test('Check that dangerouslyReplaceRecordsForCity works correctly', () => {
 
 test('Check that deleting records works correctly', () => {
   
-    const entry1 = new FullRecord({
-      type: 'rezoning',
-      city: 'city',
-      metroCity: 'metroCity',
-      address: 'address 1',
-      rawSummaries: [],
-      status: 'applied'
-    })
+  const entry1 = new FullRecord({
+    type: 'rezoning',
+    city: 'city',
+    metroCity: 'metroCity',
+    address: 'address 1',
+    rawSummaries: [],
+    status: 'applied'
+  })
 
-    const entry2 = new FullRecord({
-      type: 'rezoning',
-      city: 'city',
-      metroCity: 'metroCity',
-      address: 'address 2',
-      rawSummaries: [],
-      status: 'applied'
-    })
+  const entry2 = new FullRecord({
+    type: 'rezoning',
+    city: 'city',
+    metroCity: 'metroCity',
+    address: 'address 2',
+    rawSummaries: [],
+    status: 'applied'
+  })
 
-    recordsRepository.createRecord(entry1)
-    recordsRepository.createRecord(entry2)
-    expect(recordsRepository.getRecords('all').data.length).toBe(2)
+  recordsRepository.createRecord(entry1)
+  recordsRepository.createRecord(entry2)
+  expect(recordsRepository.getRecords('all').data.length).toBe(2)
 
-    recordsRepository.deleteRecord(entry1.id)
-    expect(recordsRepository.getRecords('all').data.length).toBe(1)
-    expect(recordsRepository.getRecords('all').data[0].id).toBe(entry2.id)
+  recordsRepository.deleteRecord(entry1.id)
+  expect(recordsRepository.getRecords('all').data.length).toBe(1)
+  expect(recordsRepository.getRecords('all').data[0].id).toBe(entry2.id)
 
 })

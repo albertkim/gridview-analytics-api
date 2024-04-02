@@ -8,6 +8,7 @@ import { cleanString, formatDateString } from '@/utilities/StringUtilities'
 import { AIGetRecordDetails } from '@/utilities/AIUtilitiesV2'
 import { RecordsRepository } from '@/repositories/RecordsRepository'
 import { FullRecord } from '@/models/Records'
+import { chatGPTJSONQuery } from '@/utilities/AIUtilities'
 
 const startUrl = 'https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear'
 
@@ -105,7 +106,27 @@ export async function analyze(options: IOptions) {
   for (const entry of data) {
 
     const detailsResponse = await AIGetRecordDetails(entry.ProjectDescription, {fieldsToAnalyze: ['building type', 'stats']})
+
     if (!detailsResponse) {
+      continue
+    }
+
+    // Use AI to identify if this is a new structure or not
+    const newStructureResponse = await chatGPTJSONQuery(`
+      <Content>
+        ${entry.ProjectDescription}
+      </Content>
+
+      <Instructions>
+        Given the following development permit, identify if it is for the construction of a new structure or not. Anything that refers to an alteration, renovation, or an additional to an existing structure should be considered as not a new structure.
+        {
+          newStructure: boolean
+          reason: string
+        }
+      </Instructions>
+    `, 'Claude Haiku')
+
+    if (!newStructureResponse.newStructure) {
       continue
     }
     
