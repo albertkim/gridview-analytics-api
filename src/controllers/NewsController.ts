@@ -10,8 +10,11 @@ const router = Router()
 
 router.get('/api/v1/news/raw', async (req: Request, res: Response, next: NextFunction) => {
   try {
+    const city = req.query.city as string | undefined
+    const startDate = city ? moment().subtract(4, 'months').format('YYYY-MM-DD') : moment().subtract(2, 'months').format('YYYY-MM-DD')
     const rawNews = await RawNewsRepository.getNews({
-      startDate: moment().subtract(2, 'months').format('YYYY-MM-DD')
+      city: city,
+      startDate: startDate
     })
     res.send(rawNews)
   } catch (error) {

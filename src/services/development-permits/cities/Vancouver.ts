@@ -105,12 +105,6 @@ export async function analyze(options: IOptions) {
 
   for (const entry of data) {
 
-    const detailsResponse = await AIGetRecordDetails(entry.ProjectDescription, {fieldsToAnalyze: ['building type', 'stats']})
-
-    if (!detailsResponse) {
-      continue
-    }
-
     // Use AI to identify if this is a new structure or not
     const newStructureResponse = await chatGPTJSONQuery(`
       <Content>
@@ -129,6 +123,13 @@ export async function analyze(options: IOptions) {
     `, 'Claude Haiku')
 
     if (!newStructureResponse.newStructure) {
+      continue
+    }
+
+    const detailsResponse = await AIGetRecordDetails(entry.ProjectDescription, {fieldsToAnalyze: ['building type', 'stats']})
+
+    if (!detailsResponse || detailsResponse.buildingType === 'single-family residential') {
+      console.log(`Skipping record with ID ${entry.PermitNumber}`)
       continue
     }
     
