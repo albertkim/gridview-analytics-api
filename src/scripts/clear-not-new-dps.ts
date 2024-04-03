@@ -32,9 +32,10 @@ import chalk from 'chalk'
       </Content>
 
       <Instructions>
-        Given the following content, identify if the development permit is for the construction of a new structure or not. Anything that refers to an alteration or renovation should be considered as not a new structure.
+        Given the following content, identify only the items that refer to the development of new structures that are bigger than a single-family residential, laneway house, or duplex. If residential, should have a minimum of 3 units. Anything that refers to an alteration, renovation, or demolition should be considered as not a new structure. Return in the following JSON format:
         {
           newStructure: boolean
+          biggerThanSingleFamily: boolean
           reason: string - keep very short
         }
       </Instructions>
@@ -46,7 +47,7 @@ import chalk from 'chalk'
     console.log(`Development Permit: ${developmentPermit.id} ${developmentPermit.applicationId}`)
     console.log(response)
 
-    if (!response.newStructure) {
+    if (!response.newStructure || !response.biggerThanSingleFamily) {
       recordsRepository.deleteRecord(developmentPermit.id)
       console.log(chalk.red(`Deleted record with ID ${developmentPermit.id}`))
     }
