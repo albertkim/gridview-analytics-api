@@ -411,8 +411,6 @@ export async function AIGetRecordDetails(contents: string, options: IDetailsPara
     possibleValues: ['applied', 'public hearing', 'approved', 'denied', 'withdrawn']
   }
 
-  console.log(detailsQuery)
-
   let detailsResponse = await chatGPTJSONQuery(detailsQuery, 'Claude Sonnet')
   const detailsResponseValid1 = checkAndFixAIResponse(detailsResponse, detailsQueryFormat)
 
