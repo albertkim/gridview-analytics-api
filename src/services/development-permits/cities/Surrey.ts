@@ -67,7 +67,7 @@ export async function analyze(options: IOptions) {
     const permitNumber = permitNumbers[0]
 
     const response = await AIGetPartialRecords(`${news.title}\n${news.contents}`, {
-      instructions: 'Identify only the items that refer to new developments, of buildings bigger than single-family, laneway, coach, or duplex homes. No not include alterations.',
+      instructions: 'Identify only the items that refer to new developments, of buildings bigger than single-family, laneway, coach, or duplex homes. Do not include alterations.',
       applicationId: 'XXXX-XXXX-XX where X is a number',
       fieldsToAnalyze: ['building type', 'stats'],
       expectedWords: [permitNumber]

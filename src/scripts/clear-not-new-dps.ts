@@ -11,11 +11,11 @@ import chalk from 'chalk'
   // Turns true once ID is hit
   let afterId: boolean = false
 
-  const recordsRepository = new RecordsRepository('final')
+  const recordsRepository = new RecordsRepository('draft')
 
-  const vancouverDevelopmentPermits = await recordsRepository.getRecords('development permit')
+  const developmentPermits = await recordsRepository.getRecords('development permit', {city: 'Surrey'})
 
-  for (const developmentPermit of vancouverDevelopmentPermits.data) {
+  for (const developmentPermit of developmentPermits.data) {
 
     if (startFromId && developmentPermit.id === startFromId) {
       afterId = true
@@ -32,7 +32,25 @@ import chalk from 'chalk'
       </Content>
 
       <Instructions>
-        Given the following content, identify only the items that refer to the development of new structures that are bigger than a single-family residential, laneway house, or duplex. If residential, should have a minimum of 3 units. Anything that refers to an alteration, renovation, or demolition should be considered as not a new structure. Return in the following JSON format:
+        Given the following content, identify if it refers to the development of new buildings that are bigger than a single-family residential, laneway house, or duplex. If residential, should have a minimum of 3 units. Anything that refers to a structure alteration, renovation, or demolition should be considered as not a new structure.
+
+        Examples of new buildings:
+        - 6 story apartment
+        - 50 townhouses
+        - 4 story mixed-use building
+        - Comprehensive development
+
+        Examples of not new buildings:
+        - Renovation of existing building
+        - A sign or board or an existing building
+        - Changing the use of an existing building
+        - Heritage or character alteration
+        - An infrastructure systems upgrade
+        - A parking lot
+        - A demolition
+        
+        Return in the following JSON format:
+
         {
           newStructure: boolean
           biggerThanSingleFamily: boolean
