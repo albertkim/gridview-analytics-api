@@ -95,7 +95,7 @@ export async function analyze(options: IOptions) {
       }
 
       const response = await AIGetPartialRecords(parsed, {
-        instructions: `The following text extracted from a PDF is messy but do your best. Identify ONLY the items that refer to the development of new structures that are bigger than a single-family residential, laneways, or duplex. Do not include alterations nor demolitions. Number of units is usually a number listed right after the $ value`,
+        instructions: `The following text extracted from a PDF is messy but do your best. Identify only the items that refer to the development of new structures that are bigger than single-family, laneway, coach, or duplex homes. Do not include alterations nor demolitions. Number of units is usually a number listed right after the $ value`,
         applicationId: 'must match BLDXX-XXXXX where X is a number',
         fieldsToAnalyze: ['building type', 'stats'],
         expectedWords: permitNumbers
