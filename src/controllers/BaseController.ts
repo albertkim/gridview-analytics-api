@@ -1,5 +1,6 @@
 import { Router, Request, Response, NextFunction } from 'express'
 import { RecordsRepository } from '@/repositories/RecordsRepository'
+import { generateSitemapXML } from '@/services/sitemap'
 
 const router = Router()
 
@@ -11,6 +12,16 @@ router.get('/ping', async (req: Request, res: Response, next: NextFunction) => {
       data: 'Hello world',
       date: new Date()
     })
+  } catch (error) {
+    next(error)
+  }
+})
+
+router.get('/sitemap.xml', async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const sitemap = await generateSitemapXML()
+    res.set('Content-Type', 'text/xml')
+    res.send(sitemap)
   } catch (error) {
     next(error)
   }
