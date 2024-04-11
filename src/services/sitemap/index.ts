@@ -10,7 +10,7 @@ export async function generateSitemapXML(): Promise<string> {
   const newsUrls = news.data.map(n => {
     return `
       <url>
-        <loc>https://gridviewanalytics.com/news/${n.id}</loc>
+        <loc>https://gridviewanalytics.com/news/id/${n.id}</loc>
         <lastmod>${n.date}</lastmod>
       </url>
     `
