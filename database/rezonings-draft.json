@@ -1,5 +1,2306 @@
 [
   {
+    "id": "rez-u3koxgsvbj4456cbeqouh",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "REZ #21-34",
+    "address": "4612, 4664 Lougheed Highway, 2040, 2140 and 2150 Alpha Avenue",
+    "applicant": null,
+    "behalf": null,
+    "description": "to permit construction of the Grosvenor Brentwood Site over two main phases, including four high-rise market residential rental buildings and two high-rise strata residential buildings set atop non-market residential rental and commercial/retail podiums with underground parking, as well as a City Community Centre.",
+    "rawSummaries": [
+      {
+        "summary": "REZ #21-34 (4612, 4664 Lougheed Highway, 2040, 2140 and 2150 Alpha Avenue)\nPurpose: to permit construction of the Grosvenor Brentwood Site over two main phases, including four high-rise market residential rental buildings and two high-rise strata residential buildings set atop non-market residential rental and commercial/retail podiums with underground parking, as well as a City Community Centre.",
+        "date": "2024-05-13",
+        "status": "approved",
+        "reportUrl": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=75752"
+      }
+    ],
+    "buildingType": null,
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-13",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 6,
+      "stratas": 2,
+      "rentals": 4,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-13",
+        "title": "14454 No. 17, 2022 ACD (FA).pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=75752",
+        "status": "approved"
+      },
+      {
+        "date": "2024-05-13",
+        "title": "REZ 21-34 Final Adoption 2024-05-13.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=75753",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-13",
+        "url": "https://pub-burnaby.escribemeetings.com/Meeting.aspx?Id=7b389ec3-8234-4cdb-8f1d-7a62b5fb579a&lang=English",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-14T17:58:10.576Z",
+    "updateDate": "2024-05-14T17:58:10.576Z",
+    "lastUpdateDate": "2024-05-13"
+  },
+  {
+    "id": "dev-wv9hnvxsaq697cpckrlqk",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2023-02558",
+    "address": "6578 OAK STREET",
+    "applicant": "Matt Turco DBA: GHL Consultants Ltd.",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - Building 2 - To construct a 3-storey building with 5 dwelling units.\nRefer to BP-2022-04156 for site work, below-grade facilities, and common underground bike storage, electrical room, and sprinkler valve room.\nVBBL2019 - Sprinklered.",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2023-02558\",\"PermitNumberCreatedDate\":\"2023-07-18\",\"IssueDate\":\"2024-05-13\",\"PermitElapsedDays\":\"300\",\"ProjectValue\":\"0.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"6578 OAK STREET, Vancouver, BC\",\"ProjectDescription\":\"Certified Professional Program - New Building - Building 2 - To construct a 3-storey building with 5 dwelling units.\\r\\n\\r\\nRefer to BP-2022-04156 for site work, below-grade facilities, and common underground bike storage, electrical room, and sprinkler valve room.\\r\\n\\r\\nVBBL2019 - Sprinklered.\",\"PermitCategory\":\"\",\"Applicant\":\"Matt Turco DBA: GHL Consultants Ltd.\",\"ApplicantAddress\":\"Suite 800 – 700 West Pender Street\\r\\nVancouver, BC  V6C 1G8\",\"PropertyUse\":\"Dwelling Uses\",\"SpecificUseCategory\":\"Multiple Dwelling\",\"BuildingContractor\":\"\",\"BuildingContractorAddress\":\"\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Oakridge\",\"Geom\":\"{\\\"coordinates\\\": [-123.1282646, 49.2255354], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-05\",\"geo_point_2d\":\"49.2255354, -123.1282646\"}",
+        "date": "2024-05-13",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "multi-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-13",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 5,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 3
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-05-13",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:50:18.339Z",
+    "updateDate": "2024-05-15T02:50:18.339Z",
+    "lastUpdateDate": "2024-05-13"
+  },
+  {
+    "id": "dev-3p539jnxgi8xwfxavddtd",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2023-02557",
+    "address": "6558 OAK STREET",
+    "applicant": "Matt Turco DBA: GHL Consultants Ltd.",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - Building 1 - To construct a 3-storey building with 4 dwelling units.\nRefer to BP-2022-04156 for site work, below-grade facilities, and common underground bike storage, electrical room, and sprinkler valve room.\nVBBL2019 - Sprinklered.",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2023-02557\",\"PermitNumberCreatedDate\":\"2023-07-18\",\"IssueDate\":\"2024-05-13\",\"PermitElapsedDays\":\"300\",\"ProjectValue\":\"0.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"6558 OAK STREET, Vancouver, BC\",\"ProjectDescription\":\"Certified Professional Program - New Building - Building 1 - To construct a 3-storey building with 4 dwelling units.\\r\\n\\r\\nRefer to BP-2022-04156 for site work, below-grade facilities, and common underground bike storage, electrical room, and sprinkler valve room.\\r\\n\\r\\nVBBL2019 - Sprinklered.\",\"PermitCategory\":\"\",\"Applicant\":\"Matt Turco DBA: GHL Consultants Ltd.\",\"ApplicantAddress\":\"Suite 800 – 700 West Pender Street\\r\\nVancouver, BC  V6C 1G8\",\"PropertyUse\":\"Dwelling Uses\",\"SpecificUseCategory\":\"Multiple Dwelling\",\"BuildingContractor\":\"\",\"BuildingContractorAddress\":\"\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Oakridge\",\"Geom\":\"{\\\"coordinates\\\": [-123.1282524, 49.2257571], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-05\",\"geo_point_2d\":\"49.2257571, -123.1282524\"}",
+        "date": "2024-05-13",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "multi-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-13",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 4,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 3
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-05-13",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:50:59.432Z",
+    "updateDate": "2024-05-15T02:50:59.432Z",
+    "lastUpdateDate": "2024-05-13"
+  },
+  {
+    "id": "dev-qg1u6nj8vb2dlyvem6fbk",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2023-02559",
+    "address": "6568 OAK STREET",
+    "applicant": "Matt Turco DBA: GHL Consultants Ltd.",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - Building 3 - To construct a 3-storey building with 5 dwelling units.\nRefer to BP-2022-04156 for site work, below-grade facilities, and common underground bike storage, electrical room, and sprinkler valve room.\nVBBL2019 - Sprinklered.",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2023-02559\",\"PermitNumberCreatedDate\":\"2023-07-18\",\"IssueDate\":\"2024-05-13\",\"PermitElapsedDays\":\"300\",\"ProjectValue\":\"0.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"6568 OAK STREET, Vancouver, BC\",\"ProjectDescription\":\"Certified Professional Program - New Building - Building 3 - To construct a 3-storey building with 5 dwelling units.\\r\\n\\r\\nRefer to BP-2022-04156 for site work, below-grade facilities, and common underground bike storage, electrical room, and sprinkler valve room.\\r\\n\\r\\nVBBL2019 - Sprinklered.\",\"PermitCategory\":\"\",\"Applicant\":\"Matt Turco DBA: GHL Consultants Ltd.\",\"ApplicantAddress\":\"Suite 800 – 700 West Pender Street\\r\\nVancouver, BC  V6C 1G8\",\"PropertyUse\":\"Dwelling Uses\",\"SpecificUseCategory\":\"Multiple Dwelling\",\"BuildingContractor\":\"\",\"BuildingContractorAddress\":\"\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Oakridge\",\"Geom\":\"{\\\"coordinates\\\": [-123.1278834, 49.2255686], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-05\",\"geo_point_2d\":\"49.2255686, -123.1278834\"}",
+        "date": "2024-05-13",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "multi-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-13",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 5,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 3
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-05-13",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:51:31.743Z",
+    "updateDate": "2024-05-15T02:51:31.743Z",
+    "lastUpdateDate": "2024-05-13"
+  },
+  {
+    "id": "dev-8pb4vtjeha5dw3r26a7lz",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2023-02560",
+    "address": "6566 OAK STREET",
+    "applicant": "Matt Turco DBA: GHL Consultants Ltd.",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - Building 4 - To construct a 3-storey building with 4 dwelling units.\nRefer to BP-2022-04156 for site work, below-grade facilities, and common underground bike storage, electrical room, and sprinkler valve room.\nVBBL2019 - Sprinklered.",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2023-02560\",\"PermitNumberCreatedDate\":\"2023-07-18\",\"IssueDate\":\"2024-05-13\",\"PermitElapsedDays\":\"300\",\"ProjectValue\":\"0.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"6566 OAK STREET, Vancouver, BC\",\"ProjectDescription\":\"Certified Professional Program - New Building - Building 4 - To construct a 3-storey building with 4 dwelling units.\\r\\n\\r\\nRefer to BP-2022-04156 for site work, below-grade facilities, and common underground bike storage, electrical room, and sprinkler valve room.\\r\\n\\r\\nVBBL2019 - Sprinklered.\",\"PermitCategory\":\"\",\"Applicant\":\"Matt Turco DBA: GHL Consultants Ltd.\",\"ApplicantAddress\":\"Suite 800 – 700 West Pender Street\\r\\nVancouver, BC  V6C 1G8\",\"PropertyUse\":\"Dwelling Uses\",\"SpecificUseCategory\":\"Multiple Dwelling\",\"BuildingContractor\":\"\",\"BuildingContractorAddress\":\"\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Oakridge\",\"Geom\":\"{\\\"coordinates\\\": [-123.1282597, 49.2256257], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-05\",\"geo_point_2d\":\"49.2256257, -123.1282597\"}",
+        "date": "2024-05-13",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "multi-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-13",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 4,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 3
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-05-13",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:51:40.394Z",
+    "updateDate": "2024-05-15T02:51:40.394Z",
+    "lastUpdateDate": "2024-05-13"
+  },
+  {
+    "id": "dev-3mtxruh68tsfmc50cqeh1",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD24-00398",
+    "address": "8351 FRASER REACH CRT",
+    "applicant": "AECOM CANADA LTD",
+    "behalf": null,
+    "description": "The project involves adding a conveyer system and crossover stairs - interior alteration and finishing for the Amazon facility at this location. The permit is for a commercial alteration project with a value of work of $4,000,000.00. The contractor is LEWCO INC DBA LOGISTIQ - A DIVISION OF LEWCO.",
+    "rawSummaries": [
+      {
+        "summary": "BLD24-00398 - 8351 FRASER REACH CRT\nPermit for a commercial alteration project with a value of work of $4,000,000.00. The applicant is AECOM CANADA LTD and the contractor is LEWCO INC DBA LOGISTIQ - A DIVISION OF LEWCO. The project involves adding a conveyer system and crossover stairs - interior alteration and finishing for the Amazon facility at this location.",
+        "date": "2024-05-13",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-13-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-13",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-13-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-13-2024.pdf",
+        "date": "2024-05-13",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:54:33.510Z",
+    "updateDate": "2024-05-15T02:54:33.510Z",
+    "lastUpdateDate": "2024-05-13"
+  },
+  {
+    "id": "dev-h019czxw5s9s6inmkfw2i",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD23-00874",
+    "address": "5359 EMPIRE DR",
+    "applicant": "AIRA ARINDUQUE",
+    "behalf": null,
+    "description": "Permit for a new residential laneway house with an attached garage and parking pad, with a value of work of $350,000.00. This is an addition to a previous permit (BLD21-01356).",
+    "rawSummaries": [
+      {
+        "summary": "BLD23-00874 - L1 - 5359 EMPIRE DR\nPermit for a new residential laneway house with an attached garage and parking pad, with a value of work of $350,000.00. The applicant is AIRA ARINDUQUE and the contractor is 15 CUBES DEVELOPMENT LTD. This is an addition to a previous permit (BLD21-01356).",
+        "date": "2024-05-13",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-13-2024.pdf"
+      }
+    ],
+    "buildingType": "single-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-13",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 1,
+      "rentals": null,
+      "hotels": null,
+      "fsr": null,
+      "storeys": 1
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-13-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-13-2024.pdf",
+        "date": "2024-05-13",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:54:33.510Z",
+    "updateDate": "2024-05-15T02:54:33.510Z",
+    "lastUpdateDate": "2024-05-13"
+  },
+  {
+    "id": "dev-xzmbcl3vic4cifxif8aox",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD24-00486",
+    "address": "1680 MACDONALD AVE",
+    "applicant": "KD VENTURES INC",
+    "behalf": null,
+    "description": "The project involves interior alterations and finishing for a tenant at 1680 MACDONALD AVE. The permit is for a commercial alteration project with a value of work of $180,000.00. The contractor is NOVA DRYWALL LTD.",
+    "rawSummaries": [
+      {
+        "summary": "BLD24-00486 - 1680 MACDONALD AVE\nPermit for a commercial alteration project with a value of work of $180,000.00. The applicant is KD VENTURES INC and the contractor is NOVA DRYWALL LTD. The project involves interior alterations and finishing for a tenant.",
+        "date": "2024-05-13",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-13-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-13",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-13-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-13-2024.pdf",
+        "date": "2024-05-13",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:54:33.510Z",
+    "updateDate": "2024-05-15T02:54:33.510Z",
+    "lastUpdateDate": "2024-05-13"
+  },
+  {
+    "id": "dev-q16lo5p3m47nlq6g0w1tq",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD24-00241",
+    "address": "4150 PHILLIPS AVE",
+    "applicant": "RAIN CITY MANAGEMENT",
+    "behalf": null,
+    "description": "Building permit for new racking for APT AUTO PARTS TRADING CO LTD. The permit is for an alteration to a commercial property with a current/underlying zone of M5. The value of the work is $400,000.00 and there are 0 units.",
+    "rawSummaries": [
+      {
+        "summary": "BLD24-00241\nPermit Number: BLD24-00241\nValue of Work: $400,000.00\nNumber of Units: 0\nPermit Category: Building Permit (Commercial)\nType of Change: Alteration\nLegal Description: LOT: 197 DISTRICT LOT: 43 PLAN: NWP66130 Group 1.\nCurrent / Underlying Zone: M5\nSite Address: 4150 PHILLIPS AVE\nApplicant Name: RAIN CITY MANAGEMENT\nContractor Address: 319 - 9440 202 ST LANGLEY, BC V1M 4A6\nContractor Name: RAIN CITY MANAGEMENT\nDescription: APT AUTO PARTS TRADING CO LTD - Building permit for new racking",
+        "date": "2024-05-13",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-13-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-13",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-13-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-13-2024.pdf",
+        "date": "2024-05-13",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:54:38.756Z",
+    "updateDate": "2024-05-15T02:54:38.756Z",
+    "lastUpdateDate": "2024-05-13"
+  },
+  {
+    "id": "dev-p3643cn6azgrr04cvtza4",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD23-01030",
+    "address": "8982 UNIVERSITY HIGH ST",
+    "applicant": "DEWELL INTERIORS INC",
+    "behalf": null,
+    "description": "Permit for interior alteration and finishing for a new tenant restaurant. The property is located at 8982 UNIVERSITY HIGH ST, with the legal description of LOT: 2 DISTRICT LOT: 211 PLAN: BCP6258 Group 1. The current/underlying zone is CD. The contractor is POWERINTER ELECTRICAL LTD. The value of work is $150,000.00 with 0 units.",
+    "rawSummaries": [
+      {
+        "summary": "BLD23-01030 - 8982 UNIVERSITY HIGH ST\nPermit for interior alteration and finishing for a new tenant restaurant. The property is located at 8982 UNIVERSITY HIGH ST, with the legal description of LOT: 2 DISTRICT LOT: 211 PLAN: BCP6258 Group 1. The current/underlying zone is CD. The applicant is DEWELL INTERIORS INC and the contractor is POWERINTER ELECTRICAL LTD. The value of work is $150,000.00 with 0 units.",
+        "date": "2024-05-10",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-10-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-10",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-10-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-10-2024.pdf",
+        "date": "2024-05-10",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:54:11.430Z",
+    "updateDate": "2024-05-15T02:54:11.430Z",
+    "lastUpdateDate": "2024-05-10"
+  },
+  {
+    "id": "dev-wngfuqhs77fnffwhvekoo",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD24-00569",
+    "address": "4615 LOUGHEED HWY",
+    "applicant": "IMPERIAL SIGN CORPORATION",
+    "behalf": null,
+    "description": "Permit for a sign type 2H, multi-tenant fascia sign for TAB Tower 3. The property is located at 4615 LOUGHEED HWY, with the legal description of LOT: 3 DISTRICT LOT: 124 PLAN: EPP59173 GROUP 1. EXCEPT PLAN EPP65160. The current/underlying zone is CD. The value of work is $30,473.02 with 0 units.",
+    "rawSummaries": [
+      {
+        "summary": "BLD24-00569 - 4615 LOUGHEED HWY\nPermit for a sign type 2H, multi-tenant fascia sign for TAB Tower 3. The property is located at 4615 LOUGHEED HWY, with the legal description of LOT: 3 DISTRICT LOT: 124 PLAN: EPP59173 GROUP 1. EXCEPT PLAN EPP65160. The current/underlying zone is CD. The applicant and contractor is IMPERIAL SIGN CORPORATION. The value of work is $30,473.02 with 0 units.",
+        "date": "2024-05-10",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-10-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-10",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-10-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-10-2024.pdf",
+        "date": "2024-05-10",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:54:11.430Z",
+    "updateDate": "2024-05-15T02:54:11.430Z",
+    "lastUpdateDate": "2024-05-10"
+  },
+  {
+    "id": "dev-o2falntuypo64sczluyjd",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD23-00679",
+    "address": "6382 SILVER AVE",
+    "applicant": "JOY DESIGN LTD",
+    "behalf": null,
+    "description": "Permit for interior alteration for new tenant at 6382 SILVER AVE. The property is zoned CD and has a legal description of LOT: 3 DISTRICT LOT: 153 PLAN: EPS7862 STRATA LOT 3, DISTRICT LOT 153, PLAN EPS7862, NEW WESTMINSTER LAND DISTRICT, GROUP 1, TOGETHER WITH AN INTEREST IN THE COMMON PROPERTY IN PROPORTION TO THE UNIT ENTITLEMENT OF THE STRATA LOT AS SHOWN ON FORM V. The contractor is BOAS CONSTRUCTION LTD. The value of work is $50,000.00 and there are 0 units.",
+    "rawSummaries": [
+      {
+        "summary": "BLD23-00679\nPermit for interior alteration for new tenant at 6382 SILVER AVE. The property is zoned CD and has a legal description of LOT: 3 DISTRICT LOT: 153 PLAN: EPS7862 STRATA LOT 3, DISTRICT LOT 153, PLAN EPS7862, NEW WESTMINSTER LAND DISTRICT, GROUP 1, TOGETHER WITH AN INTEREST IN THE COMMON PROPERTY IN PROPORTION TO THE UNIT ENTITLEMENT OF THE STRATA LOT AS SHOWN ON FORM V. The applicant is JOY DESIGN LTD and the contractor is BOAS CONSTRUCTION LTD. The value of work is $50,000.00 and there are 0 units.",
+        "date": "2024-05-10",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-10-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-10",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-10-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-10-2024.pdf",
+        "date": "2024-05-10",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:54:20.809Z",
+    "updateDate": "2024-05-15T02:54:20.809Z",
+    "lastUpdateDate": "2024-05-10"
+  },
+  {
+    "id": "dev-0s837zbli53ix6b28rstr",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD24-00183",
+    "address": "4010 MYRTLE ST",
+    "applicant": "AXIN ARCHITECTURE LTD",
+    "behalf": null,
+    "description": "Permit for interior alteration and finishing for new tenant (like presentation center) at 4010 MYRTLE ST. The property is zoned M5 and has a legal description of LOT: 42 DISTRICT LOT: 69 PLAN: NWP47359 Group 1, Except Plan 75217. The contractor is DASHMESH CONSTRUCTION LTD. The value of work is $75,000.00 and there are 0 units.",
+    "rawSummaries": [
+      {
+        "summary": "BLD24-00183\nPermit for interior alteration and finishing for new tenant (like presentation center) at 4010 MYRTLE ST. The property is zoned M5 and has a legal description of LOT: 42 DISTRICT LOT: 69 PLAN: NWP47359 Group 1, Except Plan 75217. The applicant is AXIN ARCHITECTURE LTD and the contractor is DASHMESH CONSTRUCTION LTD. The value of work is $75,000.00 and there are 0 units.",
+        "date": "2024-05-10",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-10-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-10",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-10-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-10-2024.pdf",
+        "date": "2024-05-10",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:54:20.809Z",
+    "updateDate": "2024-05-15T02:54:20.809Z",
+    "lastUpdateDate": "2024-05-10"
+  },
+  {
+    "id": "dev-ihpo3cqfmqfp9rysilxb2",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD23-00909",
+    "address": "8888 UNIVERSITY DR",
+    "applicant": "OFFICE OF MCFARLANE BIGGAR (OMB) ARCHITECTS & DESIGNERS INC",
+    "behalf": null,
+    "description": "Building permit for an alteration to the existing SHRUM SCIENCE COMPLEX (KINESIOLOGY) building. The legal description is LOT: 1 DISTRICT LOT: 31 PLAN: BCP45523 Group 1, & DL 101, 102, 141, 144, 147, 209, 210 & 211. The current/underlying zone is SHRUM - 8888 UNIVERSITY DR. The work involves exterior alteration to the existing building for envelope renewal.",
+    "rawSummaries": [
+      {
+        "summary": "BLD23-00909 - SHRUM - 8888 UNIVERSITY DR\nBuilding permit for an alteration to the existing SHRUM SCIENCE COMPLEX (KINESIOLOGY) building. The legal description is LOT: 1 DISTRICT LOT: 31 PLAN: BCP45523 Group 1, & DL 101, 102, 141, 144, 147, 209, 210 & 211. The current/underlying zone is SHRUM - 8888 UNIVERSITY DR. The applicant is OFFICE OF MCFARLANE BIGGAR (OMB) ARCHITECTS & DESIGNERS INC and the contractor is HOLACO CONSTRUCTION (1997) LTD. The work involves exterior alteration to the existing building for envelope renewal.",
+        "date": "2024-05-09",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-9-2024.pdf"
+      }
+    ],
+    "buildingType": "other",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-09",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-9-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-9-2024.pdf",
+        "date": "2024-05-09",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:53:45.435Z",
+    "updateDate": "2024-05-15T02:53:45.435Z",
+    "lastUpdateDate": "2024-05-09"
+  },
+  {
+    "id": "dev-sg2zo33lo6jz06ttsc9h9",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD23-01058",
+    "address": "4683 KINGSWAY",
+    "applicant": "AVAN INTERIORS INC.",
+    "behalf": null,
+    "description": "Building permit for interior alterations and finishing for a new massage clinic tenant. The property is located at 4683 Kingsway and has the legal description of LOT: 4 DISTRICT LOT: 153 PLAN: NWP1768 Parcel D(EP13870), Group 1. The current zoning is C3. The contractor for the project is ANGELOS CONSTRUCTION & RENOVATIONS INC.",
+    "rawSummaries": [
+      {
+        "summary": "BLD23-01058 - 4683 KINGSWAY\nBuilding Permit for interior alterations and finishing for a new massage clinic tenant. Legal Description: LOT: 4 DISTRICT LOT: 153 PLAN: NWP1768 Parcel D(EP13870), Group 1. Current Zoning: C3. Applicant: AVAN INTERIORS INC. Contractor: ANGELOS CONSTRUCTION & RENOVATIONS INC.",
+        "date": "2024-05-09",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-9-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-09",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-9-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-9-2024.pdf",
+        "date": "2024-05-09",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:53:57.689Z",
+    "updateDate": "2024-05-15T02:53:57.689Z",
+    "lastUpdateDate": "2024-05-09"
+  },
+  {
+    "id": "dev-ppckw7f2hs6dfy1rivmv5",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD23-01158",
+    "address": "7150 PATTERSON AVE",
+    "applicant": "MSB DEVELOPMENT LTD.",
+    "behalf": null,
+    "description": "Building Permit for a new Laneway House. Legal Description: LOT: 3 DISTRICT LOT: 149 PLAN: NWP9400 Group 1. Current Zoning: R3.",
+    "rawSummaries": [
+      {
+        "summary": "BLD23-01158 - L1 - 7150 PATTERSON AVE\nBuilding Permit for a new Laneway House. Legal Description: LOT: 3 DISTRICT LOT: 149 PLAN: NWP9400 Group 1. Current Zoning: R3. Applicant and Contractor: MSB DEVELOPMENT LTD.",
+        "date": "2024-05-09",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-9-2024.pdf"
+      }
+    ],
+    "buildingType": "single-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-09",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 1,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-9-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-9-2024.pdf",
+        "date": "2024-05-09",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:53:57.689Z",
+    "updateDate": "2024-05-15T02:53:57.689Z",
+    "lastUpdateDate": "2024-05-09"
+  },
+  {
+    "id": "dev-ucjgrs5k0mreu2ckquu61",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD24-00251",
+    "address": "8695 10TH AVE",
+    "applicant": "AVISINA PROPERTIES LTD",
+    "behalf": null,
+    "description": "Interior alteration and finishing for a new childcare centre in a commercial building with current/underlying zone C1. The contractor is CREST SHOPPING CENTRE INC.",
+    "rawSummaries": [
+      {
+        "summary": "BLD24-00251\nPermit for alteration to a commercial building at 8695 10TH AVE. The current/underlying zone is C1. The applicant is AVISINA PROPERTIES LTD and the contractor is CREST SHOPPING CENTRE INC. The description indicates an interior alteration and finishing for a new childcare centre.",
+        "date": "2024-05-09",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-9-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-09",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-9-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-9-2024.pdf",
+        "date": "2024-05-09",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:54:01.968Z",
+    "updateDate": "2024-05-15T02:54:01.968Z",
+    "lastUpdateDate": "2024-05-09"
+  },
+  {
+    "id": "rez-uuns70koff503vv9ui7o7",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": null,
+    "address": "5755-5791 Oak Street, 1008 West 41st Avenue",
+    "applicant": "Wesgroup Properties",
+    "behalf": null,
+    "description": "The application is to rezone the lands from C-1 to CD-1 to permit a mixed-use development with 25-storey and 17-storey buildings, 357 secured-rental units (20% below-market), and commercial uses.",
+    "rawSummaries": [
+      {
+        "summary": "CD-1 REZONING: 5755-5791 Oak Street and 1008 West 41st Avenue\nTo rezone 5755-5791 Oak Street and 1008 West 41st Avenue from C-1 (Commercial) District to CD-1 (Comprehensive Development) District, to permit a mixed-use development with 25-storey and 17-storey buildings connected by a six-storey podium, with 357 secured rental units, of which 20% will be secured at below-market rents. A floor space ratio (FSR) of 7.59 and building heights of 78.7 m (258 ft.) (sub-area A) and 54.6 m (179 ft.) (sub-area B) are proposed. Applicant: Wesgroup Properties. Recommended Approval by the General Manager of Planning, Urban Design and Sustainability, subject to conditions.",
+        "date": "2024-05-08",
+        "status": "public hearing",
+        "reportUrl": "https://council.vancouver.ca/20240507/documents/phea3SR.pdf"
+      },
+      {
+        "summary": "CD-1 Rezoning: 5755-5791 Oak Street and 1008 West 41st Avenue\nThe report evaluates an application to rezone 5755-5791 Oak Street and 1008 West 41st Avenue from C-1 to CD-1 to permit a mixed-use development with 25-storey and 17-storey buildings, 357 secured-rental units (20% below-market), and commercial uses. The application exceeds the anticipated height and density, but staff support it based on the changing context, emerging directions in the Vancouver Plan, and the delivery of 357 secured rental housing units including a portion of below-market units. The report recommends referring the rezoning application and plans to Public Hearing with the recommendation of the General Manager of Planning, Urban Design and Sustainability to approve the application, subject to conditions. The Director of Legal Services is instructed to prepare the necessary by-laws for consideration at the Public Hearing, including a Housing Agreement By-law and an amendment to the Noise Control By-law.",
+        "date": "2024-04-09",
+        "status": "applied",
+        "reportUrl": "https://council.vancouver.ca/20240409/documents/rr1.pdf"
+      }
+    ],
+    "buildingType": "mixed use",
+    "status": "public hearing",
+    "dates": {
+      "appliedDate": "2024-04-09",
+      "publicHearingDate": "2024-05-08",
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 2,
+      "stratas": 0,
+      "rentals": 357,
+      "hotels": 0,
+      "fsr": 7.59,
+      "storeys": 25
+    },
+    "zoning": {
+      "previousZoningCode": "C-1",
+      "previousZoningDescription": "Commercial",
+      "newZoningCode": "CD-1",
+      "newZoningDescription": "Comprehensive Development"
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-08",
+        "title": "Summary and Recommendation",
+        "url": "https://council.vancouver.ca/20240507/documents/phea3SR.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Referral Report dated March 12, 2024",
+        "url": "https://council.vancouver.ca/20240507/documents/phea3RR.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Draft By-law - Zoning and Development",
+        "url": "https://council.vancouver.ca/20240507/documents/phea3BylawZD.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Draft By-law - Sign",
+        "url": "https://council.vancouver.ca/20240507/documents/phea3BylawSign.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Applicant Renderings",
+        "url": "https://council.vancouver.ca/20240507/documents/phea3renderings.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Applicant Boards",
+        "url": "https://council.vancouver.ca/20240507/documents/phea3boards.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Staff Presentation",
+        "url": "https://council.vancouver.ca/20240507/documents/phea3_PDF.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Video Clip of this Item",
+        "url": "https://csg001-harmony.sliq.net/00317/Harmony/en/PowerBrowser/PowerBrowserV2/20240508/-1/20532?mediaStartTime=20240507190505&mediaEndTime=20240507194740&viewMode=3",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-04-09",
+        "title": "Referral Report",
+        "url": "https://council.vancouver.ca/20240409/documents/rr1.pdf",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-08",
+        "url": "https://council.vancouver.ca/20240507/phea20240507ag.htm",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-04-09",
+        "url": "https://council.vancouver.ca/20240409/regu20240409ag.htm",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-04-25T19:10:47.213Z",
+    "updateDate": "2024-05-14T17:57:24.281Z",
+    "lastUpdateDate": "2024-05-08"
+  },
+  {
+    "id": "rez-kt4oh5w569vx1nrsv4aaz",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": null,
+    "address": "7525 Cambie Street",
+    "applicant": "Wesgroup Properties",
+    "behalf": "West 59th Avenue & Cambie Street Investments Ltd.",
+    "description": "The application is to rezone the lands at 7525 Cambie Street from C-1 to CD-1 to increase the FSR from 1.20 to 3.22 and the height from 10.7 m to 23.8 m to permit a six-storey mixed-use building with 67 strata-titled residential units and commercial space. The proposed uses and form of development are consistent with the Cambie Corridor Plan.",
+    "rawSummaries": [
+      {
+        "summary": "CD-1 Rezoning: 7525 Cambie Street\nRezone 7525 Cambie Street from C-1 (Commercial) to CD-1 (Comprehensive Development) to permit a six-storey mixed-use building with commercial use at grade and 67 strata-titled units. Proposed FSR of 3.22 and height of 23.8 m (78 ft.). Applicant: Wesgroup Properties. Recommended Approval by General Manager of Planning, Urban Design and Sustainability, subject to conditions.",
+        "date": "2024-05-08",
+        "status": "public hearing",
+        "reportUrl": "https://council.vancouver.ca/20240507/documents/phea2SR.pdf"
+      },
+      {
+        "summary": "CD-1 Rezoning: 7525 Cambie Street\nThe application by Wesgroup Properties, on behalf of West 59th Avenue & Cambie Street Investments Ltd., is to rezone the lands at 7525 Cambie Street from C-1 to CD-1 to increase the FSR from 1.20 to 3.22 and the height from 10.7 m to 23.8 m to permit a six-storey mixed-use building with 67 strata-titled residential units and commercial space. The proposed uses and form of development are consistent with the Cambie Corridor Plan. The application is recommended for approval in principle, subject to a Public Hearing, and conditions.",
+        "date": "2024-04-09",
+        "status": "applied",
+        "reportUrl": "https://council.vancouver.ca/20240409/documents/rr2.pdf"
+      }
+    ],
+    "buildingType": "mixed use",
+    "status": "public hearing",
+    "dates": {
+      "appliedDate": "2024-04-09",
+      "publicHearingDate": "2024-05-08",
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 67,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": 3.22,
+      "storeys": 6
+    },
+    "zoning": {
+      "previousZoningCode": "C-1",
+      "previousZoningDescription": "Commercial",
+      "newZoningCode": "CD-1",
+      "newZoningDescription": "Comprehensive Development"
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-08",
+        "title": "Summary and Recommendation",
+        "url": "https://council.vancouver.ca/20240507/documents/phea2SR.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Referral Report dated March 12, 2024",
+        "url": "https://council.vancouver.ca/20240507/documents/phea2RR.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Draft By-law - Zoning and Development",
+        "url": "https://council.vancouver.ca/20240507/documents/phea2BylawZD.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Draft By-law - Sign",
+        "url": "https://council.vancouver.ca/20240507/documents/phea2BylawSign.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Applicant Renderings",
+        "url": "https://council.vancouver.ca/20240507/documents/phea2renderings.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Yellow Memorandum dated May 3, 2024",
+        "url": "https://council.vancouver.ca/20240507/documents/phea2yellowmemo.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Video Clip of this Item",
+        "url": "https://csg001-harmony.sliq.net/00317/Harmony/en/PowerBrowser/PowerBrowserV2/20240508/-1/20532?mediaStartTime=20240507183820&mediaEndTime=20240507190500&viewMode=3",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-04-09",
+        "title": "Referral Report",
+        "url": "https://council.vancouver.ca/20240409/documents/rr2.pdf",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-08",
+        "url": "https://council.vancouver.ca/20240507/phea20240507ag.htm",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-04-09",
+        "url": "https://council.vancouver.ca/20240409/regu20240409ag.htm",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-04-25T19:10:53.517Z",
+    "updateDate": "2024-05-14T17:57:14.043Z",
+    "lastUpdateDate": "2024-05-08"
+  },
+  {
+    "id": "rez-o0vpbkl9alwp2mmw62nws",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": null,
+    "address": "1302-1318 East 12th Avenue",
+    "applicant": "David Wong Architect",
+    "behalf": "XGX Apartments Ltd.",
+    "description": "The application is to rezone the lands at 1302-1318 East 12th Avenue from RM-11N (Residential) District to CD-1 (Comprehensive Development) District. The proposed changes are to increase the maximum floor space ratio (FSR) from 1.70 to 3.21 and the maximum building height from 13.7 m (45 ft.) to 24.18 m (79 ft.) to permit a six-storey mixed-use building containing 33 secured market rental residential units with commercial space on the ground floor.",
+    "rawSummaries": [
+      {
+        "summary": "CD-1 REZONING: 1302-1318 East 12th Avenue\nTo rezone 1302-1318 East 12th Avenue from RM-11N (Residential) to CD-1 (Comprehensive Development) to permit a six-storey mixed-use building with 33 secured rental units and commercial space. Proposed FSR of 3.21 and height of 24.20 m (79 ft.). Applicant: David Wong Architect. Recommended Approval by General Manager of Planning, Urban Design and Sustainability, subject to conditions. Approval subject to: Housing Agreement By-law, Sign By-law amendments, Noise Control By-law amendments.",
+        "date": "2024-05-08",
+        "status": "public hearing",
+        "reportUrl": "https://council.vancouver.ca/20240507/documents/phea1SR.pdf"
+      },
+      {
+        "summary": "CD-1 Rezoning: 1302-1318 East 12th Avenue\nThe application by David Wong Architect, on behalf of XGX Apartments Ltd., is to rezone the lands at 1302-1318 East 12th Avenue from RM-11N (Residential) District to CD-1 (Comprehensive Development) District. The proposed changes are to increase the maximum floor space ratio (FSR) from 1.70 to 3.21 and the maximum building height from 13.7 m (45 ft.) to 24.18 m (79 ft.) to permit a six-storey mixed-use building containing 33 secured market rental residential units with commercial space on the ground floor. The proposed form of development is generally approved, with the Director of Planning allowed to make minor alterations. The application is recommended for approval in principle, subject to the Public Hearing and Conditions of Approval.",
+        "date": "2024-04-09",
+        "status": "applied",
+        "reportUrl": "https://council.vancouver.ca/20240409/documents/rr3.pdf"
+      }
+    ],
+    "buildingType": "mixed use",
+    "status": "public hearing",
+    "dates": {
+      "appliedDate": "2024-04-09",
+      "publicHearingDate": "2024-05-08",
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 0,
+      "rentals": 33,
+      "hotels": 0,
+      "fsr": 3.21,
+      "storeys": 6
+    },
+    "zoning": {
+      "previousZoningCode": "RM-11N",
+      "previousZoningDescription": "Residential",
+      "newZoningCode": "CD-1",
+      "newZoningDescription": "Comprehensive Development"
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-08",
+        "title": "Summary and Recommendation",
+        "url": "https://council.vancouver.ca/20240507/documents/phea1SR.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Referral Report dated March 12, 2024",
+        "url": "https://council.vancouver.ca/20240507/documents/phea1RR.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Draft By-law - Zoning and Development",
+        "url": "https://council.vancouver.ca/20240507/documents/phea1BylawZD.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Draft By-law - Sign",
+        "url": "https://council.vancouver.ca/20240507/documents/phea1BylawSign.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Applicant Renderings",
+        "url": "https://council.vancouver.ca/20240507/documents/phea1renderings.pdf",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-05-08",
+        "title": "Video Clip of this Item",
+        "url": "https://csg001-harmony.sliq.net/00317/Harmony/en/PowerBrowser/PowerBrowserV2/20240508/-1/20532?mediaStartTime=20240507180710&mediaEndTime=20240507182645&viewMode=3",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-04-09",
+        "title": "Referral Report",
+        "url": "https://council.vancouver.ca/20240409/documents/rr3.pdf",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-08",
+        "url": "https://council.vancouver.ca/20240507/phea20240507ag.htm",
+        "status": "public hearing"
+      },
+      {
+        "date": "2024-04-09",
+        "url": "https://council.vancouver.ca/20240409/regu20240409ag.htm",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-04-25T19:11:01.752Z",
+    "updateDate": "2024-05-14T17:57:04.289Z",
+    "lastUpdateDate": "2024-05-08"
+  },
+  {
+    "id": "dev-58m93vtazkb8ub2t3wn7x",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2023-02325",
+    "address": "2828 HORLEY STREET",
+    "applicant": "Gyanen Nongmaithem DBA: Simplex + G Architecture Inc.",
+    "behalf": null,
+    "description": "High Density Housing / Commercial - New Building - To construct a new multiple dwelling building, containing six dwelling units, and two parking spaces at the rear having access from the lane.\nRelated to :\nDP-2021-00919\nAL-2023-00143 and AL-2023-00144\nEntire Building sprinklered to NFPA 13R requirements.\nNote:\n\"This permit has been reviewed under the provision of Vancouver Building By-law 2019 (#12511).\"",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2023-02325\",\"PermitNumberCreatedDate\":\"2023-07-04\",\"IssueDate\":\"2024-05-08\",\"PermitElapsedDays\":\"309\",\"ProjectValue\":\"1618500.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"2828 HORLEY STREET, Vancouver, BC V5R 4R9\",\"ProjectDescription\":\"High Density Housing / Commercial - New Building - To construct a new multiple dwelling building, containing six dwelling units, and two parking spaces at the rear having access from the lane.\\r\\n\\r\\nRelated to :\\r\\nDP-2021-00919\\r\\nAL-2023-00143 and AL-2023-00144\\r\\n\\r\\nEntire Building sprinklered to NFPA 13R requirements.\\r\\n\\r\\nNote:                                                                             \\r\\n\\\"This permit has been reviewed under the provision of Vancouver Building By-law 2019 (#12511).\\\"\",\"PermitCategory\":\"\",\"Applicant\":\"Gyanen Nongmaithem DBA: Simplex + G Architecture Inc.\",\"ApplicantAddress\":\"407 - 12075 228 Street\\r\\nMaple Ridge, BC  V2X6M2\",\"PropertyUse\":\"Dwelling Uses\",\"SpecificUseCategory\":\"Multiple Dwelling\",\"BuildingContractor\":\"\",\"BuildingContractorAddress\":\"\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Renfrew-Collingwood\",\"Geom\":\"{\\\"coordinates\\\": [-123.0465807, 49.2393616], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-05\",\"geo_point_2d\":\"49.2393616, -123.0465807\"}",
+        "date": "2024-05-08",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "multi-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-08",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 6,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-05-08",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:51:37.624Z",
+    "updateDate": "2024-05-15T02:51:37.624Z",
+    "lastUpdateDate": "2024-05-08"
+  },
+  {
+    "id": "dev-e7ym4m0yevwyh71yr34c2",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD24-00272",
+    "address": "6501 SPROTT ST",
+    "applicant": "DAVID DANYLUCK ARCHITECT",
+    "behalf": null,
+    "description": "Interior alteration & finishing on second floor for CALAN SPORTS at 6501 SPROTT ST. The permit is for a commercial building with a value of work of $200,000.00.",
+    "rawSummaries": [
+      {
+        "summary": "BLD24-00272\nPermit Number: BLD24-00272\nSite Address: 6501 SPROTT ST\nLegal Description: LOT: A DISTRICT LOT: 76 PLAN: LMP22854 Parcel A, Group 1\nCurrent / Underlying Zone: CD\nPermit Category: Building Permit (Commercial)\nType of Change: Alteration\nValue of Work: $200,000.00\nNumber of Units: 0\nApplicant Name: DAVID DANYLUCK ARCHITECT\nContractor Name: NORUM CONSTRUCTION & RENOVATION LTD\nContractor Address: 11985 189B ST PITT MEADOWS, BC V3Y 1X2\nDescription: CALAN SPORTS - Interior alteration & finishing on second floor",
+        "date": "2024-05-08",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-8-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-08",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 2
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-8-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-8-2024.pdf",
+        "date": "2024-05-08",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:53:35.520Z",
+    "updateDate": "2024-05-15T02:53:35.520Z",
+    "lastUpdateDate": "2024-05-08"
+  },
+  {
+    "id": "rez-wmxb4z6c5oqyocxpopfk6",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": null,
+    "address": "988 West 32nd Avenue",
+    "applicant": "b Squared Architecture Inc.",
+    "behalf": "HE 988 West 32nd Ventures Inc.",
+    "description": "Rezoning application to rezone the land at 988 West 32nd Avenue from R1-1 to RM-8A District to allow for a townhouse or rowhouse development up to 1.20 FSR, approximately 10 units. The application meets the intent of the Cambie Corridor Plan.",
+    "rawSummaries": [
+      {
+        "summary": "988 West 32nd Avenue\nRezoning application by b Squared Architecture Inc. on behalf of HE 988 West 32nd Ventures Inc. to rezone the land at 988 West 32nd Avenue from R1-1 to RM-8A District to allow for a townhouse or rowhouse development up to 1.20 FSR, approximately 10 units. The application meets the intent of the Cambie Corridor Plan. Staff recommend referral to Public Hearing with approval recommended, subject to conditions.",
+        "date": "2024-05-07",
+        "status": "applied",
+        "reportUrl": "https://council.vancouver.ca/20240507/documents/rr1.pdf"
+      }
+    ],
+    "buildingType": "townhouse",
+    "status": "applied",
+    "dates": {
+      "appliedDate": "2024-05-07",
+      "publicHearingDate": null,
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 10,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": 1.2,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": "R1-1",
+      "previousZoningDescription": "low density residential",
+      "newZoningCode": "RM-8A",
+      "newZoningDescription": "high density residential"
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-07",
+        "title": "Referral Report",
+        "url": "https://council.vancouver.ca/20240507/documents/rr1.pdf",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-07",
+        "url": "https://council.vancouver.ca/20240507/regu20240507ag.htm",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-14T17:57:36.569Z",
+    "updateDate": "2024-05-14T17:57:36.569Z",
+    "lastUpdateDate": "2024-05-07"
+  },
+  {
+    "id": "rez-g55ol2s6fud8m239sttsw",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": null,
+    "address": "1026-1108 West 41st Avenue",
+    "applicant": null,
+    "behalf": null,
+    "description": "The application is to rezone the properties at 1026-1108 West 41st Avenue from R1-1 (Residential Inclusive) District to CD-1 (Comprehensive Development) District. This would allow the development of a six-storey, 164-unit Community Care Facility - Class B, intended for seniors. The proposed changes include increasing the maximum floor space ratio (FSR) from 0.70 to 3.36 and the maximum building height from 11.5 m (38 ft.) to 26.2 m (86 ft.) and to 30.0 m (98 ft.) for the portion with rooftop amenity.",
+    "rawSummaries": [
+      {
+        "summary": "CD-1 Rezoning: 1026-1108 West 41st Avenue\nThe application is to rezone the properties at 1026-1108 West 41st Avenue from R1-1 (Residential Inclusive) District to CD-1 (Comprehensive Development) District. This would allow the development of a six-storey, 164-unit Community Care Facility - Class B, intended for seniors. The proposed changes include increasing the maximum floor space ratio (FSR) from 0.70 to 3.36 and the maximum building height from 11.5 m (38 ft.) to 26.2 m (86 ft.) and to 30.0 m (98 ft.) for the portion with rooftop amenity. The application is supported by staff, subject to design development and other conditions, and is recommended to be referred to a public hearing for approval in principle.",
+        "date": "2024-05-07",
+        "status": "applied",
+        "reportUrl": "https://council.vancouver.ca/20240507/documents/rr2.pdf"
+      }
+    ],
+    "buildingType": "multi-family residential",
+    "status": "applied",
+    "dates": {
+      "appliedDate": "2024-05-07",
+      "publicHearingDate": null,
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 0,
+      "rentals": 164,
+      "hotels": 0,
+      "fsr": 3.36,
+      "storeys": 6
+    },
+    "zoning": {
+      "previousZoningCode": "R1-1",
+      "previousZoningDescription": "Residential Inclusive",
+      "newZoningCode": "CD-1",
+      "newZoningDescription": "Comprehensive Development"
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-07",
+        "title": "Referral Report    ",
+        "url": "https://council.vancouver.ca/20240507/documents/rr2.pdf",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-07",
+        "url": "https://council.vancouver.ca/20240507/regu20240507ag.htm",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-14T17:57:56.640Z",
+    "updateDate": "2024-05-14T17:57:56.640Z",
+    "lastUpdateDate": "2024-05-07"
+  },
+  {
+    "id": "rez-wwdmpvfuyontpslvunom6",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": null,
+    "address": "8302 Beatrice Street",
+    "applicant": null,
+    "behalf": null,
+    "description": "The land owner has applied to rezone the property from RS-1B (Residential) District to CD-1 (Comprehensive Development) District, subject to a Housing Agreement being entered into by the City and the land owner. The City has accepted and signed the Housing Agreement with the applicant land owner.",
+    "rawSummaries": [
+      {
+        "summary": "8302 Beatrice Street\nFollowing public hearing on February 14 and 21, 2023, Council approved in principle the land owner's application to rezone the property from RS-1B (Residential) District to CD-1 (Comprehensive Development) District, subject to a Housing Agreement being entered into by the City and the land owner. A Housing Agreement has been accepted and signed by the applicant land owner and the City now seeks enactment of a By-law to authorize such Housing Agreement and to authorize the City to enter into the Housing Agreement with the land owner.",
+        "date": "2024-05-07",
+        "status": "approved",
+        "reportUrl": "https://council.vancouver.ca/20240507/documents/Bylaws1to13.pdf"
+      }
+    ],
+    "buildingType": null,
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-07",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": null,
+      "rentals": null,
+      "hotels": null,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-07",
+        "title": "By-laws 1 to 13",
+        "url": "https://council.vancouver.ca/20240507/documents/Bylaws1to13.pdf",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-07",
+        "url": "https://council.vancouver.ca/20240507/regu20240507ag.htm",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-14T17:58:01.520Z",
+    "updateDate": "2024-05-14T17:58:01.520Z",
+    "lastUpdateDate": "2024-05-07"
+  },
+  {
+    "id": "rez-cecnf1vf9xbwsmjmw32ns",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": null,
+    "address": "2518 – 2540 Grandview Highway South",
+    "applicant": null,
+    "behalf": null,
+    "description": "The land owner has applied to rezone the property from RT-2 (Residential) District to CD-1 (Comprehensive Development) District. The rezoning is subject to a Housing Agreement being entered into by the City and the land owner.",
+    "rawSummaries": [
+      {
+        "summary": "2518 – 2540 Grandview Highway South\nFollowing public hearing on February 14 and 21, 2023, Council approved in principle the land owner's application to rezone the property from RT-2 (Residential) District to CD-1 (Comprehensive Development) District, subject to a Housing Agreement being entered into by the City and the land owner. A Housing Agreement has been accepted and signed by the applicant land owner and the City now seeks enactment of a By-law to authorize such Housing Agreement and to authorize the City to enter into the Housing Agreement with the land owner.",
+        "date": "2024-05-07",
+        "status": "approved",
+        "reportUrl": "https://council.vancouver.ca/20240507/documents/Bylaws1to13.pdf"
+      }
+    ],
+    "buildingType": null,
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-07",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": null,
+      "rentals": null,
+      "hotels": null,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-07",
+        "title": "By-laws 1 to 13",
+        "url": "https://council.vancouver.ca/20240507/documents/Bylaws1to13.pdf",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-07",
+        "url": "https://council.vancouver.ca/20240507/regu20240507ag.htm",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-14T17:58:05.356Z",
+    "updateDate": "2024-05-14T17:58:05.356Z",
+    "lastUpdateDate": "2024-05-07"
+  },
+  {
+    "id": "dev-cckr1irmyyzq8yesoqv5d",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD23-00553",
+    "address": "2 - 5400 PATTERSON AVE",
+    "applicant": "MCINTOSH PERRY LTD",
+    "behalf": null,
+    "description": "Permit for commercial building alteration at 2 - 5400 PATTERSON AVE. The legal description is LOT: 12 DISTRICT LOT: 34 PLAN: NWS3153 Group 1, TOGETHER WITH AN INTEREST IN THE COMMON PROPERTY IN PROPORTION TO THE UNIT ENTITLEMENT OF THE STRATA LOT AS SHOWN ON FORM 1. , LOT: 2 DISTRICT LOT: 34 PLAN: NWS3153 Group 1, TOGETHER WITH AN INTEREST IN THE COMMON PROPERTY IN PROPORTION TO THE UNIT ENTITLEMENT OF THE STRATA LOT AS SHOWN ON FORM 1 OR V, AS APPROPRIATE. The current/underlying zone is CD. The contractor is COLUMBUS CONSTRUCTION & RESTORATION LTD. The value of work is $130,000.00 and there are 0 units.",
+    "rawSummaries": [
+      {
+        "summary": "BLD23-00553\nPermit for commercial building alteration at 2 - 5400 PATTERSON AVE. The legal description is LOT: 12 DISTRICT LOT: 34 PLAN: NWS3153 Group 1, TOGETHER WITH AN INTEREST IN THE COMMON PROPERTY IN PROPORTION TO THE UNIT ENTITLEMENT OF THE STRATA LOT AS SHOWN ON FORM 1. , LOT: 2 DISTRICT LOT: 34 PLAN: NWS3153 Group 1, TOGETHER WITH AN INTEREST IN THE COMMON PROPERTY IN PROPORTION TO THE UNIT ENTITLEMENT OF THE STRATA LOT AS SHOWN ON FORM 1 OR V, AS APPROPRIATE. The current/underlying zone is CD. The applicant is MCINTOSH PERRY LTD and the contractor is COLUMBUS CONSTRUCTION & RESTORATION LTD. The value of work is $130,000.00 and there are 0 units.",
+        "date": "2024-05-07",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-7-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-07",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-7-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-7-2024.pdf",
+        "date": "2024-05-07",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:53:25.252Z",
+    "updateDate": "2024-05-15T02:53:25.252Z",
+    "lastUpdateDate": "2024-05-07"
+  },
+  {
+    "id": "dev-ch4i0luavndla8qqcobqx",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD23-00934",
+    "address": "3155 WILLINGDON GREEN",
+    "applicant": "MALLEN GOWING BERZINS ARCHITECTURE INC",
+    "behalf": null,
+    "description": "Permit for commercial building alteration at 3155 WILLINGDON GREEN. The current/underlying zone is CD. The contractor is ENDURO CONSTRUCTION. The value of work is $139,935.00 and there are 0 units.",
+    "rawSummaries": [
+      {
+        "summary": "BLD23-00934\nPermit for commercial building alteration at 3155 WILLINGDON GREEN. The legal description is LOT: 54 DISTRICT LOT: 70 PLAN: NWP65869 Group 1, 1500-4610 HEALTH & WELFARE CANADA - HEALTH PROTECTION BRANCH. The current/underlying zone is CD. The applicant is MALLEN GOWING BERZINS ARCHITECTURE INC and the contractor is ENDURO CONSTRUCTION. The value of work is $139,935.00 and there are 0 units.",
+        "date": "2024-05-07",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-7-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-07",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-7-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-7-2024.pdf",
+        "date": "2024-05-07",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:53:25.252Z",
+    "updateDate": "2024-05-15T02:53:25.252Z",
+    "lastUpdateDate": "2024-05-07"
+  },
+  {
+    "id": "dev-txmqmcpf2ucbayr9xk2lf",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD24-00568",
+    "address": "8600 GLENLYON PKY",
+    "applicant": "NEW HAVEN PROPERTIES INC",
+    "behalf": null,
+    "description": "Permit for alteration work on a commercial building located at 8600 GLENLYON PKY. The value of work is $100,000.00 and there are 0 units. The applicant is NEW HAVEN PROPERTIES INC and the contractor is AMACON CONSTRUCTION LTD. The description indicates this is a 'LANDLORD WORK' permit for SLAB REPAIR ONLY with no drawings required.",
+    "rawSummaries": [
+      {
+        "summary": "BLD24-00568\nPermit for alteration work on a commercial building located at 8600 GLENLYON PKY. The value of work is $100,000.00 and there are 0 units. The applicant is NEW HAVEN PROPERTIES INC and the contractor is AMACON CONSTRUCTION LTD. The description indicates this is a 'LANDLORD WORK' permit for SLAB REPAIR ONLY with no drawings required.",
+        "date": "2024-05-07",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-7-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-07",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-7-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-7-2024.pdf",
+        "date": "2024-05-07",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:53:30.136Z",
+    "updateDate": "2024-05-15T02:53:30.136Z",
+    "lastUpdateDate": "2024-05-07"
+  },
+  {
+    "id": "dev-h3posvl5jvd1qctl92g3m",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD24-00041",
+    "address": "4212 MACDONALD AVE",
+    "applicant": "TYKO DEVELOPMENT LTD",
+    "behalf": null,
+    "description": "Permit for a new residential building with 2 units. The value of work is $950,000.00. The legal description is LOT: 4 BLOCK: 2 DISTRICT LOT: 39 E HLF PLAN: NWP1436 District Lot 39 E HLF, Group 1, OF LOT 2. The current/underlying zone is R4.",
+    "rawSummaries": [
+      {
+        "summary": "BLD24-00041 - 4212 MACDONALD AVE\nPermit for a new residential building with 2 units. The value of work is $950,000.00. The legal description is LOT: 4 BLOCK: 2 DISTRICT LOT: 39 E HLF PLAN: NWP1436 District Lot 39 E HLF, Group 1, OF LOT 2. The current/underlying zone is R4. The applicant is TYKO DEVELOPMENT LTD and the contractor is TYKO DEVELOPMENT LTD located at 1979 36TH AVE E VANCOUVER, BC V5P 1C7.",
+        "date": "2024-05-06",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-6-2024.pdf"
+      }
+    ],
+    "buildingType": "multi-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-06",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 2,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-6-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-6-2024.pdf",
+        "date": "2024-05-06",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:53:01.391Z",
+    "updateDate": "2024-05-15T02:53:01.391Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "dev-2s44hyyxhdb6gi83z0rmc",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD24-00026",
+    "address": "8763 10TH AVE",
+    "applicant": "DREAM CHOICE HOMES LTD",
+    "behalf": null,
+    "description": "Permit for a new laneway house with a detached garage and parking pad. The value of work is $140,000.00. The legal description is LOT: 41 DISTRICT LOT: 13 PLAN: NWP11772 Group 1. The current/underlying zone is R2.",
+    "rawSummaries": [
+      {
+        "summary": "BLD24-00026 - L1 - 8763 10TH AVE\nPermit for a new laneway house with a detached garage and parking pad. The value of work is $140,000.00. The legal description is LOT: 41 DISTRICT LOT: 13 PLAN: NWP11772 Group 1. The current/underlying zone is R2. The applicant and contractor is DREAM CHOICE HOMES LTD located at 13083 57 AVE SURREY, BC V3X 3X3.",
+        "date": "2024-05-06",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-6-2024.pdf"
+      }
+    ],
+    "buildingType": "single-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-06",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 2,
+      "stratas": 1,
+      "rentals": null,
+      "hotels": null,
+      "fsr": null,
+      "storeys": 1
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-6-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-6-2024.pdf",
+        "date": "2024-05-06",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:53:01.391Z",
+    "updateDate": "2024-05-15T02:53:01.391Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "dev-m7wkhmb4u86avky1x5ugw",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD24-00042",
+    "address": "4112 LOUGHEED HWY",
+    "applicant": "ONNI",
+    "behalf": null,
+    "description": "Building Permit for interior alteration and finishing to make 4 new units (#140, #150, #160 & #170) (Formerly CRU1 C/D/E/F) at 4112 LOUGHEED HWY. The legal description is LOT: 1 DISTRICT LOT: 119 PLAN: EPP70913, Group 1. The current/underlying zone is CD. The contractor is ONNI PROPERTY MANAGEMENT SERVICES LTD.",
+    "rawSummaries": [
+      {
+        "summary": "BLD24-00042 - 4112 LOUGHEED HWY\nBuilding Permit for interior alteration and finishing to make 4 new units (#140, #150, #160 & #170) (Formerly CRU1 C/D/E/F) at 4112 LOUGHEED HWY. The legal description is LOT: 1 DISTRICT LOT: 119 PLAN: EPP70913, Group 1. The current/underlying zone is CD. The applicant is ONNI and the contractor is ONNI PROPERTY MANAGEMENT SERVICES LTD.",
+        "date": "2024-05-06",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-6-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-06",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-6-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-6-2024.pdf",
+        "date": "2024-05-06",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:53:14.720Z",
+    "updateDate": "2024-05-15T02:53:14.720Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "dev-utiumb639oqe92famm0xq",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD24-00394",
+    "address": "3788 WAKEFIELD CRT",
+    "applicant": "INSPO HOMES & DESIGN INC",
+    "behalf": null,
+    "description": "Permit for a new Laneway House on LOT: D DISTRICT LOT: 35 PLAN: NWP18172 Group 1, with a current/underlying zone of R4.",
+    "rawSummaries": [
+      {
+        "summary": "BLD24-00394 - 3788 WAKEFIELD CRT\nPermit for a new Laneway House on LOT: D DISTRICT LOT: 35 PLAN: NWP18172 Group 1, with a current/underlying zone of R4. The applicant is INSPO HOMES & DESIGN INC, with a contractor address of 1050 26TH AVE W VANCOUVER, BC V6H 2A5.",
+        "date": "2024-05-03",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-3-2024.pdf"
+      }
+    ],
+    "buildingType": "single-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-03",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 1,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-3-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-3-2024.pdf",
+        "date": "2024-05-03",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:52:40.934Z",
+    "updateDate": "2024-05-15T02:52:40.934Z",
+    "lastUpdateDate": "2024-05-03"
+  },
+  {
+    "id": "dev-g8ad6997nb2s249ikkskx",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD24-00182",
+    "address": "6664 DEER LAKE AVE",
+    "applicant": "HART HOUSE RESTAURANT",
+    "behalf": null,
+    "description": "Permit for a temporary Event Tent for Events at the HART HOUSE RESTAURANT on LOT: 6 DISTRICT LOT: 85 PLAN: NWP11109 Group 1, Except Plan 14874 & 77594, with a current/underlying zone of CD.",
+    "rawSummaries": [
+      {
+        "summary": "BLD24-00182 - 6664 DEER LAKE AVE\nPermit for a temporary Event Tent for Events at the HART HOUSE RESTAURANT on LOT: 6 DISTRICT LOT: 85 PLAN: NWP11109 Group 1, Except Plan 14874 & 77594, with a current/underlying zone of CD. The applicant and contractor is HART HOUSE RESTAURANT, located at 6664 DEER LAKE AVE BURNABY, BC V5E 4H3. The permit is valid from April 15, 2024 to October 15, 2024, with an expiry date of November 1, 2024.",
+        "date": "2024-05-03",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-3-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-03",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-3-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-3-2024.pdf",
+        "date": "2024-05-03",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:52:40.934Z",
+    "updateDate": "2024-05-15T02:52:40.934Z",
+    "lastUpdateDate": "2024-05-03"
+  },
+  {
+    "id": "dev-x8v8omt98j5fd2lws64xq",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD23-00944",
+    "address": "109 - 8255 NORTH FRASER WAY",
+    "applicant": "ULINE",
+    "behalf": null,
+    "description": "Permit for interior alteration and finishing for existing tenant at 109 - 8255 NORTH FRASER WAY. The property is zoned CD. The contractor is CORVIEW CONSTRUCTION LTD. The value of work is $140,000.00 and there are 0 units.",
+    "rawSummaries": [
+      {
+        "summary": "BLD23-00944\nPermit for interior alteration and finishing for existing tenant at 109 - 8255 NORTH FRASER WAY. The property is zoned CD. The applicant is ULINE and the contractor is CORVIEW CONSTRUCTION LTD. The value of work is $140,000.00 and there are 0 units.",
+        "date": "2024-05-03",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-3-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-03",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-3-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-3-2024.pdf",
+        "date": "2024-05-03",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:52:49.197Z",
+    "updateDate": "2024-05-15T02:52:49.197Z",
+    "lastUpdateDate": "2024-05-03"
+  },
+  {
+    "id": "dev-vygfsqvytf34oqw0o3gtc",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BLD24-00070",
+    "address": "3680 GILMORE WAY",
+    "applicant": "TENANT IMPROVEMENT CONSULTING INC",
+    "behalf": null,
+    "description": "Permit for interior alteration and finishing to extend utility room on underground parkade level. The property is zoned CD. The contractor is DOGWOOD MAINTENANCE LTD. The value of work is $10,000.00 and there are 0 units.",
+    "rawSummaries": [
+      {
+        "summary": "BLD24-00070\nPermit for interior alteration and finishing to extend utility room on underground parkade level at 3680 GILMORE WAY. The property is zoned CD. The applicant is TENANT IMPROVEMENT CONSULTING INC and the contractor is DOGWOOD MAINTENANCE LTD. The value of work is $10,000.00 and there are 0 units.",
+        "date": "2024-05-03",
+        "status": "approved",
+        "reportUrl": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-3-2024.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-03",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "title": "May-3-2024.pdf",
+        "url": "https://www.burnaby.ca/sites/default/files/acquiadam/2024-05/May-3-2024.pdf",
+        "date": "2024-05-03",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-05-15T02:52:49.197Z",
+    "updateDate": "2024-05-15T02:52:49.197Z",
+    "lastUpdateDate": "2024-05-03"
+  },
+  {
     "id": "dev-xjon13dll56vpvit8mgc0",
     "city": "Burnaby",
     "metroCity": "Metro Vancouver",
@@ -54,7 +2355,7 @@
       "longitude": null
     },
     "createDate": "2024-05-04T16:41:49.658Z",
-    "updateDate": "2024-05-04T16:41:49.658Z",
+    "updateDate": "2024-05-15T02:52:28.865Z",
     "lastUpdateDate": "2024-05-02"
   },
   {
@@ -112,7 +2413,7 @@
       "longitude": null
     },
     "createDate": "2024-05-04T16:41:49.658Z",
-    "updateDate": "2024-05-04T16:41:49.658Z",
+    "updateDate": "2024-05-15T02:52:28.882Z",
     "lastUpdateDate": "2024-05-02"
   },
   {
@@ -170,7 +2471,7 @@
       "longitude": null
     },
     "createDate": "2024-05-04T16:41:49.658Z",
-    "updateDate": "2024-05-04T16:41:49.658Z",
+    "updateDate": "2024-05-15T02:52:28.896Z",
     "lastUpdateDate": "2024-05-02"
   },
   {
@@ -228,7 +2529,7 @@
       "longitude": null
     },
     "createDate": "2024-05-04T16:41:21.098Z",
-    "updateDate": "2024-05-04T16:41:21.098Z",
+    "updateDate": "2024-05-15T02:51:59.623Z",
     "lastUpdateDate": "2024-05-01"
   },
   {
@@ -286,7 +2587,7 @@
       "longitude": null
     },
     "createDate": "2024-05-04T16:41:21.098Z",
-    "updateDate": "2024-05-04T16:41:21.098Z",
+    "updateDate": "2024-05-15T02:51:59.639Z",
     "lastUpdateDate": "2024-05-01"
   },
   {
@@ -344,7 +2645,7 @@
       "longitude": null
     },
     "createDate": "2024-05-04T16:41:32.797Z",
-    "updateDate": "2024-05-04T16:41:32.797Z",
+    "updateDate": "2024-05-15T02:52:11.490Z",
     "lastUpdateDate": "2024-05-01"
   },
   {
@@ -402,7 +2703,7 @@
       "longitude": null
     },
     "createDate": "2024-05-04T16:41:32.797Z",
-    "updateDate": "2024-05-04T16:41:32.797Z",
+    "updateDate": "2024-05-15T02:52:11.507Z",
     "lastUpdateDate": "2024-05-01"
   },
   {
@@ -460,7 +2761,7 @@
       "longitude": null
     },
     "createDate": "2024-05-04T16:41:32.797Z",
-    "updateDate": "2024-05-04T16:41:32.797Z",
+    "updateDate": "2024-05-15T02:52:11.520Z",
     "lastUpdateDate": "2024-05-01"
   },
   {
@@ -518,7 +2819,7 @@
       "longitude": null
     },
     "createDate": "2024-05-04T16:41:37.722Z",
-    "updateDate": "2024-05-04T16:41:37.722Z",
+    "updateDate": "2024-05-15T02:52:16.290Z",
     "lastUpdateDate": "2024-05-01"
   },
   {
@@ -7139,198 +9440,6 @@
     "createDate": "2024-04-25T19:44:27.238Z",
     "updateDate": "2024-05-04T16:43:45.003Z",
     "lastUpdateDate": "2024-04-10"
-  },
-  {
-    "id": "rez-uuns70koff503vv9ui7o7",
-    "city": "Vancouver",
-    "metroCity": "Metro Vancouver",
-    "type": "rezoning",
-    "applicationId": null,
-    "address": "5755-5791 Oak Street, 1008 West 41st Avenue",
-    "applicant": null,
-    "behalf": null,
-    "description": "The application is to rezone the lands from C-1 to CD-1 to permit a mixed-use development with 25-storey and 17-storey buildings, 357 secured-rental units (20% below-market), and commercial uses.",
-    "rawSummaries": [
-      {
-        "summary": "CD-1 Rezoning: 5755-5791 Oak Street and 1008 West 41st Avenue\nThe report evaluates an application to rezone 5755-5791 Oak Street and 1008 West 41st Avenue from C-1 to CD-1 to permit a mixed-use development with 25-storey and 17-storey buildings, 357 secured-rental units (20% below-market), and commercial uses. The application exceeds the anticipated height and density, but staff support it based on the changing context, emerging directions in the Vancouver Plan, and the delivery of 357 secured rental housing units including a portion of below-market units. The report recommends referring the rezoning application and plans to Public Hearing with the recommendation of the General Manager of Planning, Urban Design and Sustainability to approve the application, subject to conditions. The Director of Legal Services is instructed to prepare the necessary by-laws for consideration at the Public Hearing, including a Housing Agreement By-law and an amendment to the Noise Control By-law.",
-        "date": "2024-04-09",
-        "status": "applied",
-        "reportUrl": "https://council.vancouver.ca/20240409/documents/rr1.pdf"
-      }
-    ],
-    "buildingType": "mixed use",
-    "status": "applied",
-    "dates": {
-      "appliedDate": "2024-04-09",
-      "publicHearingDate": null,
-      "approvalDate": null,
-      "denialDate": null,
-      "withdrawnDate": null
-    },
-    "stats": {
-      "buildings": 2,
-      "stratas": 0,
-      "rentals": 357,
-      "hotels": 0,
-      "fsr": null,
-      "storeys": 25
-    },
-    "zoning": {
-      "previousZoningCode": "C-1",
-      "previousZoningDescription": null,
-      "newZoningCode": "CD-1",
-      "newZoningDescription": null
-    },
-    "reportUrls": [
-      {
-        "date": "2024-04-09",
-        "title": "Referral Report",
-        "url": "https://council.vancouver.ca/20240409/documents/rr1.pdf",
-        "status": "applied"
-      }
-    ],
-    "minutesUrls": [
-      {
-        "date": "2024-04-09",
-        "url": "https://council.vancouver.ca/20240409/regu20240409ag.htm",
-        "status": "applied"
-      }
-    ],
-    "location": {
-      "latitude": null,
-      "longitude": null
-    },
-    "createDate": "2024-04-25T19:10:47.213Z",
-    "updateDate": "2024-05-04T16:26:37.501Z",
-    "lastUpdateDate": "2024-04-09"
-  },
-  {
-    "id": "rez-kt4oh5w569vx1nrsv4aaz",
-    "city": "Vancouver",
-    "metroCity": "Metro Vancouver",
-    "type": "rezoning",
-    "applicationId": null,
-    "address": "7525 Cambie Street",
-    "applicant": "Wesgroup Properties",
-    "behalf": "West 59th Avenue & Cambie Street Investments Ltd.",
-    "description": "The application is to rezone the lands at 7525 Cambie Street from C-1 to CD-1 to increase the FSR from 1.20 to 3.22 and the height from 10.7 m to 23.8 m to permit a six-storey mixed-use building with 67 strata-titled residential units and commercial space. The proposed uses and form of development are consistent with the Cambie Corridor Plan.",
-    "rawSummaries": [
-      {
-        "summary": "CD-1 Rezoning: 7525 Cambie Street\nThe application by Wesgroup Properties, on behalf of West 59th Avenue & Cambie Street Investments Ltd., is to rezone the lands at 7525 Cambie Street from C-1 to CD-1 to increase the FSR from 1.20 to 3.22 and the height from 10.7 m to 23.8 m to permit a six-storey mixed-use building with 67 strata-titled residential units and commercial space. The proposed uses and form of development are consistent with the Cambie Corridor Plan. The application is recommended for approval in principle, subject to a Public Hearing, and conditions.",
-        "date": "2024-04-09",
-        "status": "applied",
-        "reportUrl": "https://council.vancouver.ca/20240409/documents/rr2.pdf"
-      }
-    ],
-    "buildingType": "mixed use",
-    "status": "applied",
-    "dates": {
-      "appliedDate": "2024-04-09",
-      "publicHearingDate": null,
-      "approvalDate": null,
-      "denialDate": null,
-      "withdrawnDate": null
-    },
-    "stats": {
-      "buildings": 1,
-      "stratas": 67,
-      "rentals": null,
-      "hotels": 0,
-      "fsr": 3.22,
-      "storeys": 6
-    },
-    "zoning": {
-      "previousZoningCode": "C-1",
-      "previousZoningDescription": null,
-      "newZoningCode": "CD-1",
-      "newZoningDescription": null
-    },
-    "reportUrls": [
-      {
-        "date": "2024-04-09",
-        "title": "Referral Report",
-        "url": "https://council.vancouver.ca/20240409/documents/rr2.pdf",
-        "status": "applied"
-      }
-    ],
-    "minutesUrls": [
-      {
-        "date": "2024-04-09",
-        "url": "https://council.vancouver.ca/20240409/regu20240409ag.htm",
-        "status": "applied"
-      }
-    ],
-    "location": {
-      "latitude": null,
-      "longitude": null
-    },
-    "createDate": "2024-04-25T19:10:53.517Z",
-    "updateDate": "2024-05-04T16:26:43.238Z",
-    "lastUpdateDate": "2024-04-09"
-  },
-  {
-    "id": "rez-o0vpbkl9alwp2mmw62nws",
-    "city": "Vancouver",
-    "metroCity": "Metro Vancouver",
-    "type": "rezoning",
-    "applicationId": null,
-    "address": "1302-1318 East 12th Avenue",
-    "applicant": "David Wong Architect",
-    "behalf": "XGX Apartments Ltd.",
-    "description": "The application is to rezone the lands at 1302-1318 East 12th Avenue from RM-11N (Residential) District to CD-1 (Comprehensive Development) District. The proposed changes are to increase the maximum floor space ratio (FSR) from 1.70 to 3.21 and the maximum building height from 13.7 m (45 ft.) to 24.18 m (79 ft.) to permit a six-storey mixed-use building containing 33 secured market rental residential units with commercial space on the ground floor.",
-    "rawSummaries": [
-      {
-        "summary": "CD-1 Rezoning: 1302-1318 East 12th Avenue\nThe application by David Wong Architect, on behalf of XGX Apartments Ltd., is to rezone the lands at 1302-1318 East 12th Avenue from RM-11N (Residential) District to CD-1 (Comprehensive Development) District. The proposed changes are to increase the maximum floor space ratio (FSR) from 1.70 to 3.21 and the maximum building height from 13.7 m (45 ft.) to 24.18 m (79 ft.) to permit a six-storey mixed-use building containing 33 secured market rental residential units with commercial space on the ground floor. The proposed form of development is generally approved, with the Director of Planning allowed to make minor alterations. The application is recommended for approval in principle, subject to the Public Hearing and Conditions of Approval.",
-        "date": "2024-04-09",
-        "status": "applied",
-        "reportUrl": "https://council.vancouver.ca/20240409/documents/rr3.pdf"
-      }
-    ],
-    "buildingType": "mixed use",
-    "status": "applied",
-    "dates": {
-      "appliedDate": "2024-04-09",
-      "publicHearingDate": null,
-      "approvalDate": null,
-      "denialDate": null,
-      "withdrawnDate": null
-    },
-    "stats": {
-      "buildings": 1,
-      "stratas": 0,
-      "rentals": 33,
-      "hotels": 0,
-      "fsr": 3.21,
-      "storeys": 6
-    },
-    "zoning": {
-      "previousZoningCode": "RM-11N",
-      "previousZoningDescription": "Residential",
-      "newZoningCode": "CD-1",
-      "newZoningDescription": "Comprehensive Development"
-    },
-    "reportUrls": [
-      {
-        "date": "2024-04-09",
-        "title": "Referral Report",
-        "url": "https://council.vancouver.ca/20240409/documents/rr3.pdf",
-        "status": "applied"
-      }
-    ],
-    "minutesUrls": [
-      {
-        "date": "2024-04-09",
-        "url": "https://council.vancouver.ca/20240409/regu20240409ag.htm",
-        "status": "applied"
-      }
-    ],
-    "location": {
-      "latitude": null,
-      "longitude": null
-    },
-    "createDate": "2024-04-25T19:11:01.752Z",
-    "updateDate": "2024-05-04T16:26:49.644Z",
-    "lastUpdateDate": "2024-04-09"
   },
   {
     "id": "rez-xf0dm2zr7wlko9k4728gq",

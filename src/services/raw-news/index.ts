@@ -38,7 +38,7 @@ export async function main(params: IParams) {
     params.cities = availableCities
   }
 
-  if (params.cities.includes('BC (province)')) {
+  if (params.cities.includes('BC')) {
     console.log(chalk.bgWhite(`Scraping: BC (province)`))
     const data = await scrapeBC({
       startDate: params.startDate,
