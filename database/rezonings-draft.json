@@ -1,5 +1,1425 @@
 [
   {
+    "id": "dev-fe7u0kru8xt4i3s9mricb",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2023-02587",
+    "address": "2329 E 34TH AVENUE",
+    "applicant": "Michael Meszaros DBA: Pioneer Code Consultants Ltd.",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - This permit has been issued for all site work for the proposed two 4-storey townhouse buildings with 13 dwelling units plus 3 lock-off suites, total 16 dwelling units:\nTo construct one 4-storey townhouse buildings (Building 1) with 8 dwelling units plus 2 lock-off suites (total 10 dwelling units) with 9 on-grade parking spaces and 33 metal bike lockers at rear having vehicular access from the lane.\nThis is a CP Process Permit and the applicant is Michael Meszaros, P. Eng., CP.\nRefer to BP-2023-03575 for Building 2.\nBuilding to be sprinklered NFPA 13R. Hose connections are provided in lieu of standpipe.\nNote: This is a 3-storey plus basement pursuant to the Zoning and Development By-Law\n***REVIEWED UNDER VBBL 2019 WITH AMENDMENTS EFFECTIVE ON JUL 01, 2023***\nSTAGED CONSTRUCTION\nStage 1: Excavation & Shoring. (Jul 19/24, A. Min)",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2023-02587\",\"PermitNumberCreatedDate\":\"2023-07-20\",\"IssueDate\":\"2024-07-19\",\"PermitElapsedDays\":\"365\",\"ProjectValue\":\"4653000.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"2329 E 34TH AVENUE, Vancouver, BC V5R 2S6\",\"ProjectDescription\":\"Certified Professional Program - New Building - This permit has been issued for all site work for the proposed two 4-storey townhouse buildings with 13 dwelling units plus 3 lock-off suites, total 16 dwelling units: \\r\\n\\r\\nTo construct one 4-storey townhouse buildings (Building 1) with 8 dwelling units plus 2 lock-off suites (total 10 dwelling units) with 9 on-grade parking spaces and 33 metal bike lockers at rear having vehicular access from the lane. \\r\\n\\r\\nThis is a CP Process Permit and the applicant is Michael Meszaros, P. Eng., CP.\\r\\n\\r\\nRefer to BP-2023-03575 for Building 2. \\r\\n\\r\\nBuilding to be sprinklered NFPA 13R. Hose connections are provided in lieu of standpipe. \\r\\n\\r\\nNote: This is a 3-storey plus basement pursuant to the Zoning and Development By-Law\\r\\n\\r\\n***REVIEWED UNDER VBBL 2019 WITH AMENDMENTS EFFECTIVE ON JUL 01, 2023***\\r\\n\\r\\nSTAGED CONSTRUCTION\\r\\nStage 1: Excavation & Shoring. (Jul 19/24, A. Min)\",\"PermitCategory\":\"\",\"Applicant\":\"Michael Meszaros DBA: Pioneer Code Consultants Ltd.\",\"ApplicantAddress\":\"1933 W Broadway\\r\\nVancouver, BC  V6J 1Z3\",\"PropertyUse\":\"Dwelling Uses\",\"SpecificUseCategory\":\"Multiple Dwelling\",\"BuildingContractor\":\"C-Best Construction Ltd\",\"BuildingContractorAddress\":\"952 E 53RD AV  \\r\\nVancouver, BC  V5X 1J6\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Renfrew-Collingwood\",\"Geom\":\"{\\\"coordinates\\\": [-123.0580042, 49.2389404], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-07\",\"geo_point_2d\":\"49.2389404, -123.0580042\"}",
+        "date": "2024-07-19",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "townhouse",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-07-19",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 2,
+      "stratas": 16,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 4
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-07-19",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:37:24.440Z",
+    "updateDate": "2024-07-20T18:37:24.440Z",
+    "lastUpdateDate": "2024-07-19"
+  },
+  {
+    "id": "dev-jzoh05m98eg3i8css8qah",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2022-04782",
+    "address": "7789 YUKON STREET",
+    "applicant": "Michael Meszaros DBA: Pioneer Code Consultants Ltd.",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - Building 1 (Facing the Lane / West) - To construct a stack townhouse multiple dwelling buildings, containing 13 dwelling units.\nRefer to BP-2022-02435 for site work, below grade facilities and common underground parking.\nVBBL2019 - NFPA 13R\nStage Construction.",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2022-04782\",\"PermitNumberCreatedDate\":\"2022-10-18\",\"IssueDate\":\"2024-07-17\",\"PermitElapsedDays\":\"638\",\"ProjectValue\":\"0.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"7789 YUKON STREET, Vancouver, BC\",\"ProjectDescription\":\"Certified Professional Program - New Building - Building 1 (Facing the Lane / West) - To construct a stack townhouse multiple dwelling buildings, containing 13 dwelling units.\\r\\n\\r\\nRefer to BP-2022-02435  for site work, below grade facilities and common underground parking.\\r\\n\\r\\nVBBL2019 - NFPA 13R\\r\\n\\r\\nStage Construction.\",\"PermitCategory\":\"\",\"Applicant\":\"Michael Meszaros DBA: Pioneer Code Consultants Ltd.\",\"ApplicantAddress\":\"1933 W Broadway\\r\\nVancouver, BC  V6J 1Z3\",\"PropertyUse\":\"Dwelling Uses\",\"SpecificUseCategory\":\"Multiple Dwelling\",\"BuildingContractor\":\"Signia Construction Ltd\",\"BuildingContractorAddress\":\"233 E 6TH AV  \\r\\nVancouver, BC  V5T 1J7\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Marpole\",\"Geom\":\"{\\\"coordinates\\\": [-123.1155358, 49.2142398], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-07\",\"geo_point_2d\":\"49.2142398, -123.1155358\"}",
+        "date": "2024-07-17",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "townhouse",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-07-17",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 13,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-07-17",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:37:05.417Z",
+    "updateDate": "2024-07-20T18:37:05.417Z",
+    "lastUpdateDate": "2024-07-17"
+  },
+  {
+    "id": "dev-hfcv8184jz133i16201c2",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2022-04862",
+    "address": "7791 YUKON STREET",
+    "applicant": "Michael Meszaros DBA: Pioneer Code Consultants Ltd.",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - Building 3 (Facing W. 62nd with 7791 Yukon addresses / South) - To construct a stack townhouse multiple dwelling buildings, containing 11 dwelling units.\nRefer to BP-2022-02435 for site work, below grade facilities and common underground parking.\nVBBL2019 - NFPA 13R\nStage Construction.",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2022-04862\",\"PermitNumberCreatedDate\":\"2022-10-25\",\"IssueDate\":\"2024-07-17\",\"PermitElapsedDays\":\"631\",\"ProjectValue\":\"0.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"7791 YUKON STREET, Vancouver, BC\",\"ProjectDescription\":\"Certified Professional Program - New Building - Building 3 (Facing  W. 62nd with 7791 Yukon addresses / South)  - To construct a stack townhouse multiple dwelling buildings, containing 11 dwelling units.\\r\\n\\r\\nRefer to BP-2022-02435  for site work, below grade facilities and common underground parking.\\r\\n\\r\\nVBBL2019 - NFPA 13R\\r\\n\\r\\nStage Construction.\",\"PermitCategory\":\"\",\"Applicant\":\"Michael Meszaros DBA: Pioneer Code Consultants Ltd.\",\"ApplicantAddress\":\"1933 W Broadway\\r\\nVancouver, BC  V6J 1Z3\",\"PropertyUse\":\"Dwelling Uses\",\"SpecificUseCategory\":\"Multiple Dwelling\",\"BuildingContractor\":\"Signia Construction Ltd\",\"BuildingContractorAddress\":\"233 E 6TH AV  \\r\\nVancouver, BC  V5T 1J7\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Marpole\",\"Geom\":\"{\\\"coordinates\\\": [-123.1155365, 49.2142182], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-07\",\"geo_point_2d\":\"49.2142182, -123.1155365\"}",
+        "date": "2024-07-17",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "townhouse",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-07-17",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 11,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-07-17",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:37:08.560Z",
+    "updateDate": "2024-07-20T18:37:08.560Z",
+    "lastUpdateDate": "2024-07-17"
+  },
+  {
+    "id": "dev-hpr30gqn8vvxvra3gmsz9",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2022-04861",
+    "address": "7781 YUKON STREET",
+    "applicant": "Michael Meszaros DBA: Pioneer Code Consultants Ltd.",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - Building 2 (Facing Yukon / East) - To construct a stack townhouse multiple dwelling buildings, containing 12 dwelling units.\nRefer to BP-2022-02435 for site work, below grade facilities and common underground parking.\nVBBL2019 - NFPA 13R\nStage Construction.",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2022-04861\",\"PermitNumberCreatedDate\":\"2022-10-25\",\"IssueDate\":\"2024-07-17\",\"PermitElapsedDays\":\"631\",\"ProjectValue\":\"0.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"7781 YUKON STREET, Vancouver, BC V5X 2Y4\",\"ProjectDescription\":\"Certified Professional Program - New Building - Building 2 (Facing Yukon / East) -  To construct a stack townhouse multiple dwelling buildings, containing 12 dwelling units.\\r\\n\\r\\nRefer to BP-2022-02435  for site work, below grade facilities and common underground parking.\\r\\n\\r\\nVBBL2019 - NFPA 13R\\r\\n\\r\\nStage Construction.\",\"PermitCategory\":\"\",\"Applicant\":\"Michael Meszaros DBA: Pioneer Code Consultants Ltd.\",\"ApplicantAddress\":\"1933 W Broadway\\r\\nVancouver, BC  V6J 1Z3\",\"PropertyUse\":\"Dwelling Uses\",\"SpecificUseCategory\":\"Multiple Dwelling\",\"BuildingContractor\":\"Signia Construction Ltd\",\"BuildingContractorAddress\":\"233 E 6TH AV  \\r\\nVancouver, BC  V5T 1J7\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Marpole\",\"Geom\":\"{\\\"coordinates\\\": [-123.1155324, 49.2143345], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-07\",\"geo_point_2d\":\"49.2143345, -123.1155324\"}",
+        "date": "2024-07-17",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "townhouse",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-07-17",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": 12,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-07-17",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T19:04:19.342Z",
+    "updateDate": "2024-07-20T19:04:19.342Z",
+    "lastUpdateDate": "2024-07-17"
+  },
+  {
+    "id": "rez-r5s3a6ssuly10s9v35975",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "REZ #22-28",
+    "address": "6800 Lougheed Highway",
+    "applicant": null,
+    "behalf": null,
+    "description": "to establish a Conceptual Master Plan and Design Guidelines for the Burnaby Lake Village Site in order to guide further site specific rezoning applications over time, for the construction of a high-density multi-phased residential and commercial mixed-use development. No specific development is being proposed by the subject rezoning application.",
+    "rawSummaries": [
+      {
+        "summary": "REZ #22-28 (6800 Lougheed Highway)\nPurpose: to establish a Conceptual Master Plan and Design Guidelines for the Burnaby Lake Village Site in order to guide further site specific rezoning applications over time, for the construction of a high-density multi-phased residential and commercial mixed-use development. No specific development is being proposed by the subject rezoning application.",
+        "date": "2024-07-08",
+        "status": "approved",
+        "reportUrl": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76666"
+      }
+    ],
+    "buildingType": null,
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-07-08",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": null,
+      "rentals": null,
+      "hotels": null,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "date": "2024-07-08",
+        "title": "14564 No. 8, 2023 (CD) (FA).pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76666",
+        "status": "approved"
+      },
+      {
+        "date": "2024-07-08",
+        "title": "REZ 22-28 Final Adoption 2024-07-08.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76667",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-07-08",
+        "url": "https://pub-burnaby.escribemeetings.com/Meeting.aspx?Id=1f31110f-83c1-4479-b605-f9dff33ae919&lang=English",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:18:50.470Z",
+    "updateDate": "2024-07-20T18:18:50.471Z",
+    "lastUpdateDate": "2024-07-08"
+  },
+  {
+    "id": "dev-2mtlm6vfs8f7nkajgkkof",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2023-03211",
+    "address": "2820 NANAIMO STREET",
+    "applicant": "Jack Hui DBA: Pontem Group",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - Building 4 (Middle-East) - To construct 4 townhouse units on this multiple-dwelling site.\nRefer to BP-2022-04490 for site work, below-grade facilities, and common underground parking.\nVBBL 2019 - NFPA 13R\nStaged Construction.",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2023-03211\",\"PermitNumberCreatedDate\":\"2023-09-08\",\"IssueDate\":\"2024-07-05\",\"PermitElapsedDays\":\"301\",\"ProjectValue\":\"0.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"2820 NANAIMO STREET, Vancouver, BC\",\"ProjectDescription\":\"Certified Professional Program - New Building - Building 4 (Middle-East) - To construct 4 townhouse units on this multiple-dwelling site.\\r\\n\\r\\nRefer to BP-2022-04490 for site work, below-grade facilities, and common underground parking.\\r\\n\\r\\nVBBL 2019 - NFPA 13R\\r\\n\\r\\nStaged Construction.\",\"PermitCategory\":\"\",\"Applicant\":\"Jack Hui DBA: Pontem Group\",\"ApplicantAddress\":\"Suite 309 – 63 W 6th Avenue\\r\\nVancouver, BC  V5Y 1K2\",\"PropertyUse\":\"Dwelling Uses\",\"SpecificUseCategory\":\"Multiple Dwelling\",\"BuildingContractor\":\"Trillium Project Management Ltd\",\"BuildingContractorAddress\":\"1195 W BROADWAY  \\r\\nUnit 200\\r\\nVancouver, BC  V6H 3X5\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Renfrew-Collingwood\",\"Geom\":\"{\\\"coordinates\\\": [-123.0565333, 49.2587512], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-07\",\"geo_point_2d\":\"49.2587512, -123.0565333\"}",
+        "date": "2024-07-05",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "townhouse",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-07-05",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 4,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-07-05",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T19:04:45.002Z",
+    "updateDate": "2024-07-20T19:04:45.002Z",
+    "lastUpdateDate": "2024-07-05"
+  },
+  {
+    "id": "dev-1oj0adacxhms4n1638r08",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2023-03208",
+    "address": "2880 NANAIMO STREET",
+    "applicant": "Jack Hui DBA: Pontem Group",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - Building 1 (South) - To construct 9 townhouse units on this multiple-dwelling site.\nRefer to BP-2022-04490 for site work, below-grade facilities, and common underground parking.\nVBBL 2019 - NFPA 13R\nStaged Construction.",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2023-03208\",\"PermitNumberCreatedDate\":\"2023-09-08\",\"IssueDate\":\"2024-07-05\",\"PermitElapsedDays\":\"301\",\"ProjectValue\":\"0.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"2880 NANAIMO STREET, Vancouver, BC V5N 5G1\",\"ProjectDescription\":\"Certified Professional Program - New Building - Building 1 (South) - To construct 9 townhouse units on this multiple-dwelling site.\\r\\n\\r\\nRefer to BP-2022-04490 for site work, below-grade facilities, and common underground parking.\\r\\n\\r\\nVBBL 2019 - NFPA 13R\\r\\n\\r\\nStaged Construction.\",\"PermitCategory\":\"\",\"Applicant\":\"Jack Hui DBA: Pontem Group\",\"ApplicantAddress\":\"Suite 309 – 63 W 6th Avenue\\r\\nVancouver, BC  V5Y 1K2\",\"PropertyUse\":\"Dwelling Uses\",\"SpecificUseCategory\":\"Multiple Dwelling\",\"BuildingContractor\":\"Trillium Project Management Ltd\",\"BuildingContractorAddress\":\"1195 W BROADWAY  \\r\\nUnit 200\\r\\nVancouver, BC  V6H 3X5\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Renfrew-Collingwood\",\"Geom\":\"{\\\"coordinates\\\": [-123.05653, 49.2585595], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-07\",\"geo_point_2d\":\"49.2585595, -123.05653\"}",
+        "date": "2024-07-05",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "townhouse",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-07-05",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 9,
+      "rentals": null,
+      "hotels": null,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-07-05",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T19:04:47.766Z",
+    "updateDate": "2024-07-20T19:04:47.766Z",
+    "lastUpdateDate": "2024-07-05"
+  },
+  {
+    "id": "dev-9ri89o99xq0ubhuuffn36",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2023-03209",
+    "address": "2830 NANAIMO STREET",
+    "applicant": "Jack Hui DBA: Pontem Group",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - Building 2 (Middle-West) - To construct 12 townhouse units on this multiple-dwelling site.\nRefer to BP-2022-04490 for site work, below-grade facilities, and common underground parking.\nVBBL 2019 - NFPA 13R\nStaged Construction.",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2023-03209\",\"PermitNumberCreatedDate\":\"2023-09-08\",\"IssueDate\":\"2024-07-05\",\"PermitElapsedDays\":\"301\",\"ProjectValue\":\"0.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"2830 NANAIMO STREET, Vancouver, BC V5N 5G1\",\"ProjectDescription\":\"Certified Professional Program - New Building - Building 2 (Middle-West) - To construct 12 townhouse units on this multiple-dwelling site.\\r\\n\\r\\nRefer to BP-2022-04490 for site work, below-grade facilities, and common underground parking.\\r\\n\\r\\nVBBL 2019 - NFPA 13R\\r\\n\\r\\nStaged Construction.\",\"PermitCategory\":\"\",\"Applicant\":\"Jack Hui DBA: Pontem Group\",\"ApplicantAddress\":\"Suite 309 – 63 W 6th Avenue\\r\\nVancouver, BC  V5Y 1K2\",\"PropertyUse\":\"Dwelling Uses\",\"SpecificUseCategory\":\"Multiple Dwelling\",\"BuildingContractor\":\"Trillium Project Management Ltd\",\"BuildingContractorAddress\":\"1195 W BROADWAY  \\r\\nUnit 200\\r\\nVancouver, BC  V6H 3X5\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Renfrew-Collingwood\",\"Geom\":\"{\\\"coordinates\\\": [-123.0565348, 49.2588425], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-07\",\"geo_point_2d\":\"49.2588425, -123.0565348\"}",
+        "date": "2024-07-05",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "townhouse",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-07-05",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 12,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-07-05",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T19:21:27.308Z",
+    "updateDate": "2024-07-20T19:21:27.308Z",
+    "lastUpdateDate": "2024-07-05"
+  },
+  {
+    "id": "dev-1un1io1gcu4kgfq9qq0j3",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2023-02649",
+    "address": "2136 E 10TH AVENUE",
+    "applicant": "Carman Kwan DBA: Architectural Collective Inc.",
+    "behalf": null,
+    "description": "High Density Housing / Commercial - New Building - To construct a new 3 storey Multiple Dwelling with 3 unit and 2 car garage (accessory building) having vehicular access from the lane.\nRelated to DP-2022-00548\n******THIS PERMIT HAS BEEN REVIEWED & ISSUED UNDER THE REQUIREMENTS OF VBBL 2019 AND AMENDMENT EFFECTIVE March 7, 2023. ********\nBuilding Review Branch Notes:\n1. Sch-A, Arch. B, Struct. B and Geo. B are submitted.\n2. Entire building to be sprinklered to NFPA 13R requirements.\n3. All new windows, doors, and skylights shall conform to AAMA/WDMA/CSA101/I.S.2/A440, NAFS.",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2023-02649\",\"PermitNumberCreatedDate\":\"2023-07-26\",\"IssueDate\":\"2024-07-03\",\"PermitElapsedDays\":\"343\",\"ProjectValue\":\"1200000.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"2136 E 10TH AVENUE, Vancouver, BC V5N 1Y1\",\"ProjectDescription\":\"High Density Housing / Commercial - New Building - To construct a new 3 storey Multiple Dwelling with 3 unit and 2 car garage (accessory building) having vehicular access from the lane. \\r\\n\\r\\nRelated to DP-2022-00548\\r\\n\\r\\n******THIS PERMIT HAS BEEN REVIEWED & ISSUED UNDER THE REQUIREMENTS OF VBBL 2019 AND AMENDMENT EFFECTIVE March 7, 2023. ********\\r\\n\\r\\nBuilding Review Branch Notes:\\r\\n1. Sch-A, Arch. B, Struct. B and Geo. B are submitted.\\r\\n2. Entire building to be sprinklered to NFPA 13R requirements.\\r\\n3. All new windows, doors, and skylights shall conform to AAMA/WDMA/CSA101/I.S.2/A440, NAFS.\",\"PermitCategory\":\"\",\"Applicant\":\"Carman Kwan DBA: Architectural Collective Inc.\",\"ApplicantAddress\":\"677 East 27th Avenue\\r\\nVancouver, BC  V5V 2K7\",\"PropertyUse\":\"Dwelling Uses\",\"SpecificUseCategory\":\"Dwelling Unit\",\"BuildingContractor\":\"\",\"BuildingContractorAddress\":\"\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Kensington-Cedar Cottage\",\"Geom\":\"{\\\"coordinates\\\": [-123.0611496, 49.2610451], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-07\",\"geo_point_2d\":\"49.2610451, -123.0611496\"}",
+        "date": "2024-07-03",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "multi-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-07-03",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 3,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 3
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-07-03",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:37:27.685Z",
+    "updateDate": "2024-07-20T18:37:27.685Z",
+    "lastUpdateDate": "2024-07-03"
+  },
+  {
+    "id": "dev-oyka1p5gmvo1yi5wj4xxh",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2023-03024",
+    "address": "433 LAKEWOOD DRIVE",
+    "applicant": "Carlito Cabahug DBA: LMDG Building Code Consultants Ltd.",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - To construct a 4-storey mixed-use building consisting of Retail on level one and Residential on levels one to four, containing a total of 111 secured market rental dwelling units, all over two levels of underground parking having vehicular access from the lane.\nVBBL 2019 - NFPA 13 - With Radio Antenna.\nStage 1 - Excavation, Shoring, and Foundation to Grade issued on June 27, 2024.",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2023-03024\",\"PermitNumberCreatedDate\":\"2023-08-23\",\"IssueDate\":\"2024-06-27\",\"PermitElapsedDays\":\"309\",\"ProjectValue\":\"29780000.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"433 LAKEWOOD DRIVE, Vancouver, BC V5L 1T8\",\"ProjectDescription\":\"Certified Professional Program - New Building - To construct a 4-storey mixed-use building consisting of Retail on level one and Residential on levels one to four, containing a total of 111 secured market rental dwelling units, all over two levels of underground parking having vehicular access from the lane.\\r\\n\\r\\nVBBL 2019 - NFPA 13 - With Radio Antenna.\\r\\n\\r\\nStage 1 - Excavation, Shoring, and Foundation to Grade issued on June 27, 2024.\",\"PermitCategory\":\"\",\"Applicant\":\"Carlito Cabahug DBA: LMDG Building Code Consultants Ltd.\",\"ApplicantAddress\":\"780 Betty St - 4th floor\\r\\nVancouver, BC  V6B2M1\",\"PropertyUse\":\"Dwelling Uses,Retail Uses\",\"SpecificUseCategory\":\"Retail Store,Mixed-Use Residential Building\",\"BuildingContractor\":\"APG Construction Ltd\",\"BuildingContractorAddress\":\"1055 DUNSMUIR ST  \\r\\nUnit 1100\\r\\nVancouver, BC  V6B 6A3\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Grandview-Woodland\",\"Geom\":\"{\\\"coordinates\\\": [-123.0617519, 49.2808736], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-06\",\"geo_point_2d\":\"49.2808736, -123.0617519\"}",
+        "date": "2024-06-27",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "mixed use",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-06-27",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": null,
+      "rentals": 111,
+      "hotels": null,
+      "fsr": null,
+      "storeys": 4
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-06-27",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:46:05.358Z",
+    "updateDate": "2024-07-20T18:46:05.358Z",
+    "lastUpdateDate": "2024-06-27"
+  },
+  {
+    "id": "dev-gl4bl1y2xxurv61zi7vmk",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2023-04604",
+    "address": "908 RAYMUR AVENUE",
+    "applicant": "Jack Hui DBA: Pontem Group",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - To construct a new 2 storey 'Repair Garage' (Group F2) containing ancillary spaces including a 2 level basement storage garage, offices, conference room, storage rooms, customer lounge, gallery, and a demonstration room.\nThis is a CP Process Permit and the applicant is Jack Hui, P. Eng., CP.\nThe entire building is to be sprinklered to NFPA 13. - VBBL 2019. - with Radio Antenna.\nStage 1: Excavation & Shoring only issued on June 27, 2024.",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2023-04604\",\"PermitNumberCreatedDate\":\"2023-12-15\",\"IssueDate\":\"2024-06-27\",\"PermitElapsedDays\":\"195\",\"ProjectValue\":\"36700000.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"908 RAYMUR AVENUE, Vancouver, BC V5A 3L5\",\"ProjectDescription\":\"Certified Professional Program - New Building - To construct a new 2 storey 'Repair Garage' (Group F2) containing ancillary spaces including a 2 level basement storage garage, offices, conference room, storage rooms, customer lounge, gallery, and a demonstration room.\\r\\n\\r\\nThis is a CP Process Permit and the applicant is Jack Hui, P. Eng., CP.\\r\\n\\r\\nThe entire building is to be sprinklered to NFPA 13. - VBBL 2019. - with Radio Antenna. \\r\\n\\r\\nStage 1: Excavation & Shoring only issued on June 27, 2024.\",\"PermitCategory\":\"\",\"Applicant\":\"Jack Hui DBA: Pontem Group\",\"ApplicantAddress\":\"Suite 309 – 63 W 6th Avenue\\r\\nVancouver, BC  V5Y 1K2\",\"PropertyUse\":\"Office Uses,Service Uses\",\"SpecificUseCategory\":\"General Office,Motor Vehicle Repair Shop\",\"BuildingContractor\":\"\",\"BuildingContractorAddress\":\"\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Strathcona\",\"Geom\":\"{\\\"coordinates\\\": [-123.0825572, 49.2767548], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-06\",\"geo_point_2d\":\"49.2767548, -123.0825572\"}",
+        "date": "2024-06-27",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-06-27",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": null,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 2
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-06-27",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:46:26.506Z",
+    "updateDate": "2024-07-20T18:46:26.506Z",
+    "lastUpdateDate": "2024-06-27"
+  },
+  {
+    "id": "rez-6tvk2aujpnbbesmmtey6z",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "REZ #22-17",
+    "address": "5033 Regent Street",
+    "applicant": "SmartCentres Management Services Inc.",
+    "behalf": null,
+    "description": "A rezoning application has been received to permit the construction of a six-storey enclosed self-storage facility at 5033 Regent Street. The subject site is currently zoned M2 General Industrial District and designated for Industrial Use. The applicant proposed to rezone the property to CD Comprehensive Development District based on M1 Manufacturing and M2 General Industrial Districts. The development will consist of approximately 1309 storage units of varying sizes, end-of-trip facilities, and a kitchen space for employees. The site is bordered by Still Creek to the north and the Trans Canada Highway to the south. The development will comply with a full 30 metres SPEA setback as required by the Zoning Bylaw.",
+    "rawSummaries": [
+      {
+        "summary": "REZ #22-17 - 5033 Regent Street - Six-Storey Self-Storage Facility\nA rezoning application has been received to permit the construction of a six-storey enclosed self-storage facility at 5033 Regent Street. The subject site is currently zoned M2 General Industrial District and designated for Industrial Use. The applicant, SmartCentres Management Services Inc., proposed to rezone the property to CD Comprehensive Development District based on M1 Manufacturing and M2 General Industrial Districts. The development will consist of approximately 1309 storage units of varying sizes, end-of-trip facilities, and a kitchen space for employees. The site is bordered by Still Creek to the north and the Trans Canada Highway to the south. The development will comply with a full 30 metres SPEA setback as required by the Zoning Bylaw. The rezoning application and associated Zoning Bylaw text amendment for parking requirements for self-storage are recommended to be forwarded to First and Second Reading.",
+        "date": "2024-06-24",
+        "status": "applied",
+        "reportUrl": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76556"
+      }
+    ],
+    "buildingType": "industrial",
+    "status": "applied",
+    "dates": {
+      "appliedDate": "2024-06-24",
+      "publicHearingDate": null,
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 6
+    },
+    "zoning": {
+      "previousZoningCode": "M2",
+      "previousZoningDescription": "General Industrial District",
+      "newZoningCode": "CD",
+      "newZoningDescription": "Comprehensive Development District based on M1 Manufacturing and M2 General Industrial Districts"
+    },
+    "reportUrls": [
+      {
+        "date": "2024-06-24",
+        "title": "REZ 22-17 5033 Regent Street_2024-06-24.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76556",
+        "status": "applied"
+      },
+      {
+        "date": "2024-06-24",
+        "title": "Attachment 1 - REZ 22-17 - Sketch 1.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76557",
+        "status": "applied"
+      },
+      {
+        "date": "2024-06-24",
+        "title": "Attachment 2 - REZ 22-17 - Development Statistics.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76558",
+        "status": "applied"
+      },
+      {
+        "date": "2024-06-24",
+        "title": "Attachment 3 - REZ 22-17 - Rezoning Prerequisites.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76559",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-06-24",
+        "url": "https://pub-burnaby.escribemeetings.com/Meeting.aspx?Id=7dc5a9b9-afc3-40f1-97ef-8009d3bc87a4&lang=English",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:19:17.521Z",
+    "updateDate": "2024-07-20T18:19:27.314Z",
+    "lastUpdateDate": "2024-06-24"
+  },
+  {
+    "id": "rez-tl3i43sormcm47hbvkjiw",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "REZ #24-06",
+    "address": "4657 Kingsway",
+    "applicant": null,
+    "behalf": null,
+    "description": "A rezoning application has been received to permit the addition of hotel use within the commercial floor area of the development previously approved under REZ #19-64. The proposed change also includes a minor revision to the setbacks of the commercial podium to allow for the addition of windows on the western facade. The subject site is located in the 4600 block of Kingsway and Hazel Street, designated for high-density mixed-use development within the Metrotown Downtown Plan and Town Centre within the Official Community Plan. The site is currently vacant. The subject site was previously rezoned under REZ #19-64 to permit a 66-storey high-rise mixed-use tower with a 7-storey commercial office podium. The development approved under REZ #19-64 contains a 7-storey commercial office podium above ground-oriented retail units fronting Kingsway. The proposal is to step back levels 5 to 9 by 1.5 m from the western property line to allow for windows on the west facade. The applicant is also proposing flexibility within the Comprehensive Development plans to facilitate the potential conversion of the permitted commercial office space to a hotel use (all suite hotel or regular hotel) at a later date.",
+    "rawSummaries": [
+      {
+        "summary": "REZ #24-06 - 4657 Kingsway\nA rezoning application has been received to permit the addition of hotel use within the commercial floor area of the development previously approved under REZ #19-64. The proposed change also includes a minor revision to the setbacks of the commercial podium to allow for the addition of windows on the western facade.\n\nThe subject site is located in the 4600 block of Kingsway and Hazel Street, designated for high-density mixed-use development within the Metrotown Downtown Plan and Town Centre within the Official Community Plan. The site is currently vacant.\n\nThe subject site was previously rezoned under REZ #19-64 to permit a 66-storey high-rise mixed-use tower with a 7-storey commercial office podium. Excavation for this approved development is anticipated to begin in Fall of 2024.\n\nThe development approved under REZ #19-64 contains a 7-storey commercial office podium above ground-oriented retail units fronting Kingsway. The proposal is to step back levels 5 to 9 by 1.5 m from the western property line to allow for windows on the west facade.\n\nThe applicant is also proposing flexibility within the Comprehensive Development plans to facilitate the potential conversion of the permitted commercial office space to a hotel use (all suite hotel or regular hotel) at a later date.",
+        "date": "2024-06-24",
+        "status": "applied",
+        "reportUrl": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76528"
+      }
+    ],
+    "buildingType": "mixed use",
+    "status": "applied",
+    "dates": {
+      "appliedDate": "2024-06-24",
+      "publicHearingDate": null,
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": null,
+      "fsr": null,
+      "storeys": 66
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": "REZ #24-06",
+      "newZoningDescription": "Permit hotel use within commercial floor area"
+    },
+    "reportUrls": [
+      {
+        "date": "2024-06-24",
+        "title": "REZ 24-06 4657 Kingsway 2024-06-24.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76528",
+        "status": "applied"
+      },
+      {
+        "date": "2024-06-24",
+        "title": "Attachment 1 - REZ 24-06 - Sketch 1 and Sketch 2.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76529",
+        "status": "applied"
+      },
+      {
+        "date": "2024-06-24",
+        "title": "Attachment 2 - REZ 24-06 - Development Statistics.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76530",
+        "status": "applied"
+      },
+      {
+        "date": "2024-06-24",
+        "title": "Attachment 3 - REZ 24-06 - Rezoning Prerequisites.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76531",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-06-24",
+        "url": "https://pub-burnaby.escribemeetings.com/Meeting.aspx?Id=7dc5a9b9-afc3-40f1-97ef-8009d3bc87a4&lang=English",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:19:45.074Z",
+    "updateDate": "2024-07-20T18:19:45.074Z",
+    "lastUpdateDate": "2024-06-24"
+  },
+  {
+    "id": "rez-gidcupjswnyuay8wqizhc",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7918-0141-00",
+    "address": "10342 – 136A Street",
+    "applicant": "Janda Group Holdings Inc.",
+    "behalf": null,
+    "description": "Rezoning from C-35 to CHI to allow the development of a 36-storey mixed-use building in City Centre.",
+    "rawSummaries": [
+      {
+        "summary": "7918-0141-00 - 10342 – 136A Street\nOwner: Janda Group Holdings Inc. (Director Information: S. Janda)\nAgent: Focus Architecture Inc. (Colin Hogan)\nRezoning from C-35 to CHI to allow the development of a 36-storey mixed-use building in City Centre.\nCouncil direction received May 10, 2021.",
+        "date": "2024-06-24",
+        "status": "approved",
+        "reportUrl": null
+      }
+    ],
+    "buildingType": "mixed use",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-06-24",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": null,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 36
+    },
+    "zoning": {
+      "previousZoningCode": "C-35",
+      "previousZoningDescription": null,
+      "newZoningCode": "CHI",
+      "newZoningDescription": null
+    },
+    "reportUrls": [],
+    "minutesUrls": [
+      {
+        "date": "2024-06-24",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN-RCLU-2024-06-24.pdf",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:20:16.134Z",
+    "updateDate": "2024-07-20T18:20:16.134Z",
+    "lastUpdateDate": "2024-06-24"
+  },
+  {
+    "id": "rez-lb18r5p0t3vp3dcm6kf29",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7921-0193-00",
+    "address": "10620 and 10628 - 138A Street; 10619 and 10631 - 139 Street",
+    "applicant": "1185259 B.C. Ltd. (Director Information: N. Takhar, M. Takhar)",
+    "behalf": null,
+    "description": "Amend Surrey Official Community Plan to allow a density up to 3.1 FAR within the 'Multiple Residential' designation for this site.",
+    "rawSummaries": [
+      {
+        "summary": "7921-0193-00 - 10620 and 10628 - 138A Street; 10619 and 10631 - 139 Street\nOwner: 1185259 B.C. Ltd. (Director Information: N. Takhar, M. Takhar)\nAgent: Barnett Dembek Architects Inc. (Abhishek Sinha)\nAmend Surrey Official Community Plan to allow a density up to 3.1 FAR within the 'Multiple Residential' designation for this site.\nCouncil direction received February 13, 2023.\nBylaw No. 20843 was finally adopted.",
+        "date": "2024-06-24",
+        "status": "approved",
+        "reportUrl": null
+      }
+    ],
+    "buildingType": "multi-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-06-24",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": null,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": 3.1,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": "Multiple Residential"
+    },
+    "reportUrls": [],
+    "minutesUrls": [
+      {
+        "date": "2024-06-24",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN-RCLU-2024-06-24.pdf",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:20:16.135Z",
+    "updateDate": "2024-07-20T18:20:16.135Z",
+    "lastUpdateDate": "2024-06-24"
+  },
+  {
+    "id": "rez-7iqez4mz6jsvcolz7t0y0",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7922-0283-00",
+    "address": "10277, 10285, 10293 - 148A Street; 10284, 10288, 10296 - 148 Street; Portion of lane",
+    "applicant": "1326427 B.C. Ltd. (Director Information: J. Parmar)",
+    "behalf": null,
+    "description": "The application is to amend the OCP Table 7a: Land Use Designation Exceptions to permit a density of up to 2.76 FAR on the subject properties.",
+    "rawSummaries": [
+      {
+        "summary": "7922-0283-00\nApplication No. 7922-0283-00\n10277, 10285, 10293 - 148A Street; 10284, 10288, 10296 - 148 Street; Portion of lane\nOwner: 1326427 B.C. Ltd. (Director Information: J. Parmar)\nAgent: Flat Architecture Inc. (Rajinder Warraich)\nTo amend the OCP Table 7a: Land Use Designation Exceptions to permit a density of up to 2.76 FAR.",
+        "date": "2024-06-24",
+        "status": "approved",
+        "reportUrl": null
+      }
+    ],
+    "buildingType": "mixed use",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-06-24",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": null,
+      "rentals": null,
+      "hotels": null,
+      "fsr": 2.76,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "date": "2024-06-24",
+        "title": "Planning Report 7922-0283-00 (10293 - 148A Street\n10285 - 148A Street\n10277 - 148A Street\n10284 - 148 Street\n10288 - 148 Street\n10296 - 148 Street,\nPortion of lane)",
+        "url": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7922-0283-00_0.pdf",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-06-24",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN-RCPH-2024-06-24.pdf",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:20:24.192Z",
+    "updateDate": "2024-07-20T18:20:24.192Z",
+    "lastUpdateDate": "2024-06-24"
+  },
+  {
+    "id": "rez-uw674klzj8g4sbex9q1bh",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7923-0157-00",
+    "address": "10730, 10738 and 10748 – 132A Street; 10731, 10739 and 10749 – 133 Street",
+    "applicant": "Atoq Capital (Porta) G.P. Ltd. (Director Information: D. Dhillon, H. Dhillon, A. Villing)",
+    "behalf": null,
+    "description": "The application is to amend the Official Community Plan (OCP) Figure 3 General Land Use Designations from Multiple Residential to Downtown and to amend Figure 16: Downtown Densities to permit a density of 5.5 Floor Area Ratio (FAR).",
+    "rawSummaries": [
+      {
+        "summary": "7923-0157-00\nApplication No. 7923-0157-00\n10730, 10738 and 10748 – 132A Street; 10731, 10739 and 10749 – 133 Street\nOwner: Atoq Capital (Porta) G.P. Ltd. (Director Information: D. Dhillon, H. Dhillon, A. Villing)\nAgent: Flat Architecture Inc. (Rajinder Warraich)\nTo amend OCP Figure 3 General Land Use Designations from Multiple Residential to Downtown and to amend Figure 16: Downtown Densities to permit a density of 5.5 FAR.",
+        "date": "2024-06-24",
+        "status": "approved",
+        "reportUrl": null
+      }
+    ],
+    "buildingType": "mixed use",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-06-24",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": null,
+      "rentals": null,
+      "hotels": null,
+      "fsr": 5.5,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": "Multiple Residential",
+      "newZoningCode": null,
+      "newZoningDescription": "Downtown"
+    },
+    "reportUrls": [
+      {
+        "date": "2024-06-24",
+        "title": "Planning Report 7923-0157-00 (10748 - 132A Street\n10749 - 133 Street\n10739 - 133 Street\n10738 - 132A Street\n10730 - 132A Street\n10731 - 133 Street)",
+        "url": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7923-0157-00_0.pdf",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-06-24",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN-RCPH-2024-06-24.pdf",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:20:29.649Z",
+    "updateDate": "2024-07-20T18:20:29.649Z",
+    "lastUpdateDate": "2024-06-24"
+  },
+  {
+    "id": "dev-rx28zrx5caml5bu82aief",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2023-04148",
+    "address": "2901 E HASTINGS STREET",
+    "applicant": "David Steer DBA: LMDG Building Code Consultants Ltd.",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - To construct a new amphitheater containing 10,000 seats, on the existing multi-use site, Pacific National Exhibition (PNE).\nStage I: excavation, shoring, piling and buttress structure (issued June 13/ 2024).\nStage 2 (in review)",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2023-04148\",\"PermitNumberCreatedDate\":\"2023-11-14\",\"IssueDate\":\"2024-06-13\",\"PermitElapsedDays\":\"212\",\"ProjectValue\":\"80200000.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"2901 E HASTINGS STREET, Vancouver, BC V5K 5J1\",\"ProjectDescription\":\"Certified Professional Program - New Building - To construct a new amphitheater containing 10,000 seats, on the existing multi-use site, Pacific National Exhibition (PNE). \\r\\n\\r\\nStage I: excavation, shoring, piling and buttress structure (issued June 13/ 2024).\\r\\n\\r\\nStage 2 (in review)\",\"PermitCategory\":\"\",\"Applicant\":\"David Steer DBA: LMDG Building Code Consultants Ltd.\",\"ApplicantAddress\":\"400 - 780 Beatty Street\\r\\nVancouver, BC  V6B 2M1\",\"PropertyUse\":\"Cultural/Recreational Uses\",\"SpecificUseCategory\":\"Stadium or Arena\",\"BuildingContractor\":\"\",\"BuildingContractorAddress\":\"\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Hastings-Sunrise\",\"Geom\":\"{\\\"coordinates\\\": [-123.0387934, 49.2847997], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-06\",\"geo_point_2d\":\"49.2847997, -123.0387934\"}",
+        "date": "2024-06-13",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "other",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-06-13",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": null,
+      "rentals": null,
+      "hotels": null,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-06-13",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:46:23.246Z",
+    "updateDate": "2024-07-20T18:46:23.246Z",
+    "lastUpdateDate": "2024-06-13"
+  },
+  {
+    "id": "rez-64d9wo98ht87emy2xux6e",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "REZ #24-12",
+    "address": "24-12",
+    "applicant": null,
+    "behalf": null,
+    "description": "to implement new Local Government Act requirements related to small-scale multi-unit housing (SSMUH) through the rezoning of all current R District properties and portions of properties that are split-zoned as R District, which includes permitting the following minimum number of housing units in single- and two-family neighbourhoods: 3 units on residential lots that are up to 280 m2, 4 units on residential lots that are greater than 280 m2, and 6 units on residential lots that are at least 281 m2 and within 400 m of bus stops with frequent service.",
+    "rawSummaries": [
+      {
+        "summary": "REZ #24-12\nPurpose: to implement new Local Government Act requirements related to small-scale multi-unit housing (SSMUH) through the rezoning of all current R District properties and portions of properties that are split-zoned as R District, which includes permitting the following minimum number of housing units in single- and two-family neighbourhoods:\n- 3 units on residential lots that are up to 280 m2\n- 4 units on residential lots that are greater than 280 m2\n- 6 units on residential lots that are at least 281 m2 and within 400 m of bus stops with frequent service",
+        "date": "2024-06-10",
+        "status": "approved",
+        "reportUrl": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76226"
+      }
+    ],
+    "buildingType": null,
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-06-10",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": null,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "date": "2024-06-10",
+        "title": "14662 No. 9, 2024 (Rezone to R1) (3 and FA).pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76226",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-06-10",
+        "url": "https://pub-burnaby.escribemeetings.com/Meeting.aspx?Id=48ff17b4-df24-4748-ad15-4ed886836a62&lang=English",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:19:55.007Z",
+    "updateDate": "2024-07-20T18:19:55.007Z",
+    "lastUpdateDate": "2024-06-10"
+  },
+  {
+    "id": "rez-cjb777pxqqk9sklqdk07u",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7917-0265-00",
+    "address": "10045 - 173 Street",
+    "applicant": "1266875 B.C. LTD. (Director Information: S. Sandhu, F. Brar)",
+    "behalf": null,
+    "description": "The site is being redesignated from Suburban to Urban. No other details about the proposed development are provided.",
+    "rawSummaries": [
+      {
+        "summary": "7917-0265-00 - 10045 - 173 Street\nOwner: 1266875 B.C. LTD. (Director Information: S. Sandhu, F. Brar)\nAgent: Hub Engineering Inc. (Mike Kompter)\nTo redesignate the site from Suburban to Urban.\nCouncil direction received November 19, 2018\nRegular Council - Land Use Minutes\nJune 10, 2024\nThe bylaw \"Surrey Official Community Plan Bylaw, 2013, No. 18020, Amendment Bylaw, 2018, No. 19701\" was finally adopted.",
+        "date": "2024-06-10",
+        "status": "approved",
+        "reportUrl": null
+      }
+    ],
+    "buildingType": "other",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-06-10",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": null,
+      "rentals": null,
+      "hotels": null,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": "Suburban",
+      "previousZoningDescription": null,
+      "newZoningCode": "Urban",
+      "newZoningDescription": null
+    },
+    "reportUrls": [],
+    "minutesUrls": [
+      {
+        "date": "2024-06-10",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN-RCLU-2024-06-10.pdf",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:20:35.251Z",
+    "updateDate": "2024-07-20T18:20:35.251Z",
+    "lastUpdateDate": "2024-06-10"
+  },
+  {
+    "id": "rez-oe0a2bfinxapxo9qdpd9d",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7922-0142-00",
+    "address": "9723 - 161A Street",
+    "applicant": "Wellbro Management Ltd.",
+    "behalf": null,
+    "description": "Rezoning from RA to RF-13 to subdivide into four single family lots and one lot to be conveyed to the City for conservation purposes.",
+    "rawSummaries": [
+      {
+        "summary": "7922-0142-00 - 9723 - 161A Street\nOwner: Wellbro Management Ltd. (Director Information: B. Dosanjh, A. Dosanjh, H. Kalsi, V. Kalsi)\nAgent: Coastland Engineering and Surveying Ltd. (Mike Helle)\nRezoning from RA to RF-13 to subdivide into four single family lots and one lot to be conveyed to the City for conservation purposes.\nCouncil direction received October 30, 2023.\nThe rezoning bylaw 'Surrey Zoning By-law, 1993, No. 12000, Amendment Bylaw, 2023, No. 21076' was finally adopted.",
+        "date": "2024-06-10",
+        "status": "approved",
+        "reportUrl": null
+      }
+    ],
+    "buildingType": "single-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-06-10",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 4,
+      "stratas": 4,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": "RA",
+      "previousZoningDescription": null,
+      "newZoningCode": "RF-13",
+      "newZoningDescription": null
+    },
+    "reportUrls": [],
+    "minutesUrls": [
+      {
+        "date": "2024-06-10",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN-RCLU-2024-06-10.pdf",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:20:40.581Z",
+    "updateDate": "2024-07-20T18:20:40.581Z",
+    "lastUpdateDate": "2024-06-10"
+  },
+  {
+    "id": "rez-n2l33ypif9vvd9mm0yhyu",
+    "city": "Burnaby",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "REZ #22-15",
+    "address": "7000 Lougheed Highway",
+    "applicant": null,
+    "behalf": null,
+    "description": "to establish a Conceptual Master Plan and Design Guidelines for the Burnaby Lake Heights Site in order to guide further site specific rezoning applications over time, for the construction of a high-density multi-phased residential and commercial mixed-use development. No specific development is being proposed by the subject rezoning application.",
+    "rawSummaries": [
+      {
+        "summary": "REZ #22-15 (7000 Lougheed Highway)\nPurpose: to establish a Conceptual Master Plan and Design Guidelines for the Burnaby Lake Heights Site in order to guide further site specific rezoning applications over time, for the construction of a high-density multi-phased residential and commercial mixed-use development. No specific development is being proposed by the subject rezoning application.",
+        "date": "2024-05-27",
+        "status": "approved",
+        "reportUrl": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76014"
+      }
+    ],
+    "buildingType": null,
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-27",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": null,
+      "rentals": null,
+      "hotels": null,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-27",
+        "title": "14563 No. 7, 2023 (CD) (FA).pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76014",
+        "status": "approved"
+      },
+      {
+        "date": "2024-05-27",
+        "title": "REZ 22-15 Final Adoption Memo 2024-05-27.pdf",
+        "url": "https://pub-burnaby.escribemeetings.com/filestream.ashx?DocumentId=76015",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-27",
+        "url": "https://pub-burnaby.escribemeetings.com/Meeting.aspx?Id=4b5e472c-04dc-44fa-9f6d-ee8b3531e87d&lang=English",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:20:00.024Z",
+    "updateDate": "2024-07-20T18:20:00.024Z",
+    "lastUpdateDate": "2024-05-27"
+  },
+  {
+    "id": "dev-o4znvjlj1b7wtsg1dctft",
+    "city": "Vancouver",
+    "metroCity": "Metro Vancouver",
+    "type": "development permit",
+    "applicationId": "BP-2023-02610",
+    "address": "5335 CHAMBERS STREET",
+    "applicant": "Michael Meszaros DBA: Pioneer Code Consultants Ltd.",
+    "behalf": null,
+    "description": "Certified Professional Program - New Building - To construct a new 4-storey, multiple dwelling building, containing 8 strata-titled dwelling units, with 6 parking stalls at the rear, having access from the lane on this less than 1000 m2 site.\nVBBL 2019 - NFPA 13R\nStage 1 - Excavation only issued on May 27, 2024.\nStage 2 - Foundation to Grade issued on July 18, 2024.",
+    "rawSummaries": [
+      {
+        "summary": "{\"PermitNumber\":\"BP-2023-02610\",\"PermitNumberCreatedDate\":\"2023-07-24\",\"IssueDate\":\"2024-05-27\",\"PermitElapsedDays\":\"308\",\"ProjectValue\":\"3300000.0\",\"TypeOfWork\":\"New Building\",\"Address\":\"5335 CHAMBERS STREET, Vancouver, BC V5R 3M2\",\"ProjectDescription\":\"Certified Professional Program - New Building - To construct a new 4-storey, multiple dwelling building, containing 8 strata-titled dwelling units, with 6 parking stalls at the rear, having access from the lane on this less than 1000 m2 site.\\r\\n\\r\\nVBBL 2019 - NFPA 13R\\r\\n\\r\\nStage 1 - Excavation only issued on May 27, 2024.\\r\\nStage 2 - Foundation to Grade issued on July 18, 2024.\",\"PermitCategory\":\"\",\"Applicant\":\"Michael Meszaros DBA: Pioneer Code Consultants Ltd.\",\"ApplicantAddress\":\"1933 W Broadway\\r\\nVancouver, BC  V6J 1Z3\",\"PropertyUse\":\"Dwelling Uses\",\"SpecificUseCategory\":\"Multiple Dwelling\",\"BuildingContractor\":\"TOP VISION DEVELOPMENTS INC.\",\"BuildingContractorAddress\":\"\",\"IssueYear\":\"2024\",\"GeoLocalArea\":\"Renfrew-Collingwood\",\"Geom\":\"{\\\"coordinates\\\": [-123.0533738, 49.2363945], \\\"type\\\": \\\"Point\\\"}\",\"YearMonth\":\"2024-05\",\"geo_point_2d\":\"49.2363945, -123.0533738\"}",
+        "date": "2024-05-27",
+        "status": "approved",
+        "reportUrl": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear"
+      }
+    ],
+    "buildingType": "multi-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-27",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 8,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 4
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": null,
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "url": "https://data.opendatasoft.com/explore/dataset/issued-building-permits%40vancouver/export/?sort=-issueyear",
+        "title": "Vancouver OpenData",
+        "date": "2024-05-27",
+        "status": "approved"
+      }
+    ],
+    "minutesUrls": [],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T19:21:19.884Z",
+    "updateDate": "2024-07-20T19:21:19.884Z",
+    "lastUpdateDate": "2024-05-27"
+  },
+  {
     "id": "rez-u3koxgsvbj4456cbeqouh",
     "city": "Burnaby",
     "metroCity": "Metro Vancouver",
@@ -66,7 +1486,7 @@
       "longitude": null
     },
     "createDate": "2024-05-14T17:58:10.576Z",
-    "updateDate": "2024-05-14T17:58:10.576Z",
+    "updateDate": "2024-07-20T18:20:04.647Z",
     "lastUpdateDate": "2024-05-13"
   },
   {
@@ -124,7 +1544,7 @@
       "longitude": null
     },
     "createDate": "2024-05-15T02:50:18.339Z",
-    "updateDate": "2024-05-15T02:50:18.339Z",
+    "updateDate": "2024-07-20T19:04:31.633Z",
     "lastUpdateDate": "2024-05-13"
   },
   {
@@ -182,7 +1602,7 @@
       "longitude": null
     },
     "createDate": "2024-05-15T02:50:59.432Z",
-    "updateDate": "2024-05-15T02:50:59.432Z",
+    "updateDate": "2024-07-20T19:04:28.887Z",
     "lastUpdateDate": "2024-05-13"
   },
   {
@@ -240,7 +1660,7 @@
       "longitude": null
     },
     "createDate": "2024-05-15T02:51:31.743Z",
-    "updateDate": "2024-05-15T02:51:31.743Z",
+    "updateDate": "2024-07-20T18:37:21.131Z",
     "lastUpdateDate": "2024-05-13"
   },
   {
@@ -298,7 +1718,7 @@
       "longitude": null
     },
     "createDate": "2024-05-15T02:51:40.394Z",
-    "updateDate": "2024-05-15T02:51:40.394Z",
+    "updateDate": "2024-07-20T19:21:15.953Z",
     "lastUpdateDate": "2024-05-13"
   },
   {
@@ -1117,7 +2537,7 @@
       "longitude": null
     },
     "createDate": "2024-04-25T19:10:47.213Z",
-    "updateDate": "2024-05-14T17:57:24.281Z",
+    "updateDate": "2024-07-20T18:34:30.670Z",
     "lastUpdateDate": "2024-05-08"
   },
   {
@@ -1234,7 +2654,7 @@
       "longitude": null
     },
     "createDate": "2024-04-25T19:10:53.517Z",
-    "updateDate": "2024-05-14T17:57:14.043Z",
+    "updateDate": "2024-07-20T18:34:24.449Z",
     "lastUpdateDate": "2024-05-08"
   },
   {
@@ -1345,7 +2765,7 @@
       "longitude": null
     },
     "createDate": "2024-04-25T19:11:01.752Z",
-    "updateDate": "2024-05-14T17:57:04.289Z",
+    "updateDate": "2024-07-20T18:34:18.693Z",
     "lastUpdateDate": "2024-05-08"
   },
   {
@@ -1525,7 +2945,7 @@
       "longitude": null
     },
     "createDate": "2024-05-14T17:57:36.569Z",
-    "updateDate": "2024-05-14T17:57:36.569Z",
+    "updateDate": "2024-07-20T18:34:36.006Z",
     "lastUpdateDate": "2024-05-07"
   },
   {
@@ -1589,7 +3009,7 @@
       "longitude": null
     },
     "createDate": "2024-05-14T17:57:56.640Z",
-    "updateDate": "2024-05-14T17:57:56.640Z",
+    "updateDate": "2024-07-20T18:34:43.328Z",
     "lastUpdateDate": "2024-05-07"
   },
   {
@@ -1653,7 +3073,7 @@
       "longitude": null
     },
     "createDate": "2024-05-14T17:58:01.520Z",
-    "updateDate": "2024-05-14T17:58:01.520Z",
+    "updateDate": "2024-07-20T18:18:45.328Z",
     "lastUpdateDate": "2024-05-07"
   },
   {
@@ -1717,7 +3137,7 @@
       "longitude": null
     },
     "createDate": "2024-05-14T17:58:05.356Z",
-    "updateDate": "2024-05-14T17:58:05.356Z",
+    "updateDate": "2024-07-20T18:18:45.349Z",
     "lastUpdateDate": "2024-05-07"
   },
   {
@@ -2066,6 +3486,739 @@
     },
     "createDate": "2024-05-15T02:53:14.720Z",
     "updateDate": "2024-05-15T02:53:14.720Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "rez-m5aryi0a04t79phkg474r",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7922-0277-00",
+    "address": "14570, 14580 and 14590 - 106 Avenue",
+    "applicant": "Paddington (Guildford) Holdings Ltd.",
+    "behalf": "Paddington Properties (Pawanjot Shergill)",
+    "description": "The application is for a NCP Amendment from 'Townhouse' to 'Low Rise Transition Residential' in the Guildford Plan, and a Rezoning from RF to CD (based on RM-70) to permit the development of a 5-storey residential building, containing 98 market rental units secured through a 60-year Housing Agreement, over 2 levels of underground parking, on a consolidated site in Guildford.",
+    "rawSummaries": [
+      {
+        "summary": "7922-0277-00\nApplication No. 7922-0277-00\n14570, 14580 and 14590 - 106 Avenue\nOwner: Paddington (Guildford) Holdings Ltd.\nAgent: Paddington Properties (Pawanjot Shergill)\nNCP Amendment from \"Townhouse\" to \"Low Rise Transition Residential\" in the Guildford Plan.\nRezoning from RF to CD (based on RM-70)\nDevelopment Permit\nHousing Agreement\nto permit the development of a 5-storey residential building, containing 98 market rental units secured through a 60-year Housing Agreement over 2 levels of underground parking, on a consolidated site in Guildford.",
+        "date": "2024-05-06",
+        "status": "applied",
+        "reportUrl": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7922-0277-00.pdf"
+      }
+    ],
+    "buildingType": "multi-family residential",
+    "status": "applied",
+    "dates": {
+      "appliedDate": "2024-05-06",
+      "publicHearingDate": null,
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 0,
+      "rentals": 98,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 5
+    },
+    "zoning": {
+      "previousZoningCode": "RF",
+      "previousZoningDescription": null,
+      "newZoningCode": "CD",
+      "newZoningDescription": "based on RM-70"
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-06",
+        "title": "Planning Report 7922-0277-00 (14570 - 106 Avenue\n14580 - 106 Avenue\n14590 - 106 Avenue)",
+        "url": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7922-0277-00.pdf",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-06",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN_RCLU_2024_05_06.pdf",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:20:46.823Z",
+    "updateDate": "2024-07-20T18:20:46.823Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "rez-lcyt5ouwcnty4552ouvnf",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7923-0227-00",
+    "address": "13585 - 95 Avenue",
+    "applicant": "Centurion Appelt (9525 King George) Holdings Inc.",
+    "behalf": "DF Architecture Inc. (Jessie Arora)",
+    "description": "Rezoning from CD (Bylaw No. 20416) to CD to permit the development of a 41-storey mixed-use tower comprised of 463 market rental residential dwelling units, 991 sq.m. of ground floor commercial and 5,890 sq.m. of medical offices within the 5-storey podium.",
+    "rawSummaries": [
+      {
+        "summary": "7923-0227-00\nApplication No. 7923-0227-00\n13585 - 95 Avenue\nOwner: Centurion Appelt (9525 King George) Holdings Inc.\nAgent: DF Architecture Inc. (Jessie Arora)\nRezoning from CD (Bylaw No. 20416) to CD\nDevelopment Permit / Development Variance Permit\nHousing Agreement\nto permit the development of a 41-storey mixed-use tower comprised of 463 market rental residential dwelling units, 991 sq.m. of ground floor commercial and 5,890 sq.m. of medical offices within the 5-storey podium.",
+        "date": "2024-05-06",
+        "status": "applied",
+        "reportUrl": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7923-0227-00.pdf"
+      }
+    ],
+    "buildingType": "mixed use",
+    "status": "applied",
+    "dates": {
+      "appliedDate": "2024-05-06",
+      "publicHearingDate": null,
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 0,
+      "rentals": 463,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 41
+    },
+    "zoning": {
+      "previousZoningCode": "CD (Bylaw No. 20416)",
+      "previousZoningDescription": null,
+      "newZoningCode": "CD",
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-06",
+        "title": "Planning Report 7923-0227-00 (13585 - 95 Avenue)",
+        "url": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7923-0227-00.pdf",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-06",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN_RCLU_2024_05_06.pdf",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:20:53.376Z",
+    "updateDate": "2024-07-20T18:20:53.376Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "rez-gfwuertotgxwkjv8mwnuj",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7921-0243-00",
+    "address": "10165 - 173 Street",
+    "applicant": "1283625 B.C. Ltd. (Directors: B. Gill, J. Malhi)",
+    "behalf": null,
+    "description": "Proposal to amend the Official Community Plan (OCP) from 'Suburban' to 'Urban' and rezone the property from RA to RQ and RF to allow subdivision into 2 suburban and 3 urban single-family lots.",
+    "rawSummaries": [
+      {
+        "summary": "7921-0243-00 - 10165 - 173 Street\nOwner: 1283625 B.C. Ltd. (Directors: B. Gill, J. Malhi)\nAgent: RGB Engineering Ltd (Gurpreet Grewal)\nProposal:\n- OCP Amendment of a portion from \"Suburban\" to \"Urban\"\n- Rezoning from RA to RQ and RF\n- To allow subdivision into 2 suburban and 3 urban single-family lots\nRecommendations:\n- Introduce bylaw to amend OCP from \"Suburban\" to \"Urban\" and set Public Hearing date\n- Determine appropriate consultation for OCP amendment\n- Introduce bylaw to rezone from RA to RF and RQ and set Public Hearing date\n- Resolve engineering, subdivision, transportation, tree, affordable housing, and demolition requirements prior to final adoption",
+        "date": "2024-05-06",
+        "status": "applied",
+        "reportUrl": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7921-0243-00.pdf"
+      }
+    ],
+    "buildingType": "single-family residential",
+    "status": "applied",
+    "dates": {
+      "appliedDate": "2024-05-06",
+      "publicHearingDate": null,
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 5,
+      "stratas": 5,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": "RA",
+      "previousZoningDescription": null,
+      "newZoningCode": "RQ, RF",
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-06",
+        "title": "Planning Report 7921-0243-00 (10165 - 173 Street)",
+        "url": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7921-0243-00.pdf",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-06",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN_RCLU_2024_05_06.pdf",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:20:59.318Z",
+    "updateDate": "2024-07-20T18:20:59.318Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "rez-3lyoa0e4tdieik5vwe5e9",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7923-0252-00",
+    "address": "6358 - 138 Street",
+    "applicant": "Ceres Properties Inc. (Preet Brar)",
+    "behalf": null,
+    "description": "Rezoning from RA to RF-10 to allow subdivision into 2 single family lots.",
+    "rawSummaries": [
+      {
+        "summary": "7923-0252-00 - 6358 - 138 Street\nOwners: P. Brar, S. Brar\nAgent: Ceres Properties Inc. (Preet Brar)\nRezoning from RA to RF-10 to allow subdivision into 2 single family lots.\nCouncil endorsed the Public Notification to proceed for Bylaw No. 21265 to rezone the subject site.\nCouncil instructed staff to resolve the following issues prior to final adoption:\n- Ensure all engineering requirements and issues including restrictive covenants, dedications, and rights-of-way are addressed.\n- Submission of a subdivision layout to the satisfaction of the Approving Officer.\n- Submission of a finalized landscaping plan and landscaping cost estimate.\n- Submission of a finalized tree survey and a statement regarding tree preservation.\n- The applicant adequately address the City's Affordable Housing Strategy.\n- Demolition of existing buildings and structures.",
+        "date": "2024-05-06",
+        "status": "applied",
+        "reportUrl": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7923-0252-00.pdf"
+      }
+    ],
+    "buildingType": "single-family residential",
+    "status": "applied",
+    "dates": {
+      "appliedDate": "2024-05-06",
+      "publicHearingDate": null,
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 2,
+      "stratas": 2,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": "RA",
+      "previousZoningDescription": null,
+      "newZoningCode": "RF-10",
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-06",
+        "title": "Planning Report 7923-0252-00 (6358 - 138 Street)",
+        "url": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7923-0252-00.pdf",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-06",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN_RCLU_2024_05_06.pdf",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:21:05.011Z",
+    "updateDate": "2024-07-20T18:21:05.011Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "rez-9d1q9fbvsjyqfuvjd6y7n",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7922-0238-00",
+    "address": "2635 - 158 Street",
+    "applicant": "ParaMorph Architecture Inc. (Manpreet Singh)",
+    "behalf": "1314913 B.C. Ltd.",
+    "description": "Rezoning from RH to RM-30 to permit the development of 21 townhouse units. Development Permit / Development Variance Permit to reduce the minimum north side yard setback for Building 1 from 6.0 metres to 3.0 metres at the ground floor and 2.24 metres at the 2nd and 3rd floors, reduce the minimum east front yard setback for Building 1 at 2nd and 3rd floor levels from 4.5 metres to 3.59 metres to building face and 3.43 metres for the canopy, and reduce the minimum south side yard setback for Building 2 from 6.0 metres to 3.0 metres at the ground floor and 2.39 metres at the 2nd and 3rd floors.",
+    "rawSummaries": [
+      {
+        "summary": "7922-0238-00\nApplication No. 7922-0238-00\n2635 - 158 Street\nOwner: 1314913 B.C. Ltd.\nAgent: ParaMorph Architecture Inc. (Manpreet Singh)\nRezoning from RH to RM-30\nDevelopment Permit / Development Variance Permit to permit the development of 21 townhouse units.\nCouncil endorse the Public Notification to proceed for Bylaw No. 21261 to rezone the subject site from \"Half-Acre Residential Zone (RH)\" to \"Multiple Residential 30 Zone (RM-30)\".\nCouncil authorize staff to draft Development Permit No. 7922-0238-00 generally in accordance with the attached drawings (Appendix I).\nCouncil approve Development Variance Permit No. 7922-0238-00, varying:\n(a) to reduce the minimum north side yard setback of the RM-30 Zone for Building 1 from 6.0 metres to 3.0 metres to building face at the ground floor level and from 6.0 metres to 2.24 metres to building face at the 2nd and 3rd floor levels;\n(b) to reduce the minimum east front yard setback of the RM-30 Zone for Building 1 at 2nd and 3rd floor levels from 4.5 metres to 3.59 metres to building face and to 3.43 metres for the canopy; and\n(c) to reduce the minimum south side yard setback of the RM-30 Zone for Building 2 from 6.0 metres to 3.0 metres to building face at the ground floor level and from 6.0 metres to 2.39 metres to building face at the 2nd and 3rd floor levels.",
+        "date": "2024-05-06",
+        "status": "applied",
+        "reportUrl": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7922-0238-00_0.pdf"
+      }
+    ],
+    "buildingType": "townhouse",
+    "status": "applied",
+    "dates": {
+      "appliedDate": "2024-05-06",
+      "publicHearingDate": null,
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 2,
+      "stratas": 21,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 3
+    },
+    "zoning": {
+      "previousZoningCode": "RH",
+      "previousZoningDescription": "Half-Acre Residential Zone",
+      "newZoningCode": "RM-30",
+      "newZoningDescription": "Multiple Residential 30 Zone"
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-06",
+        "title": "Planning Report 7922-0238-00 (2635 - 158 Street)",
+        "url": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7922-0238-00_0.pdf",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-06",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN_RCLU_2024_05_06.pdf",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:21:13.448Z",
+    "updateDate": "2024-07-20T18:21:13.448Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "rez-twdv8ojcj4wtvyashzbn7",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7921-0290-00",
+    "address": "2160 King George Boulevard",
+    "applicant": "Flat Architecture Inc. (Rajinder Warraich)",
+    "behalf": "Diyash Property Investments Inc. (Directors: B. Dharni, J. Sharma, A. Sharma)",
+    "description": "Proposal to amend the Official Community Plan (OCP) from 'Urban' to 'Commercial' and rezone the property from CTA to CD (based on CTA) to permit the development of a 4-storey, 80-room hotel with a restaurant.",
+    "rawSummaries": [
+      {
+        "summary": "7921-0290-00 - 2160 King George Boulevard\nOwner: Diyash Property Investments Inc. (Directors: B. Dharni, J. Sharma, A. Sharma)\nAgent: Flat Architecture Inc. (Rajinder Warraich)\nProposal:\n- OCP Amendment from \"Urban\" to \"Commercial\"\n- Rezoning from CTA to CD (based on CTA)\n- Development Permit to permit the development of a 4-storey, 80-room hotel with a restaurant.\nDecisions:\n1. Introduce OCP Amendment Bylaw and set Public Hearing date.\n2. Determine appropriate consultation for OCP amendment.\n3. Introduce Rezoning Bylaw from CTA to CD and set Public Hearing date.\n4. Authorize staff to draft Development Permit No. 7921-0290-00.\n5. Require resolution of engineering, road dedication, urban design, landscaping, tree preservation, demolition, and public art issues prior to final adoption.",
+        "date": "2024-05-06",
+        "status": "applied",
+        "reportUrl": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7921-0290-00.pdf"
+      }
+    ],
+    "buildingType": "commercial",
+    "status": "applied",
+    "dates": {
+      "appliedDate": "2024-05-06",
+      "publicHearingDate": null,
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 1,
+      "stratas": 0,
+      "rentals": 0,
+      "hotels": 80,
+      "fsr": null,
+      "storeys": 4
+    },
+    "zoning": {
+      "previousZoningCode": "CTA",
+      "previousZoningDescription": null,
+      "newZoningCode": "CD",
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-06",
+        "title": "Planning Report 7921-0290-00 (2160 King George Boulevard)",
+        "url": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7921-0290-00.pdf",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-06",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN_RCLU_2024_05_06.pdf",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:21:19.747Z",
+    "updateDate": "2024-07-20T18:21:19.747Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "rez-paqonyy17huw112wjx0s3",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7922-0321-00, 7922-0321-01",
+    "address": "10355 King George Boulevard, 10388 City Parkway",
+    "applicant": "Wesgroup Properties LP (Sebastian Jasiorkowski)",
+    "behalf": "Civic District Investments Ltd. Director: P. Wesik",
+    "description": "Development of a mixed-use phased development consisting of three high-rise mixed-use towers (55, 60 and 65 storeys) and one stand-alone office building (13 storeys). Phase 1 consists of a 55-storey mixed-use tower with ground floor food store, commercial/retail and childcare. The development is seeking a rezoning from C-8 to CD.",
+    "rawSummaries": [
+      {
+        "summary": "7922-0321-00, 7922-0321-01 - 10355 King George Boulevard (10388 City Parkway)\nOwner: Civic District Investments Ltd. Director: P. Wesik. Agent: Wesgroup Properties LP (Sebastian Jasiorkowski). Rezoning from C-8 to CD. General Development Permit / Detailed Development Permit. Development Variance Permit to permit the development of a mixed-use phased development consisting of three high-rise mixed-use towers (55, 60 and 65 storeys) and one stand-alone office building (13 storeys). Phase 1 consists of a 55-storey mixed-use tower with ground floor food store, commercial/retail and childcare. Council endorsed the Public Notification to proceed for Bylaw No. 21264 to rezone the subject site. Council authorized staff to draft General Development Permit No. 7922-0321-00 and Detailed Development Permit No. 7922-0321-01. Council approved Development Variance Permit No. 7922-0321-00 to vary the definition of \"Bond\" in the Surrey Subdivision and Development By-law, 1986, No. 8830, as amended, to include the use of a Surety Bond for Servicing Agreement No. 7822-0321-00. Council instructed staff to resolve various engineering, subdivision, urban design, landscaping, tree preservation, density bonus amenity contribution, demolition, access easements, acoustical, public art, and affordable housing requirements prior to final adoption.",
+        "date": "2024-05-06",
+        "status": "applied",
+        "reportUrl": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7922-0321-00_0.pdf"
+      }
+    ],
+    "buildingType": "mixed use",
+    "status": "applied",
+    "dates": {
+      "appliedDate": "2024-05-06",
+      "publicHearingDate": null,
+      "approvalDate": null,
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 4,
+      "stratas": null,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": 65
+    },
+    "zoning": {
+      "previousZoningCode": "C-8",
+      "previousZoningDescription": null,
+      "newZoningCode": "CD",
+      "newZoningDescription": null
+    },
+    "reportUrls": [
+      {
+        "date": "2024-05-06",
+        "title": "Planning Report 7922-0321-00 and 7922-0321-01 (10355 King George Boulevard\n(10388 City Parkway))",
+        "url": "https://www.surrey.ca/sites/default/files/planning-reports/PLR_7922-0321-00_0.pdf",
+        "status": "applied"
+      }
+    ],
+    "minutesUrls": [
+      {
+        "date": "2024-05-06",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN_RCLU_2024_05_06.pdf",
+        "status": "applied"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:21:29.281Z",
+    "updateDate": "2024-07-20T18:21:29.281Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "rez-wsbpco97v34mdzqr71vrh",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7922-0084-00",
+    "address": "3250 - 144 Street",
+    "applicant": "Exclusive Ventures Ltd. (Directors Information: M. Kooner), and M. Kooner",
+    "behalf": null,
+    "description": "Rezoning from RA to RH to subdivide the property into two single-family residential lots. The Central Semiahmoo Peninsula Local Area Plan is being amended to redesignate the land from 'One Acre' to 'Half-Acre Gross Density'.",
+    "rawSummaries": [
+      {
+        "summary": "7922-0084-00 - 3250 - 144 Street\nApplication No. 7922-0084-00\nOwners: Exclusive Ventures Ltd. (Directors Information: M. Kooner), and M. Kooner\nAgent: CitiWest Consulting Ltd. (Jasleen Kaur)\nRezoning from RA to RH to subdivide into two single-family residential lots.\nCouncil direction received December 12, 2022.\nChange of Owner.\nAmend the Central Semiahmoo Peninsula Local Area Plan to redesignate the land from \"One Acre\" to \"Half-Acre Gross Density\".",
+        "date": "2024-05-06",
+        "status": "approved",
+        "reportUrl": null
+      }
+    ],
+    "buildingType": "single-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-06",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 2,
+      "stratas": 2,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": "RA",
+      "previousZoningDescription": null,
+      "newZoningCode": "RH",
+      "newZoningDescription": null
+    },
+    "reportUrls": [],
+    "minutesUrls": [
+      {
+        "date": "2024-05-06",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN_RCLU_2024_05_06.pdf",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:21:35.475Z",
+    "updateDate": "2024-07-20T18:21:35.475Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "rez-u1hq54ryaw0n0xefwweoh",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7921-0276-00",
+    "address": "6703 and 6725 - 192 Street Diversion, 6702 - 191A Street, 19132 and 19156 - 67 Avenue",
+    "applicant": "H.Y. Engineering Ltd. (Fahad Abrahani)",
+    "behalf": null,
+    "description": "Rezoning from RA to RF-9S, RF-9C to RF-9S and RA to RF to allow the consolidation and re-subdivision of five remnant lots into two single family urban lots (RF), eleven single family urban small lots and one remnant lot in East Clayton. Amend the East Clayton Neighbourhood Concept Plan (NCP) to redesignate a portion of the land from \"Business Park\" to \"10-15 UPA Special Residential\" (portions of 19132 – 67 Avenue and 6702 -191A Street) and a portion of 6725 – 192 Street Diversion from \"15-25 UPA (Medium-High Density)\" to \"6-10 UPA (Low Density)\"",
+    "rawSummaries": [
+      {
+        "summary": "7921-0276-00\nApplication No. 7921-0276-00\n6703 and 6725 - 192 Street Diversion; 6702 - 191A Street; 19132 and 19156 - 67 Avenue\nOwners: S. Dhanoa, K. Dhanoa, 0760815 B.C. Ltd. (Director Information: S. Dhanoa), 1355255 B.C. Ltd. (Director Information: K. Dhanoa, S. Dhanoa), 1355245 B.C. Ltd. (Director Information: S. Dhanoa), Benchmark Management Ltd. (Director Information: R. Bontkes, C. Bontkes)\nAgent: H.Y. Engineering Ltd. (Fahad Abrahani)\nRezoning from RA to RF-9S, RF-9C to RF-9S and RA to RF to allow the consolidation and re-subdivision of five remnant lots into two single family urban lots (RF), eleven single family urban small lots and one remnant lot in East Clayton.\nCouncil direction received October 3, 2022\nAmend the East Clayton Neighbourhood Concept Plan (NCP) to redesignate a portion of the land from \"Business Park\" to \"10-15 UPA Special Residential\" (portions of 19132 – 67 Avenue and 6702 -191A Street) and a portion of 6725 – 192 Street Diversion from \"15-25 UPA (Medium-High Density)\" to \"6-10 UPA (Low Density)\".",
+        "date": "2024-05-06",
+        "status": "approved",
+        "reportUrl": null
+      }
+    ],
+    "buildingType": "single-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-06",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": 13,
+      "stratas": 13,
+      "rentals": 0,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": "RA",
+      "previousZoningDescription": null,
+      "newZoningCode": "RF-9S, RF-9C, RF",
+      "newZoningDescription": null
+    },
+    "reportUrls": [],
+    "minutesUrls": [
+      {
+        "date": "2024-05-06",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN_RCLU_2024_05_06.pdf",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:21:43.174Z",
+    "updateDate": "2024-07-20T18:21:43.174Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "rez-ry91iiw3bw5rcn56yeqj7",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7915-0076-00",
+    "address": "5629 King George Boulevard",
+    "applicant": "Panorama South Development Ltd. (Directors Information: H. Atwal, B. Patter)",
+    "behalf": null,
+    "description": "The property located at 5629 King George Boulevard is proposed to be redesignated from Suburban to Multiple Residential. The applicant is Panorama South Development Ltd., with directors H. Atwal and B. Patter. The agent for the application is Matthew Cheng Architect Inc. (Matthew Cheng).",
+    "rawSummaries": [
+      {
+        "summary": "7915-0076-00 - 5629 King George Boulevard\nApplication No. 7915-0076-00\n5629 King George Boulevard\nOwner: Panorama South Development Ltd. (Directors Information: H. Atwal, B. Patter)\nAgent: Matthew Cheng Architect Inc. (Matthew Cheng)\nTo redesignate the property located at 5629 King George Boulevard from Suburban to Multiple Residential\nCouncil direction received October 19, 2020",
+        "date": "2024-05-06",
+        "status": "approved",
+        "reportUrl": null
+      }
+    ],
+    "buildingType": "multi-family residential",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-06",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": null,
+      "rentals": null,
+      "hotels": 0,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": "Suburban",
+      "previousZoningDescription": "Low density residential",
+      "newZoningCode": "Multiple Residential",
+      "newZoningDescription": "Medium to high density residential"
+    },
+    "reportUrls": [],
+    "minutesUrls": [
+      {
+        "date": "2024-05-06",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN_RCLU_2024_05_06.pdf",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:21:48.786Z",
+    "updateDate": "2024-07-20T18:21:48.786Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "rez-cclkdp36r79484e7ju5ng",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7916-0679-00",
+    "address": "228 - 175A Street",
+    "applicant": "Isle of Mann Group (Jimmy Hansra)",
+    "behalf": null,
+    "description": "The application is to amend the Surrey Official Community Plan Bylaw, 2013, No. 18020, by redesignating a portion of the site from Mixed Employment to Multiple Residential and Commercial, and Mixed Employment to Commercial. The amendment also adjusts the boundary of the Commercial designation for the property.",
+    "rawSummaries": [
+      {
+        "summary": "7916-0679-00 - 228 - 175A Street\nApplication No. 7916-0679-00 for the property located at 228 - 175A Street. Owners: 1103798 B.C. Ltd., 1103806 B.C. Ltd. (Director Information: D. Mann, H. Yong). Agent: Isle of Mann Group (Jimmy Hansra).\n\nTo amend the Surrey Official Community Plan Bylaw, 2013, No. 18020, by redesignating a portion of the site from Mixed Employment to Multiple Residential and Commercial, and Mixed Employment to Commercial. The amendment also adjusts the boundary of the Commercial designation for the property.\n\nThe amendment was carried and finally adopted by Council on May 6, 2024.",
+        "date": "2024-05-06",
+        "status": "approved",
+        "reportUrl": null
+      }
+    ],
+    "buildingType": "mixed use",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-06",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": null,
+      "rentals": null,
+      "hotels": null,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": "Mixed Employment",
+      "previousZoningDescription": "Mixed Employment",
+      "newZoningCode": "Multiple Residential and Commercial, Commercial",
+      "newZoningDescription": "Mixed Use"
+    },
+    "reportUrls": [],
+    "minutesUrls": [
+      {
+        "date": "2024-05-06",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN_RCLU_2024_05_06.pdf",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:21:55.491Z",
+    "updateDate": "2024-07-20T18:21:55.491Z",
+    "lastUpdateDate": "2024-05-06"
+  },
+  {
+    "id": "rez-rmmcm36ynvi4bczjkkla0",
+    "city": "Surrey",
+    "metroCity": "Metro Vancouver",
+    "type": "rezoning",
+    "applicationId": "7922-0149-00",
+    "address": "7922-0149-00",
+    "applicant": null,
+    "behalf": null,
+    "description": "Bylaw No. 21202 was supported by Council to amend the Surrey Zoning Bylaw, 1993, No. 12000.",
+    "rawSummaries": [
+      {
+        "summary": "7922-0149-00\nApplication No. 7922-0149-00 has been closed as Bylaw No. 21202 was supported by Council. Bylaw No. 20769 has been filed to amend the Surrey Zoning Bylaw, 1993, No. 12000.",
+        "date": "2024-05-06",
+        "status": "approved",
+        "reportUrl": null
+      }
+    ],
+    "buildingType": "other",
+    "status": "approved",
+    "dates": {
+      "appliedDate": null,
+      "publicHearingDate": null,
+      "approvalDate": "2024-05-06",
+      "denialDate": null,
+      "withdrawnDate": null
+    },
+    "stats": {
+      "buildings": null,
+      "stratas": null,
+      "rentals": null,
+      "hotels": null,
+      "fsr": null,
+      "storeys": null
+    },
+    "zoning": {
+      "previousZoningCode": null,
+      "previousZoningDescription": null,
+      "newZoningCode": "21202",
+      "newZoningDescription": null
+    },
+    "reportUrls": [],
+    "minutesUrls": [
+      {
+        "date": "2024-05-06",
+        "url": "https://www.surrey.ca/sites/default/files/minutes/MIN_RCPH_2024-05-06.pdf",
+        "status": "approved"
+      }
+    ],
+    "location": {
+      "latitude": null,
+      "longitude": null
+    },
+    "createDate": "2024-07-20T18:22:04.048Z",
+    "updateDate": "2024-07-20T18:22:04.048Z",
     "lastUpdateDate": "2024-05-06"
   },
   {
